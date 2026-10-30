@@ -30,7 +30,7 @@ interface AppContextType {
   createEmergency: (data: Partial<Emergency>) => Promise<string>;
   respondToEmergency: (id: string, action: string) => Promise<void>;
   dismissEmergency: (id: string) => Promise<void>;
-  closeEmergency: (id: string) => Promise<void>;
+  closeEmergency: (id: string, notes?: string) => Promise<{ success: boolean; error?: string }>;
   updateEmergencyReport: (id: string, report: string) => Promise<void>;
   appLinks: AppLinks;
   updateAppLinks: (links: AppLinks) => Promise<void>;
@@ -379,10 +379,13 @@ export const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => 
   };
 
   const createEmergency = async (data: Partial<Emergency>) => {
+    if (!user || !user.id) {
+      throw new Error('يجب تسجيل الدخول لإنشاء بلاغ طوارئ.');
+    }
     const docRef = await addDoc(collection(db, 'emergencies'), { 
       ...data, 
-      createdBy: user?.id, 
-      creatorName: user?.name, 
+      createdBy: String(user.id), 
+      creatorName: String(user.name || user.username || 'المبلغ'), 
       createdAt: Date.now(), 
       status: EmergencyStatus.ACTIVE, 
       responders: [] 
@@ -416,27 +419,130 @@ export const AppProvider: React.FC<{ children: ReactNode }> = ({ children }) => 
     await updateDoc(doc(db, 'emergencies', id), { dismissedBy: arrayUnion(user.id) });
   };
 
-  const closeEmergency = async (id: string) => { 
-    stopAllAlerts(); 
-    mobileLocationService.setAssignedEmergency(null);
-    await updateDoc(doc(db, 'emergencies', id), { 
-      status: EmergencyStatus.CLOSED, 
-      closedAt: Date.now(), 
-      closedBy: user?.id, 
-      closedByName: user?.name 
-    });
+  const closeEmergency = async (id: string, notes?: string): Promise<{ success: boolean; error?: string }> => { 
+    if (!user?.id) {
+      return { success: false, error: 'يجب تسجيل الدخول لتنفيذ هذا الإجراء.' };
+    }
 
-    // Revert user readiness status taking into account other active incidents
+    const targetEmergency = emergencies.find(e => e.id === id);
+    const isAdmin = user.role === UserRole.ADMIN || user.role === UserRole.SUPER_ADMIN;
+    const isCreator = Boolean(targetEmergency?.createdBy && targetEmergency.createdBy === user.id);
+
+    if (!isAdmin && !isCreator) {
+      if (!targetEmergency?.createdBy) {
+        return { success: false, error: 'هذا بلاغ قديم يفتقر لمعرّف منشئ موثوق؛ يحق لمدير النظام حصراً إغلاقه.' };
+      }
+      return { success: false, error: 'غير مصرح: يحق لمنشئ البلاغ أو لمدير النظام فقط إغلاق هذا البلاغ.' };
+    }
+
+    let closedOnServer = false;
+
+    // 1. First attempt: call trusted server endpoint (/api/emergencies/close)
+    try {
+      const response = await fetch('/api/emergencies/close', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          emergencyId: id,
+          userId: user.id,
+          closedByName: user.name || user.username,
+          notes: notes || ''
+        })
+      });
+
+      const resData = await response.json();
+      if (!response.ok || !resData.success) {
+        throw new Error(resData.error || 'فشل إغلاق البلاغ عبر الخادم');
+      }
+      closedOnServer = true;
+    } catch (serverErr: any) {
+      console.warn('Server close endpoint fallback:', serverErr.message);
+
+      // 2. Fallback: Atomic client transaction
+      try {
+        const { runTransaction } = await import('firebase/firestore');
+        await runTransaction(db, async (transaction) => {
+          const emDocRef = doc(db, 'emergencies', id);
+          const emSnap = await transaction.get(emDocRef);
+          if (!emSnap.exists()) {
+            throw new Error('البلاغ غير موجود في النظام.');
+          }
+
+          const emData = emSnap.data() as Emergency;
+          if (emData.status === EmergencyStatus.CLOSED) {
+            return; // Idempotent: already closed
+          }
+
+          const canClose = isAdmin || (emData.createdBy && emData.createdBy === user.id);
+          if (!canClose) {
+            if (!emData.createdBy) {
+              throw new Error('هذا بلاغ قديم يفتقر لمعرّف منشئ موثوق؛ يحق لمدير النظام حصراً إغلاقه.');
+            }
+            throw new Error('غير مصرح لك بإغلاق هذا البلاغ.');
+          }
+
+          const now = Date.now();
+          transaction.update(emDocRef, { 
+            status: EmergencyStatus.CLOSED, 
+            closedAt: now, 
+            closedBy: user.id, 
+            closedByName: user.name || user.username,
+            closeNotes: notes || ''
+          });
+
+          // Append timeline event
+          const timelineRef = doc(collection(db, 'emergencies', id, 'timeline'));
+          transaction.set(timelineRef, {
+            id: timelineRef.id,
+            eventType: 'STATUS_CHANGE',
+            title: 'إغلاق البلاغ رسميًا',
+            description: `تم إغلاق البلاغ بواسطة ${user.name || user.username}`,
+            timestamp: now,
+            userId: user.id,
+            userName: user.name || user.username,
+            userRole: user.role
+          });
+        });
+        closedOnServer = true;
+      } catch (txErr: any) {
+        return { success: false, error: txErr.message || 'فشل إغلاق البلاغ في قاعدة البيانات.' };
+      }
+    }
+
+    if (!closedOnServer) {
+      return { success: false, error: 'تعذر تأكيد إغلاق البلاغ.' };
+    }
+
+    // Success actions
+    mobileLocationService.setAssignedEmergency(null);
     if (user) {
       await readinessService.handleEmergencyClosedForStaff(user.id, id);
     }
+
+    // CRITICAL: Stop alert for THIS emergency, but preserve siren if OTHER active emergencies exist!
+    const remainingActive = activeEmergencies.filter(e => e.id !== id);
+    if (remainingActive.length === 0) {
+      stopAllAlerts();
+    }
+
+    return { success: true };
   };
 
   const updateEmergencyReport = async (id: string, report: string) => { await updateDoc(doc(db, 'emergencies', id), { aiReport: report }); };
   const updateAppLinks = async (links: AppLinks) => { await setDoc(doc(db, 'system', 'config'), { appLinks: links }, { merge: true }); };
   const updateGeminiApiKeys = async (primary: string, secondary: string) => { await setDoc(doc(db, 'system', 'config'), { geminiApiKey: primary, geminiApiKeySecondary: secondary }, { merge: true }); };
   const logAdminAction = async (type: string, details: string) => { if (user) await addDoc(collection(db, 'admin_logs'), { userId: user.id, userName: user.name, actionType: type, details, timestamp: Date.now() }); };
-  const updateProfile = async (data: any) => { if (user) { await updateDoc(doc(db, 'users', user.id), data); const updated = { ...user, ...data }; setUser(updated); localStorage.setItem('esr_user', JSON.stringify(updated)); } };
+  const updateProfile = async (data: any) => { 
+    if (user) { 
+      // Prevent user from elevating their role via profile edit
+      const safeData = { ...data };
+      delete safeData.role;
+      await updateDoc(doc(db, 'users', user.id), safeData); 
+      const updated = { ...user, ...safeData }; 
+      setUser(updated); 
+      localStorage.setItem('esr_user', JSON.stringify(updated)); 
+    } 
+  };
   
   return (
     <AppContext.Provider value={{ 

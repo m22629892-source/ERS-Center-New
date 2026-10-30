@@ -55,6 +55,8 @@ const Alarm = () => {
   const [showPirModal, setShowPirModal] = useState(false);
   const [showFloorPlan, setShowFloorPlan] = useState(true);
   const [isCloseModalOpen, setIsCloseModalOpen] = useState(false);
+  const [isClosing, setIsClosing] = useState(false);
+  const [closeError, setCloseError] = useState<string | null>(null);
   
   const [actionNotes, setActionNotes] = useState(''); 
   const [announcementText, setAnnouncementText] = useState('');
@@ -272,7 +274,8 @@ const Alarm = () => {
     setIsSpeaking(false);
     
     await respondToEmergency(localEmergency.id, actionNotes);
-    navigate('/');
+    setActionNotes('');
+    setIsConfirming(false);
   };
 
   const startScanner = async () => {
@@ -346,6 +349,8 @@ const Alarm = () => {
   if (!localEmergency) return <div className="p-10 text-center font-black">{t('loading')}</div>;
 
   const isAdmin = user?.role === UserRole.ADMIN || user?.role === UserRole.SUPER_ADMIN;
+  const isCreator = Boolean(localEmergency?.createdBy && user?.id && localEmergency.createdBy === user.id);
+  const canCloseEmergency = (isAdmin || isCreator) && localEmergency.status === EmergencyStatus.ACTIVE;
   const isResponder = user?.role === UserRole.RESPONDER || isAdmin;
   const isEscalated = localEmergency.escalated || minutesElapsed > 15;
   const hasResponded = localEmergency.responders?.includes(user?.name || '');
@@ -605,7 +610,25 @@ const Alarm = () => {
                 </div>
                 )}
                 
-                {isAdmin && <Button variant="outline" className="w-full py-4 font-black rounded-2xl border-red-500 text-red-500 hover:bg-red-50 text-xs shadow-sm" onClick={() => setIsCloseModalOpen(true)}>{t("permanently_close_case")}</Button>}
+                {canCloseEmergency && (
+                  <div className="space-y-2 pt-2">
+                    {closeError && (
+                      <div className="p-3 bg-red-50 text-red-700 dark:bg-red-950/40 dark:text-red-300 rounded-2xl text-xs flex items-center gap-2 border border-red-200 dark:border-red-800">
+                        <AlertTriangle size={16} className="shrink-0 text-red-600" />
+                        <span>{closeError}</span>
+                      </div>
+                    )}
+                    <Button 
+                      variant="outline" 
+                      disabled={isClosing}
+                      className="w-full py-4 font-black rounded-2xl border-red-500 text-red-500 hover:bg-red-50 dark:hover:bg-red-950/30 text-xs shadow-sm flex items-center justify-center gap-2 disabled:opacity-50" 
+                      onClick={() => { setCloseError(null); setIsCloseModalOpen(true); }}
+                    >
+                      {isClosing ? <Loader2 size={16} className="animate-spin" /> : null}
+                      <span>{t("permanently_close_case")}</span>
+                    </Button>
+                  </div>
+                )}
             </div>
         </motion.div>
       </div>
@@ -619,7 +642,27 @@ const Alarm = () => {
           </div>
       </Modal>
 
-      <ConfirmModal isOpen={isCloseModalOpen} onClose={() => setIsCloseModalOpen(false)} onConfirm={async () => { stopLoopRef.current = true; stopAllAlerts(); await closeEmergency(localEmergency.id); navigate('/'); }} title={t('close_confirm_title')} message={t('close_confirm_msg')} />
+      <ConfirmModal 
+        isOpen={isCloseModalOpen} 
+        onClose={() => { if (!isClosing) setIsCloseModalOpen(false); }} 
+        onConfirm={async () => { 
+          setIsClosing(true);
+          setCloseError(null);
+          const res = await closeEmergency(localEmergency.id); 
+          setIsClosing(false);
+          if (res.success) {
+            stopLoopRef.current = true;
+            setIsCloseModalOpen(false);
+            navigate('/'); 
+          } else {
+            // Keep user on the alarm page, do NOT stop siren or navigate away!
+            setCloseError(res.error || 'فشل إغلاق البلاغ');
+            setIsCloseModalOpen(false);
+          }
+        }} 
+        title={t('close_confirm_title')} 
+        message={t('close_confirm_msg')} 
+      />
     </div>
   );
 };

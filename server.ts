@@ -1100,6 +1100,145 @@ app.post('/api/notifications/ack', async (req, res) => {
 });
 
 // ==========================================
+// 11.0.2 Authoritative Emergency Incident Closure Endpoint
+// ==========================================
+app.post('/api/emergencies/close', async (req, res) => {
+  try {
+    const { emergencyId, userId, closedByName, notes } = req.body;
+    if (!emergencyId || typeof emergencyId !== 'string') {
+      return res.status(400).json({ success: false, error: 'معرّف البلاغ مطلوب (emergencyId is required)' });
+    }
+    if (!userId || typeof userId !== 'string') {
+      return res.status(400).json({ success: false, error: 'معرّف المستخدم مطلوب (userId is required)' });
+    }
+
+    if (!(admin as any)?.apps?.length) {
+      return res.status(503).json({ success: false, error: 'خدمة Firebase Admin غير مهيأة على الخادم.' });
+    }
+
+    const db = (admin as any).firestore();
+
+    // 1. Authoritative identity check from Firestore (never trust client-supplied role)
+    const userDocRef = db.collection('users').doc(userId);
+    const userDocSnap = await userDocRef.get();
+    if (!userDocSnap.exists) {
+      return res.status(403).json({ 
+        success: false, 
+        error: 'المستخدم غير مسجل في قاعدة البيانات، تم رفض طلب الإغلاق.' 
+      });
+    }
+
+    const userData = userDocSnap.data() || {};
+    const userRole = userData.role || 'responder';
+    const isAdmin = userRole === 'admin' || userRole === 'super-admin';
+    const authoritativeName = userData.name || userData.username || closedByName || 'المسؤول';
+
+    const emergencyDocRef = db.collection('emergencies').doc(emergencyId);
+    
+    // 2. Atomic Transaction for verification, closure, and timeline event recording
+    const result = await db.runTransaction(async (transaction: any) => {
+      const emergencySnap = await transaction.get(emergencyDocRef);
+      if (!emergencySnap.exists) {
+        throw new Error('EMERGENCY_NOT_FOUND');
+      }
+
+      const emergencyData = emergencySnap.data() || {};
+
+      // If already closed: return idempotent success without duplicate timeline events
+      if (emergencyData.status === 'closed' || emergencyData.status === 'resolved') {
+        return { alreadyClosed: true, emergencyId };
+      }
+
+      // Check permission:
+      // Creator can close if createdBy matches userId
+      // Admin/Super-Admin can close
+      // Legacy emergencies without createdBy: ONLY admin can close (never guess by name)
+      const creatorId = emergencyData.createdBy;
+      const isCreator = Boolean(creatorId && creatorId === userId);
+
+      if (!isAdmin && !isCreator) {
+        if (!creatorId) {
+          throw new Error('LEGACY_EMERGENCY_REQUIRES_ADMIN');
+        } else {
+          throw new Error('FORBIDDEN_NOT_CREATOR_OR_ADMIN');
+        }
+      }
+
+      const now = Date.now();
+      const serverTs = (admin as any).firestore.FieldValue.serverTimestamp();
+
+      // Update emergency atomically
+      transaction.update(emergencyDocRef, {
+        status: 'closed',
+        closedAt: now,
+        serverClosedAt: serverTs,
+        closedBy: userId,
+        closedByName: authoritativeName,
+        closeNotes: notes || 'تم إغلاق البلاغ رسميًا',
+        updatedAt: now
+      });
+
+      // Append immutable timeline event in subcollection
+      const timelineRef = emergencyDocRef.collection('timeline').doc();
+      transaction.set(timelineRef, {
+        id: timelineRef.id,
+        eventType: 'STATUS_CHANGE',
+        title: 'إغلاق البلاغ رسميًا',
+        description: `تم إغلاق البلاغ بنجاح وإنهاء الاستدعاء بواسطة ${authoritativeName}`,
+        timestamp: now,
+        serverTimestamp: serverTs,
+        userId: userId,
+        userName: authoritativeName,
+        userRole: userRole,
+        source: 'alarm_closure'
+      });
+
+      // Record immutable audit event
+      const auditRef = db.collection('audit_events').doc();
+      transaction.set(auditRef, {
+        id: auditRef.id,
+        eventType: 'EMERGENCY_CLOSED',
+        actorId: userId,
+        actorName: authoritativeName,
+        actorRole: userRole,
+        targetId: emergencyId,
+        targetName: emergencyData.typeName || 'حالة طوارئ',
+        timestamp: now,
+        details: `إغلاق البلاغ ${emergencyId} بالموقع ${emergencyData.locationName || ''}`
+      });
+
+      return { alreadyClosed: false, emergencyId };
+    });
+
+    return res.json({
+      success: true,
+      message: result.alreadyClosed ? 'البلاغ مغلق مسبقاً.' : 'تم إغلاق البلاغ بنجاح وتوثيق الحدث.',
+      emergencyId,
+      closedBy: userId,
+      closedByName: authoritativeName
+    });
+  } catch (err: any) {
+    if (err.message === 'EMERGENCY_NOT_FOUND') {
+      return res.status(404).json({ success: false, error: 'البلاغ غير موجود في النظام.' });
+    }
+    if (err.message === 'LEGACY_EMERGENCY_REQUIRES_ADMIN') {
+      return res.status(403).json({ 
+        success: false, 
+        error: 'هذا بلاغ قديم يفتقر لمعرّف منشئ موثوق؛ يحق لمدير النظام حصراً إغلاقه.' 
+      });
+    }
+    if (err.message === 'FORBIDDEN_NOT_CREATOR_OR_ADMIN') {
+      return res.status(403).json({ 
+        success: false, 
+        error: 'غير مصرح: يحق لمنشئ البلاغ فقط أو لمدير النظام إغلاق هذا البلاغ.' 
+      });
+    }
+    console.error('Error closing emergency on server:', err);
+    return res.status(500).json({ success: false, error: err.message || 'خطأ في معالجة إغلاق البلاغ' });
+  }
+});
+
+// ==========================================
 // 11.1. System Readiness & Health Check Endpoint
 // ==========================================
 app.get('/api/system/health-check', async (req, res) => {
