@@ -1,0 +1,802 @@
+{
+  "approx_ip": {
+    "ar": "تقريبي عبر IP",
+    "en": "Approximate via IP"
+  },
+  "interactive_map_title": {
+    "ar": "الخريطة التفاعلية المباشرة (OpenStreetMap + Leaflet)",
+    "en": "Live Interactive Map (OpenStreetMap + Leaflet)"
+  },
+  "connected_devices_list": {
+    "ar": "قائمة الأجهزة المتصلة",
+    "en": "Connected Devices List"
+  },
+  "click_to_focus_device": {
+    "ar": "اضغط على الجهاز للتركيز أو فحص التفاصيل",
+    "en": "Click device to focus or inspect details"
+  },
+  "no_matching_devices": {
+    "ar": "لا توجد أجهزة مطابقة للفلاتر المحددة.",
+    "en": "No devices match the selected filters."
+  },
+  "locate_on_map": {
+    "ar": "تحديد على الخريطة",
+    "en": "Locate on Map"
+  },
+  "details_and_history": {
+    "ar": "التفاصيل والسجل",
+    "en": "Details & History"
+  },
+  "simulate_travel_egypt": {
+    "ar": "محاكاة السفر إلى مصر (القاهرة)",
+    "en": "Simulate Travel to Egypt (Cairo)"
+  },
+  "simulate_return_saudi": {
+    "ar": "محاكاة العودة إلى السعودية (الرياض)",
+    "en": "Simulate Return to Saudi (Riyadh)"
+  },
+  "close": {
+    "ar": "إغلاق",
+    "en": "Close"
+  },
+  "loading_blackbox_data": {
+    "ar": "جاري تحميل بيانات الصندوق الأسود...",
+    "en": "Loading incident black-box data..."
+  },
+  "task_completed_event": {
+    "ar": "إنجاز مهمة: {{title}}",
+    "en": "Task Completed: {{title}}"
+  },
+  "voice_note_event": {
+    "ar": "🎙️ ملاحظة صوتية ({{duration}} ث): {{desc}}",
+    "en": "🎙️ Voice Note ({{duration}}s): {{desc}}"
+  },
+  "responder_name_fallback": {
+    "ar": "مستجيب",
+    "en": "Responder"
+  },
+  "field_recording_fallback": {
+    "ar": "تسجيل ميداني",
+    "en": "Field Recording"
+  },
+  "replay_incident": {
+    "ar": "إعادة تشغيل الحادث:",
+    "en": "Incident Playback:"
+  },
+  "elapsed_time": {
+    "ar": "الزمن",
+    "en": "Elapsed Time"
+  },
+  "real_data": {
+    "ar": "بيانات حقيقية",
+    "en": "REAL DATA"
+  },
+  "no_telemetry": {
+    "ar": "لا توجد بيانات تتبع",
+    "en": "NO TELEMETRY"
+  },
+  "switch_to_satellite": {
+    "ar": "قمر صناعي",
+    "en": "Satellite"
+  },
+  "switch_to_street_map": {
+    "ar": "خريطة",
+    "en": "Streets Map"
+  },
+  "switch_to_satellite_tooltip": {
+    "ar": "التحويل إلى القمر الصناعي (مجاني 100%)",
+    "en": "Switch to Satellite Layer (100% Free)"
+  },
+  "switch_to_streets_tooltip": {
+    "ar": "التحويل إلى الخريطة التخطيطية (مجاني 100%)",
+    "en": "Switch to Street Map (100% Free)"
+  },
+  "zoom_in": {
+    "ar": "تكبير الخريطة",
+    "en": "Zoom In"
+  },
+  "zoom_out": {
+    "ar": "تصغير الخريطة",
+    "en": "Zoom Out"
+  },
+  "recenter_incident": {
+    "ar": "إعادة التمركز على موقع الحادث",
+    "en": "Recenter on Incident"
+  },
+  "free_live_tracking_badge": {
+    "ar": "تتبع مباشر مجاني 100% بدون أي مفتاح API",
+    "en": "100% Free Live Tracking without API Key"
+  },
+  "stats": {
+    "ar": "الإحصائيات",
+    "en": "Stats"
+  },
+  "forensic_replay_module": {
+    "ar": "وحدة التحقيق الجنائي وإعادة محاكاة الحوادث - ERS",
+    "en": "ERS System Forensic Replay Module"
+  },
+  "country_egypt": {
+    "ar": "مصر (Egypt)",
+    "en": "Egypt"
+  },
+  "country_saudi_arabia": {
+    "ar": "السعودية (KSA)",
+    "en": "Saudi Arabia (KSA)"
+  },
+  "country_kuwait": {
+    "ar": "الكويت (Kuwait)",
+    "en": "Kuwait"
+  },
+  "country_uae": {
+    "ar": "الإمارات (UAE)",
+    "en": "United Arab Emirates (UAE)"
+  },
+  "country_qatar": {
+    "ar": "قطر (Qatar)",
+    "en": "Qatar"
+  },
+  "color_blue": {
+    "ar": "أزرق",
+    "en": "Blue"
+  },
+  "color_red": {
+    "ar": "أحمر",
+    "en": "Red"
+  },
+  "color_green": {
+    "ar": "أخضر",
+    "en": "Green"
+  },
+  "color_purple": {
+    "ar": "بنفسجي",
+    "en": "Purple"
+  },
+  "color_indigo": {
+    "ar": "نيلي",
+    "en": "Indigo"
+  },
+  "color_orange": {
+    "ar": "برتقالي",
+    "en": "Orange"
+  },
+  "color_teal": {
+    "ar": "سماوي",
+    "en": "Teal"
+  },
+  "color_pink": {
+    "ar": "وردي",
+    "en": "Pink"
+  },
+  "color_amber": {
+    "ar": "عنبري",
+    "en": "Amber"
+  },
+  "work_country_label": {
+    "ar": "دولة العمل (للتمركز على الخريطة)",
+    "en": "Work Country (for Map Centering)"
+  },
+  "save_data_error": {
+    "ar": "حدث خطأ أثناء حفظ البيانات",
+    "en": "An error occurred while saving data"
+  },
+  "move_up": {
+    "ar": "تحريك لأعلى",
+    "en": "Move Up"
+  },
+  "move_down": {
+    "ar": "تحريك لأسفل",
+    "en": "Move Down"
+  },
+  "mobile_diagnostics_title": {
+    "ar": "تشخيص واختبار خدمات الموبايل",
+    "en": "Mobile Services Diagnostics & Testing"
+  },
+  "mobile_diagnostics_sub": {
+    "ar": "فحص شامل لتكامل الإشعارات، تسجيل الأجهزة، والـ GPS الميداني",
+    "en": "Comprehensive test for notifications, device registration & field GPS"
+  },
+  "recheck": {
+    "ar": "إعادة الفحص",
+    "en": "Re-run Diagnostics"
+  },
+  "hardware_platform_info": {
+    "ar": "معلومات الجهاز والبيئة",
+    "en": "Hardware & Platform Information"
+  },
+  "device_model": {
+    "ar": "طراز الجهاز",
+    "en": "Device Model"
+  },
+  "operating_system": {
+    "ar": "نظام التشغيل",
+    "en": "Operating System"
+  },
+  "network_status": {
+    "ar": "حالة الشبكة",
+    "en": "Network Status"
+  },
+  "device_id_label": {
+    "ar": "معرّف الجهاز (Device ID)",
+    "en": "Device ID"
+  },
+  "push_notif_diagnostics": {
+    "ar": "تشخيص إشعارات الإنذار الفورية (Push Notifications)",
+    "en": "Push Notifications Diagnostics"
+  },
+  "fcm_token_label": {
+    "ar": "رمز FCM الميداني",
+    "en": "FCM Device Token"
+  },
+  "send_test_push": {
+    "ar": "إرسال إشعار فحص تجريبي",
+    "en": "Send Test Push Notification"
+  },
+  "sending": {
+    "ar": "جاري الإرسال...",
+    "en": "Sending..."
+  },
+  "gps_field_diagnostics": {
+    "ar": "تشخيص نظام تحديد المواقع (Field GPS)",
+    "en": "Field GPS Diagnostics"
+  },
+  "current_coordinates": {
+    "ar": "الإحداثيات الحالية",
+    "en": "Current Coordinates"
+  },
+  "accuracy": {
+    "ar": "دقة التحديد",
+    "en": "Accuracy"
+  },
+  "speed": {
+    "ar": "السرعة",
+    "en": "Speed"
+  },
+  "altitude": {
+    "ar": "الارتفاع",
+    "en": "Altitude"
+  },
+  "refresh_gps": {
+    "ar": "تحديث إحداثيات GPS",
+    "en": "Refresh GPS Coordinates"
+  },
+  "unspecified": {
+    "ar": "غير محدد",
+    "en": "Unspecified"
+  },
+  "testing": {
+    "ar": "فحص...",
+    "en": "Testing..."
+  },
+  "meters": {
+    "ar": "متر",
+    "en": "meters"
+  },
+  "km_h": {
+    "ar": "كم/س",
+    "en": "km/h"
+  },
+  "browser_env": {
+    "ar": "متصفح ويب (Web Browser)",
+    "en": "Web Browser"
+  },
+  "copied": {
+    "ar": "تم النسخ!",
+    "en": "Copied!"
+  },
+  "copy_token": {
+    "ar": "نسخ الرمز",
+    "en": "Copy Token"
+  },
+  "native_app_env": {
+    "ar": "تطبيق أصلي (Native APK / Capacitor)",
+    "en": "Native App (APK / Capacitor)"
+  },
+  "web_browser_env": {
+    "ar": "بيئة الويب / متصفح (PWA)",
+    "en": "Web / Browser Environment (PWA)"
+  },
+  "copied_to_clipboard": {
+    "ar": "تم النسخ إلى الحافظة بنجاح",
+    "en": "Copied to clipboard successfully"
+  },
+  "incident_details": {
+    "ar": "تفاصيل الحادث",
+    "en": "Incident Details"
+  },
+  "incident_severity": {
+    "ar": "درجة الخطورة",
+    "en": "Incident Severity"
+  },
+  "high_priority": {
+    "ar": "أولوية قصوى",
+    "en": "High Priority"
+  },
+  "medium_priority": {
+    "ar": "أولوية متوسطة",
+    "en": "Medium Priority"
+  },
+  "low_priority": {
+    "ar": "أولوية عادية",
+    "en": "Low Priority"
+  },
+  "send_emergency_now": {
+    "ar": "إرسال بلاغ الطوارئ الآن",
+    "en": "Dispatch Emergency Alert Now"
+  },
+  "emergency_dispatched": {
+    "ar": "تم إرسال البلاغ بنجاح",
+    "en": "Emergency Dispatched Successfully"
+  },
+  "incident_log": {
+    "ar": "سجل الحادث",
+    "en": "Incident Log"
+  },
+  "responder_chat": {
+    "ar": "دردشة المستجيبين",
+    "en": "Responder Chat"
+  },
+  "type_message_placeholder": {
+    "ar": "اكتب رسالة للفرق الميدانية...",
+    "en": "Type a message for field teams..."
+  },
+  "unauthorized_access_desc": {
+    "ar": "هذه اللوحة مخصصة لمدراء النظام فقط لمراقبة الأجهزة العالمية.",
+    "en": "This dashboard is restricted to system administrators for global device monitoring."
+  },
+  "back_to_home": {
+    "ar": "العودة للرئيسية",
+    "en": "Back to Dashboard"
+  },
+  "devices_map_sub": {
+    "ar": "تحديد دقيق عبر GPS و IP Geolocation مع إدارة النزاعات وحفظ السجل الزمني",
+    "en": "Precise tracking via GPS & IP Geolocation with conflict resolution and history logging"
+  },
+  "check_my_location_now": {
+    "ar": "فحص موقعي الآن",
+    "en": "Check My Location Now"
+  },
+  "back_to_admin": {
+    "ar": "العودة للإدارة",
+    "en": "Back to Admin Panel"
+  },
+  "location_version_label": {
+    "ar": "إصدار الموقع: v{{version}}",
+    "en": "Location Version: v{{version}}"
+  },
+  "installation_id_label": {
+    "ar": "معرف التثبيت: {{instId}} | الجهاز: {{deviceId}}",
+    "en": "Installation ID: {{instId}} | Device: {{deviceId}}"
+  },
+  "firestore_registered_fields": {
+    "ar": "الحقول المسجلة في Firestore",
+    "en": "Firestore Registered Fields"
+  },
+  "user_id_label": {
+    "ar": "المستخدم (userId)",
+    "en": "User ID (userId)"
+  },
+  "user_name_label": {
+    "ar": "اسم المستخدم (userName)",
+    "en": "User Name (userName)"
+  },
+  "current_session_id": {
+    "ar": "جلسة العمل الحالية (sessionId)",
+    "en": "Current Session ID (sessionId)"
+  },
+  "active_session_id": {
+    "ar": "الجلسة النشطة (activeSessionId)",
+    "en": "Active Session ID (activeSessionId)"
+  },
+  "operating_system_label": {
+    "ar": "نظام التشغيل (operatingSystem)",
+    "en": "Operating System (operatingSystem)"
+  },
+  "browser_label": {
+    "ar": "المتصفح (browser)",
+    "en": "Web Browser (browser)"
+  },
+  "device_type_label": {
+    "ar": "نوع الجهاز (deviceType)",
+    "en": "Device Type (deviceType)"
+  },
+  "ip_address_label": {
+    "ar": "عنوان IP (ipAddress)",
+    "en": "IP Address (ipAddress)"
+  },
+  "country_label": {
+    "ar": "الدولة (country / countryCode)",
+    "en": "Country (country / countryCode)"
+  },
+  "city_region_label": {
+    "ar": "المدينة والمنطقة (city / region)",
+    "en": "City & Region (city / region)"
+  },
+  "latitude_field_label": {
+    "ar": "خط العرض (latitude)",
+    "en": "Latitude (latitude)"
+  },
+  "longitude_field_label": {
+    "ar": "خط الطول (longitude)",
+    "en": "Longitude (longitude)"
+  },
+  "location_source_label": {
+    "ar": "مصدر الموقع (locationSource)",
+    "en": "Location Source (locationSource)"
+  },
+  "location_accuracy_label": {
+    "ar": "دقة الموقع (locationAccuracy)",
+    "en": "Location Accuracy (locationAccuracy)"
+  },
+  "location_status_label": {
+    "ar": "حالة الموقع (locationStatus)",
+    "en": "Location Status (locationStatus)"
+  },
+  "location_observed_at_label": {
+    "ar": "توقيت الرصد الفعلي (locationObservedAt)",
+    "en": "Observed At (locationObservedAt)"
+  },
+  "location_updated_at_label": {
+    "ar": "توقيت التحديث بالخادم (locationUpdatedAt)",
+    "en": "Server Updated At (locationUpdatedAt)"
+  },
+  "last_ip_check_label": {
+    "ar": "آخر فحص IP (lastIpCheckAt)",
+    "en": "Last IP Check (lastIpCheckAt)"
+  },
+  "last_known_country_label": {
+    "ar": "آخر دولة معروفة (lastKnownCountry)",
+    "en": "Last Known Country (lastKnownCountry)"
+  },
+  "last_known_city_label": {
+    "ar": "آخر مدينة معروفة (lastKnownCity)",
+    "en": "Last Known City (lastKnownCity)"
+  },
+  "connection_status_label": {
+    "ar": "حالة الاتصال (isOnline)",
+    "en": "Connection Status (isOnline)"
+  },
+  "first_seen_label": {
+    "ar": "أول ظهور (firstSeen)",
+    "en": "First Seen (firstSeen)"
+  },
+  "last_seen_label": {
+    "ar": "آخر ظهور (lastSeen)",
+    "en": "Last Seen (lastSeen)"
+  },
+  "notification_permission_label": {
+    "ar": "إذن الإشعارات (notificationEnabled)",
+    "en": "Notifications Permission (notificationEnabled)"
+  },
+  "fcm_token_field_label": {
+    "ar": "رمز FCM Token",
+    "en": "FCM Device Token"
+  },
+  "enabled": {
+    "ar": "مفعل",
+    "en": "Enabled"
+  },
+  "disabled": {
+    "ar": "معطل",
+    "en": "Disabled"
+  },
+  "not_available": {
+    "ar": "غير متوفر",
+    "en": "N/A"
+  },
+  "location_movement_history": {
+    "ar": "سجل تحركات وتغيرات الموقع الجغرافي (locationHistory)",
+    "en": "Geographic Movement & Location History (locationHistory)"
+  },
+  "records_count_label": {
+    "ar": "{{count}} سجلات مسجلة",
+    "en": "{{count}} records logged"
+  },
+  "loading_history": {
+    "ar": "جاري تحميل السجل...",
+    "en": "Loading history..."
+  },
+  "no_history_yet": {
+    "ar": "لا يوجد سجل تحركات مسجل لهذا الجهاز حتى الآن (يتم التسجيل تلقائياً عند تغيير الدولة أو المدينة أو الحركة).",
+    "en": "No movement history recorded for this device yet (logged automatically upon location shifts)."
+  },
+  "periodic_location_update": {
+    "ar": "تحديث دوري للموقع",
+    "en": "Periodic Location Update"
+  },
+  "accurate_gps_tag": {
+    "ar": "🛰️ GPS دقيق",
+    "en": "🛰️ Accurate GPS"
+  },
+  "approx_ip_tag": {
+    "ar": "🌐 تقريبي IP",
+    "en": "🌐 Approx IP"
+  },
+  "delete_error": {
+    "ar": "حدث خطأ أثناء الحذف",
+    "en": "An error occurred while deleting"
+  },
+  "reset_filter": {
+    "ar": "إعادة تعيين",
+    "en": "Reset Filter"
+  },
+  "settings_save_failed": {
+    "ar": "فشل حفظ الإعدادات",
+    "en": "Failed to save settings"
+  },
+  "delete_failed": {
+    "ar": "فشل الحذف",
+    "en": "Deletion failed"
+  },
+  "fcm_push_service": {
+    "ar": "خدمة الإشعارات الفورية (FCM Push)",
+    "en": "Push Notifications Service (FCM)"
+  },
+  "fcm_push_desc": {
+    "ar": "استقبال التنبيهات في الخلفية والشاشة مقفلة",
+    "en": "Receive alerts in the background and on lock screen"
+  },
+  "status_granted": {
+    "ar": "مفعّل (Granted)",
+    "en": "Granted"
+  },
+  "status_not_granted": {
+    "ar": "غير مفعّل",
+    "en": "Not Granted"
+  },
+  "request_notification_permission": {
+    "ar": "طلب وتفعيل إذن الإشعارات",
+    "en": "Request & Enable Notification Permission"
+  },
+  "fcm_device_token": {
+    "ar": "رمز تسجيل الجهاز (FCM Token)",
+    "en": "Device Registration Token (FCM)"
+  },
+  "token_not_registered_hint": {
+    "ar": "لم يتم تسجيل توكن بعد. اضغط منح الصلاحية أدناه.",
+    "en": "No token registered yet. Click grant permission below."
+  },
+  "android_channel_id": {
+    "ar": "قناة إنذارات أندرويد (Channel ID)",
+    "en": "Android Alert Channel (Channel ID)"
+  },
+  "priority_level": {
+    "ar": "مستوى الأولوية (Priority)",
+    "en": "Priority Level"
+  },
+  "high_max_priority": {
+    "ar": "High / Max (صوت + اهتزاز)",
+    "en": "High / Max (Sound + Vibration)"
+  },
+  "send_test_push_btn": {
+    "ar": "إرسال إشعار فحص حقيقي لهذا الجهاز",
+    "en": "Send Real Test Notification to this Device"
+  },
+  "notifications_denied_warning": {
+    "ar": "تم حظر إشعارات المتصفح لهذا الموقع. لإعادة التفعيل: انقر على أيقونة القفل أو إعدادات الموقع بجانب شريط العنوان واختر 'سماح' للإشعارات، ثم أعد الفحص.",
+    "en": "Browser notifications are blocked for this site. To re-enable: click the lock icon or site settings in the address bar, select 'Allow' for notifications, then recheck."
+  },
+  "gps_field_service": {
+    "ar": "خدمات الموقع الميداني (GPS Tracking)",
+    "en": "Field Location Services (GPS Tracking)"
+  },
+  "gps_field_desc": {
+    "ar": "تتبع المناوبة ومشاركة الموقع الحي على خريطة ERS",
+    "en": "Shift tracking and live location sharing on the ERS map"
+  },
+  "gps_granted": {
+    "ar": "GPS مصرح به",
+    "en": "GPS Authorized"
+  },
+  "shift_location_sharing_active": {
+    "ar": "مشاركة الموقع أثناء المناوبة: نشطة الآن",
+    "en": "Shift Location Sharing: Currently Active"
+  },
+  "shift_location_sharing_inactive": {
+    "ar": "مشاركة الموقع أثناء المناوبة: متوقفة",
+    "en": "Shift Location Sharing: Inactive"
+  },
+  "shift_sharing_active_desc": {
+    "ar": "يتم تحديث موقعك الميداني ودقته تلقائياً على خريطة العمليات",
+    "en": "Your field location and accuracy are automatically updated on the ops map"
+  },
+  "shift_sharing_inactive_desc": {
+    "ar": "اضغط لتفعيل مشاركة موقعك المباشر مع غرفة العمليات",
+    "en": "Click to enable sharing your live location with the operations room"
+  },
+  "stop_location_sharing": {
+    "ar": "إيقاف مشاركة الموقع",
+    "en": "Stop Location Sharing"
+  },
+  "start_location_sharing": {
+    "ar": "بدء مشاركة الموقع أثناء المناوبة",
+    "en": "Start Location Sharing on Shift"
+  },
+  "latitude_label": {
+    "ar": "خط العرض (Latitude)",
+    "en": "Latitude"
+  },
+  "longitude_label": {
+    "ar": "خط الطول (Longitude)",
+    "en": "Longitude"
+  },
+  "accuracy_label": {
+    "ar": "دقة الموقع (Accuracy)",
+    "en": "Location Accuracy"
+  },
+  "measurement_time": {
+    "ar": "توقيت القياس",
+    "en": "Measurement Timestamp"
+  },
+  "global_devices_map_card_title": {
+    "ar": "نظام مراقبة الأجهزة والخريطة العالمية (Leaflet)",
+    "en": "Global Device Tracking & Live Map System (Leaflet)"
+  },
+  "global_devices_map_card_desc": {
+    "ar": "لوحة الإدارة الشاملة لتتبع أجهزة المستخدمين عالمياً، وتحديد مصادر المواقع (GPS / IP)، ومراقبة الحضور والنزاعات.",
+    "en": "Comprehensive admin dashboard to monitor devices globally, detect location sources (GPS/IP), and oversee presence."
+  },
+  "open_global_map": {
+    "ar": "فتح الخريطة العالمية",
+    "en": "Open Global Map"
+  },
+  "mobile_testing_guide_title": {
+    "ar": "دليل اختبار الموبايل على الأجهزة الفعلية",
+    "en": "Mobile Testing Guide on Physical Devices"
+  },
+  "mobile_guide_item_1_title": {
+    "ar": "التطبيق مغلق تماماً:",
+    "en": "App completely closed:"
+  },
+  "mobile_guide_item_1_desc": {
+    "ar": "عند إرسال بلاغ جديد من غرفة التحكم، يستقبل الهاتف إشعار FCM فوري برنين قناة الإنذار.",
+    "en": "When a new alert is dispatched, the phone receives an immediate FCM push ringing the emergency channel."
+  },
+  "mobile_guide_item_2_title": {
+    "ar": "الضغط على الإشعار:",
+    "en": "Tapping notification:"
+  },
+  "mobile_guide_item_2_desc": {
+    "ar": "يفتح تطبيق ERS وينتقل مباشرة إلى تفاصيل البلاغ بعد التحقق من تسجيل الدخول.",
+    "en": "Opens the ERS app and navigates directly to the alarm details after authentication."
+  },
+  "mobile_guide_item_3_title": {
+    "ar": "منع التكرار:",
+    "en": "Deduplication:"
+  },
+  "mobile_guide_item_3_desc": {
+    "ar": "كل تنبيه يحمل alertId فريد يمنع تكرار صفارة الإنذار أو فتح الشاشة مرتين.",
+    "en": "Every alert has a unique alertId preventing duplicate sirens or double screen triggers."
+  },
+  "mobile_guide_item_4_title": {
+    "ar": "تسجيل الخروج:",
+    "en": "User logout:"
+  },
+  "mobile_guide_item_4_desc": {
+    "ar": "عند خروج المستخدم، يتم إلغاء ربط توكن الجهاز فوراً من user_devices لمنع وصول بلاغات حساسة.",
+    "en": "Upon logout, the device token is immediately deactivated from user_devices to prevent unauthorized alerts."
+  },
+  "mobile_guide_item_5_title": {
+    "ar": "الموقع في الخلفية:",
+    "en": "Background location:"
+  },
+  "mobile_guide_item_5_desc": {
+    "ar": "زر بدء مشاركة الموقع أثناء المناوبة يحافظ على إرسال الإحداثيات كل 10-15 ثانية لتوفير البطارية.",
+    "en": "The shift location sharing button broadcasts coordinates every 10-15 seconds efficiently to conserve battery."
+  },
+  "search_case_name": {
+    "ar": "بحث باسم الحالة",
+    "en": "Search by Case Name"
+  },
+  "case_name_placeholder": {
+    "ar": "مثلاً: حريق، تسريب...",
+    "en": "e.g., Fire, Gas Leak..."
+  },
+  "filter_status": {
+    "ar": "فلترة الحالة",
+    "en": "Filter by Status"
+  },
+  "all_cases": {
+    "ar": "الكل",
+    "en": "All"
+  },
+  "closed_only": {
+    "ar": "مغلقة فقط",
+    "en": "Closed Only"
+  },
+  "active_only": {
+    "ar": "نشطة فقط",
+    "en": "Active Only"
+  },
+  "from_date": {
+    "ar": "من تاريخ",
+    "en": "From Date"
+  },
+  "to_date": {
+    "ar": "إلى تاريخ",
+    "en": "To Date"
+  },
+  "case_reports_log_title": {
+    "ar": "سجل بلاغات الطوارئ ERS System",
+    "en": "Emergency Incident Log - ERS System"
+  },
+  "export_date": {
+    "ar": "تاريخ الاستخراج",
+    "en": "Export Date"
+  },
+  "bulk_delete_confirm_title": {
+    "ar": "تأكيد الحذف الجماعي",
+    "en": "Confirm Bulk Deletion"
+  },
+  "bulk_delete_confirm_msg": {
+    "ar": "هل أنت متأكد من حذف {{count}} بلاغ نشط؟ سيؤدي هذا لإزالة البلاغات من النظام تماماً.",
+    "en": "Are you sure you want to delete {{count}} active alerts? This will permanently remove them from the system."
+  },
+  "select_all_with_count": {
+    "ar": "تحديد الكل ({{count}})",
+    "en": "Select All ({{count}})"
+  },
+  "delete_selected_with_count": {
+    "ar": "حذف المحدد ({{count}})",
+    "en": "Delete Selected ({{count}})"
+  },
+  "active_alerts_page_desc": {
+    "ar": "إدارة ومتابعة حالات الطوارئ القائمة حالياً",
+    "en": "Manage and monitor currently active emergency cases"
+  },
+  "audio_siren_disabled_warning": {
+    "ar": "صوت الإنذار غير مفعل حالياً على جهازك",
+    "en": "Alarm sound is currently disabled on your device"
+  },
+  "activate_audio_engine_now": {
+    "ar": "تنشيط محرك الإنذار الآن",
+    "en": "Activate Alarm Engine Now"
+  },
+  "available_staff_card": {
+    "ar": "الموظفون المتاحون",
+    "en": "Available Staff"
+  },
+  "on_field_response_card": {
+    "ar": "في استجابة ميدانية",
+    "en": "Responding in Field"
+  },
+  "task_completion_rate_card": {
+    "ar": "نسبة إنجاز المهام",
+    "en": "Task Completion Rate"
+  },
+  "delayed_tasks_card": {
+    "ar": "المهام المتأخرة",
+    "en": "Overdue Tasks"
+  },
+  "restoring_session_title": {
+    "ar": "جاري استعادة الجلسة...",
+    "en": "Restoring session..."
+  },
+  "restoring_session_desc": {
+    "ar": "يرجى الانتظار، يتم تسجيل الدخول تلقائياً",
+    "en": "Please wait, signing in automatically"
+  },
+  "offline_login_badge": {
+    "ar": "أنت حالياً في وضع عدم الاتصال",
+    "en": "You are currently offline"
+  },
+  "network_connection_error": {
+    "ar": "تعذر الاتصال بالخادم. يرجى التحقق من اتصال الإنترنت.",
+    "en": "Could not connect to server. Please check your internet connection."
+  },
+  "connected_now": {
+    "ar": "متصل الآن",
+    "en": "Connected Now"
+  },
+  "time_hours_mins": {
+    "ar": "{{hours}}س {{minutes}}د",
+    "en": "{{hours}}h {{minutes}}m"
+  },
+  "search_active_user_placeholder": {
+    "ar": "ابحث عن اسم الناشط...",
+    "en": "Search active user name..."
+  },
+  "diagnostics_and_test_device": {
+    "ar": "تشخيص واختبار الجهاز",
+    "en": "Device Diagnostics & Testing"
+  }
+}

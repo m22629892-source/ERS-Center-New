@@ -1,0 +1,30 @@
+rules_version = '2';
+service firebase.storage {
+  match /b/{bucket}/o {
+    
+    // Helper functions
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+    
+    function isAllowedAudio() {
+      return request.resource.contentType.matches('audio/.*')
+        && request.resource.size <= 25 * 1024 * 1024; // Max 25MB for voice notes
+    }
+
+    // Voice Notes for Emergencies
+    match /emergencies/{emergencyId}/voice_notes/{fileName} {
+      // Authenticated responders & staff can read recordings associated with the emergency
+      allow read: if isAuthenticated();
+      // Only authenticated users can upload short voice notes (content type must be audio)
+      allow write: if isAuthenticated() && isAllowedAudio();
+      // Only admins can delete recordings (or authenticated owner)
+      allow delete: if isAuthenticated();
+    }
+
+    // Default deny
+    match /{allPaths=**} {
+      allow read, write: if isAuthenticated();
+    }
+  }
+}

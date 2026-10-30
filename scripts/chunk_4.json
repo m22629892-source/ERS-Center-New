@@ -1,0 +1,646 @@
+{
+  "active_emergency_toast_title": {
+    "ar": "إنذار طوارئ نشط!",
+    "en": "Active Emergency Alert!"
+  },
+  "at_location": {
+    "ar": "في",
+    "en": "at"
+  },
+  "dismiss_not_concerned": {
+    "ar": "لست من المعنيين بهذا البلاغ (إيقاف الإنذار)",
+    "en": "Not relevant to me (Dismiss Alert)"
+  },
+  "tour_step_1_title": {
+    "ar": "مرحباً بك في نظام ERS",
+    "en": "Welcome to ERS System"
+  },
+  "tour_step_1_content": {
+    "ar": "نظام الاستجابة للطوارئ الذكي. دعنا نأخذك في جولة سريعة.",
+    "en": "Smart Emergency Response System. Let's take a quick tour."
+  },
+  "tour_step_2_title": {
+    "ar": "الإبلاغ السريع",
+    "en": "Quick Report"
+  },
+  "tour_step_2_content": {
+    "ar": "اضغط هنا لفتح حالة طوارئ جديدة، يمكنك استخدام الذكاء الاصطناعي لتحليل الصور.",
+    "en": "Click here to open a new emergency; you can use AI to analyze incident scenes."
+  },
+  "tour_step_3_title": {
+    "ar": "غرفة العمليات الحية",
+    "en": "Live Ops Room"
+  },
+  "tour_step_3_content": {
+    "ar": "تتبع المستجيبين والحالات النشطة بشكل لحظي على الخريطة التفاعلية.",
+    "en": "Track responders and active cases in real-time on the interactive map."
+  },
+  "tour_step_4_title": {
+    "ar": "وحدة التحليل الذكي ERS",
+    "en": "ERS Intelligence Hub"
+  },
+  "tour_step_4_content": {
+    "ar": "يقوم الذكاء الاصطناعي بتحليل الوضع وتقديم رؤى حرجة واستراتيجية هنا.",
+    "en": "AI analyzes the situation and provides critical strategic insights here."
+  },
+  "live_active_location": {
+    "ar": "موقع حي ومباشر (مناوبة نشطة)",
+    "en": "Live Active Location (On-Duty Shift)"
+  },
+  "recent_inactive_location": {
+    "ar": "موقع حديث (غير نشط حالياً)",
+    "en": "Recent Location (Currently Inactive)"
+  },
+  "older_recorded_location": {
+    "ar": "آخر موقع مسجل (قديم)",
+    "en": "Last Recorded Location (Older)"
+  },
+  "gps_accuracy_label": {
+    "ar": "دقة تحديد الموقع (GPS)",
+    "en": "GPS Accuracy"
+  },
+  "meters_accuracy": {
+    "ar": "± {{accuracy}} متر",
+    "en": "± {{accuracy}} meters"
+  },
+  "last_location_update": {
+    "ar": "آخر تحديث للموقع",
+    "en": "Last Location Update"
+  },
+  "ar_target_victim": {
+    "ar": "موقع المصاب",
+    "en": "Victim Location"
+  },
+  "ar_target_exit": {
+    "ar": "مخرج الطوارئ {{name}}",
+    "en": "Emergency Exit {{name}}"
+  },
+  "ar_target_extinguisher": {
+    "ar": "طفائية حريق",
+    "en": "Fire Extinguisher"
+  },
+  "ar_target_gas_leak": {
+    "ar": "تسريب غاز مكتشف",
+    "en": "Detected Gas Leak"
+  },
+  "camera_required_for_ar": {
+    "ar": "الكاميرا مطلوبة لتشغيل الواقع المعزز.",
+    "en": "Camera permission is required for AR navigation."
+  },
+  "ai_live_assistant_title": {
+    "ar": "الدعم الفني الذكي (Live API)",
+    "en": "Smart Live AI Assistant (Live API)"
+  },
+  "ai_live_disconnect_error": {
+    "ar": "تم قطع الاتصال مع خادم الذكاء الاصطناعي.",
+    "en": "Connection to AI server was lost."
+  },
+  "ai_live_socket_error": {
+    "ar": "تعذر استقرار المكالمة الصوتية مع الخادم.",
+    "en": "Unable to establish voice session with server."
+  },
+  "ai_live_mic_error": {
+    "ar": "تعذر الوصول للميكروفون أو بدء المكالمة.",
+    "en": "Could not access microphone or initiate call."
+  },
+  "start_voice_call": {
+    "ar": "بدء نداء الدعم الفني",
+    "en": "Start Live Support Call"
+  },
+  "stop_voice_call": {
+    "ar": "إنهاء المكالمة",
+    "en": "End Voice Call"
+  },
+  "sent_media": {
+    "ar": "أرسل {{type}}",
+    "en": "Sent {{type}}"
+  },
+  "file_size_limit_error": {
+    "ar": "حجم الملف كبير جداً. الحد الأقصى هو 1 ميجابايت.",
+    "en": "File size is too large. Maximum size is 1MB."
+  },
+  "file_db_limit_error": {
+    "ar": "تعذر إرسال الملف: الحجم يتجاوز حدود قاعدة البيانات.",
+    "en": "Could not send file: size exceeds database limits."
+  },
+  "audio_too_long_error": {
+    "ar": "التسجيل طويل جداً، يرجى إرسال رسالة أقصر.",
+    "en": "Recording is too long. Please record a shorter message."
+  },
+  "mic_permission_required": {
+    "ar": "إذن الميكروفون مطلوب لتسجيل الرسائل الصوتية.",
+    "en": "Microphone permission is required to record voice messages."
+  },
+  "general_alert": {
+    "ar": "تنبيه عام",
+    "en": "General Emergency Alert"
+  },
+  "ai_field_announcement": {
+    "ar": "النداء الميداني الذكي",
+    "en": "Tactical Field Broadcast"
+  },
+  "instant_ai_broadcast": {
+    "ar": "بث ذكاء اصطناعي فوري",
+    "en": "Instant AI Voice Broadcast"
+  },
+  "action_notes_placeholder": {
+    "ar": "صف الإجراءات التي قمت بها هنا...",
+    "en": "Describe the actions you took here..."
+  },
+  "sending_and_securing": {
+    "ar": "جاري الإرسال وتأمين الموقع...",
+    "en": "Submitting response and securing scene..."
+  },
+  "send_response_stop_sirens": {
+    "ar": "إرسال الاستجابة وإيقاف كافة الإنذارات",
+    "en": "Submit Response & Silence All Alarms"
+  },
+  "permanently_close_case": {
+    "ar": "إغلاق البلاغ نهائياً",
+    "en": "Permanently Close Incident"
+  },
+  "qr_scanner_title": {
+    "ar": "ماسح رمز تأكيد الوصول",
+    "en": "Arrival Verification QR Scanner"
+  },
+  "voice_prefix": {
+    "ar": "[صوت]",
+    "en": "[Voice]"
+  },
+  "select_type_and_location_error": {
+    "ar": "يرجى اختيار النوع والموقع",
+    "en": "Please select emergency type and location"
+  },
+  "emergency_dispatch_error": {
+    "ar": "حدث خطأ أثناء إرسال البلاغ",
+    "en": "An error occurred while dispatching emergency alert"
+  },
+  "upload_incident_photo": {
+    "ar": "ارفع صورة الحادث (اختياري)",
+    "en": "Upload Incident Photo (Optional)"
+  },
+  "ai_scene_analysis": {
+    "ar": "تحليل الذكاء الاصطناعي للمشهد",
+    "en": "AI Incident Scene Analysis"
+  },
+  "selected_location": {
+    "ar": "الموقع المحدد",
+    "en": "Target Location"
+  },
+  "select_location_placeholder": {
+    "ar": "اختر الموقع من القائمة",
+    "en": "Select location from list"
+  },
+  "incident_notes_placeholder": {
+    "ar": "اكتب أي تفاصيل إضافية عن المشهد...",
+    "en": "Write additional details about the incident..."
+  },
+  "activate_alarm_unified": {
+    "ar": "تفعيل الإنذار والنداء الموحد",
+    "en": "Trigger Alarm & Unified Broadcast"
+  },
+  "slide_login_title": {
+    "ar": "شاشة الدخول الذكية",
+    "en": "Smart Login Interface"
+  },
+  "slide_login_desc": {
+    "ar": "واجهة دخول مستقبلية مع بصمة إصبع وتصميم Minimalist ضوئي.",
+    "en": "Futuristic login screen with biometric authentication and minimalist lighting."
+  },
+  "slide_dashboard_title": {
+    "ar": "لوحة العمليات الحية",
+    "en": "Live Ops Dashboard"
+  },
+  "slide_dashboard_desc": {
+    "ar": "غرفة تحكم مركزية بشاشات ضخمة تعرض خرائط وبيانات حية.",
+    "en": "Central command center with large video wall showing live maps and real-time telemetry."
+  },
+  "slide_vision_title": {
+    "ar": "الرؤية العميقة للذكاء الاصطناعي",
+    "en": "Deep AI Scene Vision"
+  },
+  "slide_vision_desc": {
+    "ar": "تحليل مشهد حريق باستخدام عيون روبوتية وبيانات HUD.",
+    "en": "Analyzing incident scene using robotic vision with augmented HUD telemetry."
+  },
+  "slide_ar_nav_title": {
+    "ar": "الملاحة بالواقع المعزز",
+    "en": "Augmented Reality Navigation"
+  },
+  "slide_ar_nav_desc": {
+    "ar": "أسهم توجيه ذكية تظهر في ممر بناية مشتعلة.",
+    "en": "Smart directional 3D arrows projecting evacuation paths inside emergency zones."
+  },
+  "slide_comm_title": {
+    "ar": "التواصل والترجمة الفورية",
+    "en": "Real-time Tactical Comms & Translation"
+  },
+  "slide_comm_desc": {
+    "ar": "مسعفون يتواصلون عبر أجهزة معصم ذكية وهولوجرام.",
+    "en": "First responders communicating seamlessly with wearable smart devices and holograms."
+  },
+  "strategic_analytics_report": {
+    "ar": "تقرير التحليلات الاستراتيجية",
+    "en": "Strategic Analytics Report"
+  },
+  "minutes_unit": {
+    "ar": "دقائق",
+    "en": "Minutes"
+  },
+  "alerts_count": {
+    "ar": "عدد البلاغات",
+    "en": "Alerts Count"
+  },
+  "total_dismissals": {
+    "ar": "إجمالي المستبعدين",
+    "en": "Total Dismissed"
+  },
+  "dual_key_failover_title": {
+    "ar": "بروتوكول حماية المفاتيح (Dual Key Failover)",
+    "en": "Dual Key Failover Protection Protocol"
+  },
+  "dual_key_failover_sub": {
+    "ar": "تأمين استمرارية الذكاء الاصطناعي بنسبة 99.9%",
+    "en": "Securing 99.9% AI Availability & Reliability"
+  },
+  "smart_routing_title": {
+    "ar": "نظام التبديل التلقائي (Smart Routing)",
+    "en": "Smart Routing & Failover System"
+  },
+  "smart_routing_desc": {
+    "ar": "عند حدوث أي فشل في المفتاح 'الأساسي'، سيقوم النظام فوراً وبدون تدخل بشري بالتحويل للمفتاح 'الاحتياطي' لضمان عدم توقف التقارير الميدانية.",
+    "en": "Upon any failure with the primary key, the system automatically routes requests to the secondary backup key to guarantee uninterrupted field operations."
+  },
+  "primary_key_label": {
+    "ar": "المفتاح الأساسي (Primary)",
+    "en": "Primary API Key"
+  },
+  "secondary_key_label": {
+    "ar": "المفتاح الاحتياطي (Secondary Failover)",
+    "en": "Secondary Failover API Key"
+  },
+  "updating_secure_protocol": {
+    "ar": "جاري تحديث البروتوكول الآمن...",
+    "en": "Updating secure protocol..."
+  },
+  "save_protection_protocol": {
+    "ar": "تفعيل وحفظ بروتوكول الحماية المزدوج",
+    "en": "Activate & Save Dual Protection Protocol"
+  },
+  "keys_saved_success": {
+    "ar": "تم حفظ وتفعيل بروتوكول حماية المفاتيح بنجاح!",
+    "en": "Dual key protection protocol successfully saved and activated!"
+  },
+  "crisis_simulator_report_title": {
+    "ar": "تقرير محاكي الأزمات الذكي ERS System",
+    "en": "Crisis Simulator Strategic Report - ERS System"
+  },
+  "generation_date": {
+    "ar": "تاريخ التوليد",
+    "en": "Generation Date"
+  },
+  "pdf_not_loaded_error": {
+    "ar": "أداة PDF غير محملة بعد، يرجى المحاولة مرة أخرى.",
+    "en": "PDF engine not fully loaded yet, please try again."
+  },
+  "scenario_generation_failed": {
+    "ar": "فشل توليد السيناريو: {{error}}",
+    "en": "Failed to generate scenario: {{error}}"
+  },
+  "select_case_for_report_error": {
+    "ar": "يرجى اختيار بلاغ من القائمة أولاً لتوليد التقرير عليه.",
+    "en": "Please select an incident from the list first to generate its report."
+  },
+  "default_checklist_title": {
+    "ar": "قائمة مهام {{typeName}}",
+    "en": "{{typeName}} Checklist"
+  },
+  "default_checklist_desc": {
+    "ar": "بروتوكول السلامة المعتمد للاستجابة. يرجى توثيق كافة الخطوات بدقة.",
+    "en": "Standard approved safety response protocol. Please document each step carefully."
+  },
+  "default_task_hazard_assessment": {
+    "ar": "التحقق الأولي من منطقة الخطر وتحديد المسار الآمن",
+    "en": "Initial hazard assessment and safe egress verification"
+  },
+  "default_task_hazard_desc": {
+    "ar": "تقييم بيئة الحادث والتأكد من عدم وجود مخاطر غير متوقعة.",
+    "en": "Evaluate the incident scene and confirm there are no unexpected secondary hazards."
+  },
+  "checklist_validation_error": {
+    "ar": "يرجى إدخال عنوان القائمة وتحديد نوع الطوارئ",
+    "en": "Please enter checklist title and select emergency type"
+  },
+  "checklist_tasks_required_error": {
+    "ar": "يجب إضافة مهمة واحدة على الأقل داخل القائمة",
+    "en": "At least one task must be added to the checklist"
+  },
+  "checklist_saved_success": {
+    "ar": "تم حفظ القائمة بنجاح",
+    "en": "Checklist saved successfully"
+  },
+  "checklist_save_failed": {
+    "ar": "فشل حفظ القائمة",
+    "en": "Failed to save checklist"
+  },
+  "qr_code": {
+    "ar": "رمز QR",
+    "en": "QR Code"
+  },
+  "view_and_print_qr": {
+    "ar": "عرض وطباعة رمز QR",
+    "en": "View and Print QR Code"
+  },
+  "qr_print_footer": {
+    "ar": "نظام ERS - تأكيد الوصول للموقع",
+    "en": "ERS System - Location Arrival Verification"
+  },
+  "save_failed": {
+    "ar": "فشل الحفظ",
+    "en": "Save failed"
+  },
+  "username_already_exists": {
+    "ar": "اسم المستخدم هذا مسجل مسبقاً، يرجى اختيار اسم آخر.",
+    "en": "This username is already taken. Please choose another."
+  },
+  "gps_accurate_desc": {
+    "ar": "GPS محدد بدقة",
+    "en": "Accurate GPS Fix"
+  },
+  "ip_approx_desc": {
+    "ar": "موقع تقريبي عبر IP",
+    "en": "Approximate IP Location"
+  },
+  "refreshing_location_notice": {
+    "ar": "جاري طلب فحص الموقع الجغرافي وتحديثه لحظياً...",
+    "en": "Requesting geolocation refresh and updating in real-time..."
+  },
+  "location_updated_success": {
+    "ar": "تم تحديث إحداثيات وموقع جهازك بنجاح.",
+    "en": "Device location coordinates updated successfully."
+  },
+  "location_check_error": {
+    "ar": "حدث خطأ أثناء فحص الموقع.",
+    "en": "An error occurred while checking location."
+  },
+  "simulating_egypt_travel": {
+    "ar": "جاري محاكاة انتقال الجهاز من السعودية إلى مصر (القاهرة)...",
+    "en": "Simulating device relocation from Saudi Arabia to Egypt (Cairo)..."
+  },
+  "simulating_kuwait_travel": {
+    "ar": "جاري محاكاة انتقال الجهاز من مصر إلى الكويت...",
+    "en": "Simulating device relocation from Egypt to Kuwait..."
+  },
+  "simulating_gps_drift": {
+    "ar": "جاري محاكاة حركة ميدانية دقيقة وتحديث الـ GPS...",
+    "en": "Simulating high-precision field movement and updating GPS..."
+  },
+  "simulation_applied_success": {
+    "ar": "تم تطبيق المحاكاة وتحديث سجل الموقع وقاعدة البيانات بنجاح.",
+    "en": "Simulation applied and location history updated in database successfully."
+  },
+  "simulation_error": {
+    "ar": "حدث خطأ أثناء تنفيذ المحاكاة.",
+    "en": "An error occurred while executing simulation."
+  },
+  "location_history_for_device": {
+    "ar": "سجل تحركات ومواقع الجهاز",
+    "en": "Device Movement & Location History"
+  },
+  "all_recorded_locations_desc": {
+    "ar": "جميع المواقع والإحداثيات المسجلة لهذا الجهاز مع توقيت الرصد ومصدر التحديد.",
+    "en": "All recorded locations and coordinates for this device with timestamp and fix source."
+  },
+  "detection_source": {
+    "ar": "مصدر التحديد",
+    "en": "Detection Source"
+  },
+  "speed_and_altitude": {
+    "ar": "السرعة والارتفاع",
+    "en": "Speed & Altitude"
+  },
+  "recorded_timestamp": {
+    "ar": "توقيت التسجيل",
+    "en": "Recorded Timestamp"
+  },
+  "no_history_records": {
+    "ar": "لا توجد سجلات مواقع سابقة لهذا الجهاز حتى الآن.",
+    "en": "No previous location history recorded for this device yet."
+  },
+  "close_history_modal": {
+    "ar": "إغلاق السجل",
+    "en": "Close History"
+  },
+  "user_management": {
+    "ar": "إدارة المستخدمين",
+    "en": "User Management"
+  },
+  "add_new_user": {
+    "ar": "إضافة مستخدم جديد",
+    "en": "Add New User"
+  },
+  "delete_selected": {
+    "ar": "حذف المحدد",
+    "en": "Delete Selected"
+  },
+  "search_users_placeholder": {
+    "ar": "بحث بالاسم أو اسم المستخدم...",
+    "en": "Search by name or username..."
+  },
+  "edit_user_data": {
+    "ar": "تعديل بيانات المستخدم",
+    "en": "Edit User Details"
+  },
+  "create_new_account": {
+    "ar": "إنشاء حساب جديد",
+    "en": "Create New Account"
+  },
+  "enter_real_name": {
+    "ar": "أدخل الاسم الحقيقي",
+    "en": "Enter full real name"
+  },
+  "username_login": {
+    "ar": "اسم دخول النظام",
+    "en": "System Login Username"
+  },
+  "password_login": {
+    "ar": "كلمة مرور الدخول",
+    "en": "Login Password"
+  },
+  "select_role": {
+    "ar": "تحديد الدور (Role)",
+    "en": "Select Role"
+  },
+  "role_user": {
+    "ar": "مستخدم عادي (User)",
+    "en": "Standard User (User)"
+  },
+  "role_responder": {
+    "ar": "مستجيب ميداني (Responder)",
+    "en": "Field Responder"
+  },
+  "role_admin": {
+    "ar": "مسؤول نظام (Admin)",
+    "en": "System Administrator (Admin)"
+  },
+  "add_user_now": {
+    "ar": "إضافة المستخدم الآن",
+    "en": "Add User Now"
+  },
+  "confirm_bulk_delete": {
+    "ar": "تأكيد الحذف الجماعي",
+    "en": "Confirm Bulk Deletion"
+  },
+  "confirm_bulk_delete_msg": {
+    "ar": "هل أنت متأكد من حذف {{count}} مستخدم؟ لا يمكن التراجع عن هذا الإجراء.",
+    "en": "Are you sure you want to delete {{count}} users? This action cannot be undone."
+  },
+  "delete_user": {
+    "ar": "حذف المستخدم",
+    "en": "Delete User"
+  },
+  "confirm_single_delete_user_msg": {
+    "ar": "هل أنت متأكد من حذف هذا المستخدم نهائياً من النظام؟",
+    "en": "Are you sure you want to permanently delete this user from the system?"
+  },
+  "save_data_failed": {
+    "ar": "فشل في حفظ البيانات، يرجى المحاولة لاحقاً.",
+    "en": "Failed to save data, please try again later."
+  },
+  "operations_chat": {
+    "ar": "دردشة العمليات",
+    "en": "Operations Chat"
+  },
+  "type_message": {
+    "ar": "اكتب رسالة...",
+    "en": "Type a message..."
+  },
+  "processing_file_upload": {
+    "ar": "جاري معالجة ورفع الملف...",
+    "en": "Processing and uploading file..."
+  },
+  "verification_code": {
+    "ar": "كود التحقق",
+    "en": "Verification Code"
+  },
+  "auto_generated": {
+    "ar": "سيتم توليده تلقائياً",
+    "en": "Will be auto-generated"
+  },
+  "qr_modal_title": {
+    "ar": "رمز الاستجابة السريعة (QR)",
+    "en": "Quick Response Code (QR)"
+  },
+  "print_qr_location": {
+    "ar": "طباعة الرمز للموقع",
+    "en": "Print QR for Location"
+  },
+  "ignored_unconcerned": {
+    "ar": "تجاهل (غير معني)",
+    "en": "Ignored (Not concerned)"
+  },
+  "ai_call_prompt": {
+    "ar": "اتصل بوحدة الاستجابة الذكية ERS للحصول على ملخص الحالة وتوجيهات الاستجابة الفورية.",
+    "en": "Call the ERS Smart Response unit for situation summary and immediate guidance."
+  },
+  "connecting_call": {
+    "ar": "جاري الربط...",
+    "en": "Connecting..."
+  },
+  "start_call_now": {
+    "ar": "بدء المكالمة الآن",
+    "en": "Start Call Now"
+  },
+  "active_call": {
+    "ar": "مكالمة نشطة",
+    "en": "Active Call"
+  },
+  "waiting_support_summary": {
+    "ar": "بانتظار ملخص الدعم الفني...",
+    "en": "Waiting for technical support summary..."
+  },
+  "end_call": {
+    "ar": "إنهاء المكالمة",
+    "en": "End Call"
+  },
+  "update_keys_in_db": {
+    "ar": "تحديث المفاتيح في قاعدة البيانات",
+    "en": "Update keys in database"
+  },
+  "api_sync_success": {
+    "ar": "تمت المزامنة بنجاح - النظام يعمل بالوضعية الثنائية الآن.",
+    "en": "Synced successfully - System is operating in dual mode now."
+  },
+  "api_sync_fail": {
+    "ar": "خطأ: فشل الوصول لقاعدة البيانات لتحديث البروتوكول.",
+    "en": "Error: Failed to reach database to update protocol."
+  },
+  "secure_connection_verified": {
+    "ar": "تم التحقق: بيئة اتصال مشفرة ومؤمنة",
+    "en": "Verified: Encrypted and secure connection environment"
+  },
+  "strategic_brain_reports": {
+    "ar": "العقل الاستراتيجي والتقارير",
+    "en": "Strategic Brain & Reports"
+  },
+  "strategic_brain_desc": {
+    "ar": "دماغ رقمي يولد تقارير وبيانات قانونية معقدة.",
+    "en": "Digital brain that generates complex legal reports and insights."
+  },
+  "generate_high_res_slides": {
+    "ar": "قم بتوليد صور احترافية عالية الدقة لشرائح العرض التقديمي",
+    "en": "Generate high-resolution professional visuals for presentation slides"
+  },
+  "ai_drawing_in_progress": {
+    "ar": "جاري الرسم بالذكاء الاصطناعي...",
+    "en": "AI generation in progress..."
+  },
+  "regenerate_pro": {
+    "ar": "إعادة توليد (Pro)",
+    "en": "Regenerate (Pro)"
+  },
+  "presentation_assets_notice": {
+    "ar": "ملاحظة: هذه العملية تتطلب مفتاح API مدفوع. الصور المولدة هنا هي أصول بصرية لتصميم شرائحك.",
+    "en": "Note: This operation requires a paid API key. Generated images are visual assets for your slides."
+  },
+  "select_filters_and_generate": {
+    "ar": "حدد معايير الفلترة واضغط توليد",
+    "en": "Select filter criteria and click generate"
+  },
+  "update_report": {
+    "ar": "تحديث التقرير",
+    "en": "Update Report"
+  },
+  "checklist_version_approved": {
+    "ar": "تم اعتماد الإصدار الجديد للقائمة وتثبيته رسمياً",
+    "en": "New checklist version officially approved and deployed"
+  },
+  "checklist_approval_failed": {
+    "ar": "فشل الاعتماد",
+    "en": "Approval failed"
+  },
+  "checklist_deleted_success": {
+    "ar": "تم حذف القائمة بنجاح",
+    "en": "Checklist deleted successfully"
+  },
+  "checklist_delete_failed": {
+    "ar": "فشل الحذف",
+    "en": "Deletion failed"
+  },
+  "checklists_imported_count": {
+    "ar": "تم استيراد واعتماد {{count}} بروتوكولات سلامة رسمية مطابقة لمعايير الاستجابة الطارئة.",
+    "en": "Imported and approved {{count}} official safety protocols matching emergency response standards."
+  },
+  "generate_checklists_failed": {
+    "ar": "فشل توليد القوائم المعتمدة",
+    "en": "Failed to generate approved checklists"
+  },
+  "response_call_for_type": {
+    "ar": "نداء استجابة حالة {{type}}",
+    "en": "Response call for {{type}} emergency"
+  },
+  "image_generation_failed": {
+    "ar": "فشل توليد الصورة",
+    "en": "Failed to generate image"
+  }
+}

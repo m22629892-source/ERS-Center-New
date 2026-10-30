@@ -1,0 +1,802 @@
+{
+  "system_theme_color": {
+    "ar": "لون النظام",
+    "en": "System Theme Color"
+  },
+  "time_range": {
+    "ar": "النطاق الزمني",
+    "en": "Time Range"
+  },
+  "all_time": {
+    "ar": "كل الوقت",
+    "en": "All Time"
+  },
+  "status_reports": {
+    "ar": "تقارير الحالات",
+    "en": "Status Reports"
+  },
+  "site_statistics": {
+    "ar": "إحصائيات السجلات",
+    "en": "Site Statistics"
+  },
+  "users": {
+    "ar": "المستخدمين",
+    "en": "Users"
+  },
+  "user": {
+    "ar": "المستخدم",
+    "en": "User"
+  },
+  "emergencies": {
+    "ar": "البلاغات",
+    "en": "Emergencies"
+  },
+  "user_statistics": {
+    "ar": "إحصائيات المستخدمين",
+    "en": "User Statistics"
+  },
+  "user_complaints": {
+    "ar": "شكاوى المستخدمين",
+    "en": "User Complaints"
+  },
+  "site_complaints": {
+    "ar": "شكاوى الموقع",
+    "en": "Site Complaints"
+  },
+  "emergency_checklists": {
+    "ar": "قوائم مهام الطوارئ",
+    "en": "Emergency Checklists"
+  },
+  "staff_readiness": {
+    "ar": "جاهزية واستعداد الكادر",
+    "en": "Staff Readiness"
+  },
+  "connected_devices_map": {
+    "ar": "مراقبة الأجهزة والخريطة العالمية",
+    "en": "Connected Devices & Global Map"
+  },
+  "incident_playback": {
+    "ar": "إعادة تشغيل البلاغ والمحاكاة",
+    "en": "Incident Playback & Simulation"
+  },
+  "approved_safety_sops": {
+    "ar": "إجراءات التشغيل القياسية المعتمدة",
+    "en": "Approved Safety SOPs"
+  },
+  "live_readiness_engine": {
+    "ar": "محرك الجاهزية اللحظي وتوجيه الفرق",
+    "en": "Live Readiness & Dispatch Engine"
+  },
+  "seed_approved_protocols": {
+    "ar": "تعبئة بروتوكولات معتمدة",
+    "en": "Seed Approved Protocols"
+  },
+  "create_new_checklist": {
+    "ar": "إنشاء قائمة جديدة",
+    "en": "Create New Checklist"
+  },
+  "emergency_checklists_desc": {
+    "ar": "إدارة وتخصيص قوالب الاستجابة المعتمدة لكل نوع من أنواع الحوادث لضمان سلامة الفرق وتوثيق الإجراءات.",
+    "en": "Manage and customize approved response templates for each emergency type to ensure team safety and procedure documentation."
+  },
+  "staff_readiness_desc": {
+    "ar": "المراقبة اللحظية لجاهزية المستجيبين، وإدارة حالات التفرغ، والتحقق التلقائي قبل تكليف مهام الطوارئ.",
+    "en": "Real-time monitoring of responder readiness, availability status management, and automated verification before emergency task dispatch."
+  },
+  "total_staff": {
+    "ar": "إجمالي الكادر",
+    "en": "Total Staff"
+  },
+  "status_available": {
+    "ar": "متاح",
+    "en": "Available"
+  },
+  "status_busy": {
+    "ar": "مشغول",
+    "en": "Busy"
+  },
+  "status_responding": {
+    "ar": "في استجابة",
+    "en": "Responding"
+  },
+  "status_off_duty": {
+    "ar": "خارج المناوبة",
+    "en": "Off Duty"
+  },
+  "super_admin_only": {
+    "ar": "صلاحيات المدير الخارق",
+    "en": "Super Admin Only"
+  },
+  "standard_admin_tools": {
+    "ar": "أدوات الإدارة القياسية",
+    "en": "Standard Administrative Tools"
+  },
+  "full_authority_access": {
+    "ar": "صلاحية إدارة كاملة (رئيسية)",
+    "en": "Full Authority Access (Master)"
+  },
+  "standard_admin_access": {
+    "ar": "صلاحية إدارة قياسية",
+    "en": "Standard Administrative Access"
+  },
+  "total_checklists": {
+    "ar": "إجمالي القوائم",
+    "en": "Total Checklists"
+  },
+  "approved_checklists": {
+    "ar": "قوائم معتمدة",
+    "en": "Approved Checklists"
+  },
+  "filter_by_emergency_type": {
+    "ar": "تصفية حسب نوع الطوارئ",
+    "en": "Filter by Emergency Type"
+  },
+  "all_emergency_types": {
+    "ar": "كافة أنواع الطوارئ",
+    "en": "All Emergency Types"
+  },
+  "all": {
+    "ar": "الكل",
+    "en": "All"
+  },
+  "approved_only": {
+    "ar": "معتمدة فقط",
+    "en": "Approved Only"
+  },
+  "drafts": {
+    "ar": "مسودات",
+    "en": "Drafts"
+  },
+  "no_matching_checklists": {
+    "ar": "لا توجد قوائم مهام مطابقة",
+    "en": "No matching checklists found"
+  },
+  "seed_safety_protocols_now": {
+    "ar": "تعبئة بروتوكولات السلامة الآن",
+    "en": "Seed Safety Protocols Now"
+  },
+  "loading_checklists": {
+    "ar": "جاري تحميل قوائم المهام المعتمدة...",
+    "en": "Loading approved checklists..."
+  },
+  "diff_readiness_connectivity": {
+    "ar": "التفريق الدقيق بين الجاهزية والاتصال:",
+    "en": "Distinction between Readiness and Connectivity:"
+  },
+  "search_staff_placeholder": {
+    "ar": "بحث بالاسم أو الوظيفة...",
+    "en": "Search by name or title..."
+  },
+  "all_readiness_statuses": {
+    "ar": "كافة حالات الجاهزية",
+    "en": "All Readiness Statuses"
+  },
+  "all_roles": {
+    "ar": "كل الأدوار",
+    "en": "All Roles"
+  },
+  "responder_role": {
+    "ar": "مستجيب ميداني",
+    "en": "Field Responder"
+  },
+  "admin_role": {
+    "ar": "مشرف",
+    "en": "Admin"
+  },
+  "super_admin_role": {
+    "ar": "مدير خارق",
+    "en": "Super Admin"
+  },
+  "user_role": {
+    "ar": "موظف عادي",
+    "en": "Standard User"
+  },
+  "clear_filters": {
+    "ar": "إلغاء الفلاتر",
+    "en": "Clear Filters"
+  },
+  "online_only": {
+    "ar": "متصل فقط",
+    "en": "Online Only"
+  },
+  "offline_only": {
+    "ar": "غير متصل",
+    "en": "Offline"
+  },
+  "active_shift": {
+    "ar": "المناوبة نشطة",
+    "en": "Shift Active"
+  },
+  "start_shift": {
+    "ar": "بدء المناوبة",
+    "en": "Start Shift"
+  },
+  "shift_active_desc": {
+    "ar": "المناوبة نشطة وموقعك مباشر - اضغط للإيقاف",
+    "en": "Shift is active and your location is live - click to stop"
+  },
+  "shift_start_desc": {
+    "ar": "اضغط لبدء المناوبة ومشاركة الموقع الميداني",
+    "en": "Click to start shift and share field location"
+  },
+  "mobile_diagnostics": {
+    "ar": "تشخيص خدمات الموبايل",
+    "en": "Mobile Diagnostics"
+  },
+  "change_readiness": {
+    "ar": "تغيير حالة الجاهزية",
+    "en": "Change Readiness Status"
+  },
+  "update_field_readiness": {
+    "ar": "تحديث جاهزيتك الميدانية",
+    "en": "Update Field Readiness"
+  },
+  "voice_notes_title": {
+    "ar": "الملاحظات الصوتية الميدانية",
+    "en": "Field Voice Notes"
+  },
+  "voice_notes_desc": {
+    "ar": "تسجيل وتوثيق البلاغات الصوتية الفورية لمستجيبي الحادث (بحد أقصى 60 ثانية).",
+    "en": "Record and document instant encrypted voice memos for incident responders (max 60s)."
+  },
+  "voice_notes_count": {
+    "ar": "{{count}} تسجيلات موثقة",
+    "en": "{{count}} Documented recordings"
+  },
+  "voice_notes_record_new": {
+    "ar": "تسجيل ملاحظة صوتية جديدة للحادث",
+    "en": "Record New Incident Voice Note"
+  },
+  "voice_notes_click_to_start": {
+    "ar": "التسجيل لا يبدأ إلا بعد الضغط الصريح على الزر، بحد أقصى 60 ثانية.",
+    "en": "Recording only starts upon button click, up to 60 seconds maximum."
+  },
+  "voice_notes_start_recording": {
+    "ar": "بدء التسجيل الصوتي",
+    "en": "Start Voice Recording"
+  },
+  "voice_notes_recording_in_progress": {
+    "ar": "جاري التسجيل:",
+    "en": "Recording:"
+  },
+  "voice_notes_speak_clearly": {
+    "ar": "تحدث بوضوح قرب الميكروفون",
+    "en": "Speak clearly near the microphone"
+  },
+  "voice_notes_stop_and_save": {
+    "ar": "إيقاف وحفظ المقطع",
+    "en": "Stop & Save Clip"
+  },
+  "voice_notes_preview_title": {
+    "ar": "معاينة التسجيل الصوتي قبل الرفع",
+    "en": "Preview Voice Recording Before Upload"
+  },
+  "voice_notes_duration_size": {
+    "ar": "المدة: {{duration}} ثانية • الحجم: {{size}} كيلوبايت",
+    "en": "Duration: {{duration}}s • Size: {{size}} KB"
+  },
+  "voice_notes_cancel_and_delete": {
+    "ar": "إلغاء وحذف المقطع",
+    "en": "Cancel & Delete Clip"
+  },
+  "voice_notes_confirm_upload": {
+    "ar": "تأكيد الإرسال والرفع",
+    "en": "Confirm & Upload"
+  },
+  "voice_notes_uploading": {
+    "ar": "جاري الرفع",
+    "en": "Uploading"
+  },
+  "voice_notes_description_label": {
+    "ar": "وصف نصي أو ملخص سريع للتسجيل (اختياري)",
+    "en": "Text description or quick summary (optional)"
+  },
+  "voice_notes_desc_placeholder": {
+    "ar": "مثال: نداء إخلاء الطابق الثاني، أو توجيهات المسعفين...",
+    "en": "e.g. 2nd floor evacuation call or paramedic instructions..."
+  },
+  "voice_notes_list_title": {
+    "ar": "التسجيلات الصوتية المسجلة للحادث",
+    "en": "Incident Recorded Voice Notes"
+  },
+  "voice_notes_loading": {
+    "ar": "جاري تحميل التسجيلات الصوتية...",
+    "en": "Loading voice notes..."
+  },
+  "voice_notes_empty": {
+    "ar": "لم يتم تسجيل ملاحظات صوتية لهذا الحادث بعد.",
+    "en": "No voice notes recorded for this incident yet."
+  },
+  "voice_notes_seconds": {
+    "ar": "ثانية",
+    "en": "sec"
+  },
+  "voice_notes_delete_btn": {
+    "ar": "حذف التسجيل",
+    "en": "Delete Recording"
+  },
+  "voice_notes_delete_title": {
+    "ar": "حذف الملاحظة الصوتية",
+    "en": "Delete Voice Note"
+  },
+  "voice_notes_delete_msg": {
+    "ar": "هل أنت متأكد من رغبتك في حذف هذا التسجيل الصوتي نهائياً من سجل الحادث؟",
+    "en": "Are you sure you want to permanently delete this voice recording from the incident record?"
+  },
+  "voice_notes_mic_required": {
+    "ar": "إذن الميكروفون مطلوب لتسجيل الملاحظات الصوتية.",
+    "en": "Microphone permission is required to record voice notes."
+  },
+  "voice_notes_start_failed": {
+    "ar": "فشل بدء التسجيل",
+    "en": "Failed to start recording"
+  },
+  "voice_notes_stop_failed": {
+    "ar": "فشل إيقاف التسجيل الصوتي",
+    "en": "Failed to stop recording"
+  },
+  "voice_notes_upload_success": {
+    "ar": "تم رفع الملاحظة الصوتية وتوثيقها في سجل الحادث بنجاح.",
+    "en": "Voice note successfully uploaded and documented in incident log."
+  },
+  "voice_notes_upload_failed": {
+    "ar": "فشل رفع التسجيل.",
+    "en": "Failed to upload recording."
+  },
+  "voice_notes_delete_success": {
+    "ar": "تم حذف الملاحظة الصوتية بنجاح.",
+    "en": "Voice note successfully deleted."
+  },
+  "voice_notes_delete_failed": {
+    "ar": "فشل حذف الملاحظة الصوتية",
+    "en": "Failed to delete voice note"
+  },
+  "voice_notes_offline_warning": {
+    "ar": "يوجد {{count}} تسجيل صوتي محفوظ محلياً بأمان لم يتم رفعه بعد بسبب انقطاع الشبكة.",
+    "en": "There is {{count}} voice note safely saved offline, pending upload upon connection."
+  },
+  "voice_notes_retry_now": {
+    "ar": "إعادة المحاولة الآن",
+    "en": "Retry Now"
+  },
+  "officially_approved": {
+    "ar": "معتمدة رسمياً",
+    "en": "Officially Approved"
+  },
+  "draft_in_review": {
+    "ar": "مسودة قيد المراجعة",
+    "en": "Draft in Review"
+  },
+  "archived_status": {
+    "ar": "مؤرشفة",
+    "en": "Archived"
+  },
+  "supervisor_approval": {
+    "ar": "اعتماد المشرف:",
+    "en": "Supervisor Approval:"
+  },
+  "tactical_steps_list": {
+    "ar": "قائمة الخطوات التكتيكية",
+    "en": "Tactical Steps List"
+  },
+  "estimated_duration": {
+    "ar": "الزمن التقديري",
+    "en": "Estimated Duration"
+  },
+  "mandatory": {
+    "ar": "إلزامي",
+    "en": "Mandatory"
+  },
+  "supervisor_approval_required": {
+    "ar": "موافقة مشرف",
+    "en": "Supervisor Approval Required"
+  },
+  "justified_override": {
+    "ar": "تجاوز مبرر",
+    "en": "Justified Override"
+  },
+  "official_approval": {
+    "ar": "اعتماد رسمي",
+    "en": "Official Approval"
+  },
+  "upgrade_and_approve": {
+    "ar": "ترقية واعتماد",
+    "en": "Upgrade & Approve"
+  },
+  "no_tasks_entered": {
+    "ar": "لا توجد مهام مدخلة بعد.",
+    "en": "No tasks entered yet."
+  },
+  "general_emergency": {
+    "ar": "طوارئ عامة",
+    "en": "General Emergency"
+  },
+  "create_new_checklist_title": {
+    "ar": "إنشاء قائمة مهام طوارئ جديدة",
+    "en": "Create New Emergency Checklist"
+  },
+  "edit_checklist_title": {
+    "ar": "تعديل قائمة مهام: {{title}}",
+    "en": "Edit Checklist: {{title}}"
+  },
+  "linked_emergency_type": {
+    "ar": "نوع الطوارئ المرتبط *",
+    "en": "Linked Emergency Type *"
+  },
+  "regulatory_status": {
+    "ar": "الحالة التنظيمية",
+    "en": "Regulatory Status"
+  },
+  "checklist_title_ar": {
+    "ar": "عنوان القائمة بالعربية *",
+    "en": "Checklist Title (Arabic) *"
+  },
+  "checklist_title_en": {
+    "ar": "العنوان بالإنجليزية (Title En)",
+    "en": "Title in English (Title En)"
+  },
+  "checklist_title_ku": {
+    "ar": "العنوان بالكردية (Title Ku)",
+    "en": "Title in Kurdish (Title Ku)"
+  },
+  "title_ar_placeholder": {
+    "ar": "مثال: خطة وإجراءات إخلاء حالات الحريق",
+    "en": "e.g. Fire Evacuation & Response Protocol"
+  },
+  "version_label": {
+    "ar": "رقم الإصدار (Version)",
+    "en": "Version Number"
+  },
+  "description_label": {
+    "ar": "الوصف والهدف التشغيلي للمهام",
+    "en": "Description & Operational Objective"
+  },
+  "tasks_management_header": {
+    "ar": "إدارة الخطوات والمهام التكتيكية",
+    "en": "Tactical Steps & Tasks Management"
+  },
+  "add_task_step": {
+    "ar": "إضافة خطوة جديدة",
+    "en": "Add New Step"
+  },
+  "task_number": {
+    "ar": "خطوة رقم",
+    "en": "Step No."
+  },
+  "task_title_ar": {
+    "ar": "عنوان الخطوة بالعربية *",
+    "en": "Step Title (Arabic) *"
+  },
+  "task_title_en": {
+    "ar": "عنوان الخطوة بالإنجليزية (En)",
+    "en": "Step Title in English (En)"
+  },
+  "task_title_ku": {
+    "ar": "عنوان الخطوة بالكردية (Ku)",
+    "en": "Step Title in Kurdish (Ku)"
+  },
+  "step_details_placeholder": {
+    "ar": "وصف تفصيلي للخطوة التكتيكية...",
+    "en": "Detailed description of the tactical step..."
+  },
+  "responsible_role": {
+    "ar": "الدور المسؤول عن التنفيذ",
+    "en": "Responsible Role"
+  },
+  "target_duration_minutes": {
+    "ar": "الزمن المستهدف (بالدقائق)",
+    "en": "Target Duration (minutes)"
+  },
+  "mandatory_task_option": {
+    "ar": "مهمة إلزامية لا يمكن إنهاء البلاغ بدونها",
+    "en": "Mandatory task; case cannot close without it"
+  },
+  "requires_supervisor_approval_option": {
+    "ar": "تتطلب اعتماد وتوقيع إلكتروني من المشرف",
+    "en": "Requires electronic sign-off from supervisor"
+  },
+  "can_be_skipped_option": {
+    "ar": "يمكن تجاوزها في الميدان مع ذكر مبرر موثق",
+    "en": "Can be skipped in the field with logged justification"
+  },
+  "save_changes": {
+    "ar": "حفظ التغييرات",
+    "en": "Save Changes"
+  },
+  "save_and_approve_official": {
+    "ar": "حفظ واعتماد رسمي",
+    "en": "Save & Approve Officially"
+  },
+  "delete_checklist_title": {
+    "ar": "حذف قائمة المهام",
+    "en": "Delete Checklist"
+  },
+  "delete_checklist_msg": {
+    "ar": "هل أنت متأكد من حذف قائمة المهام هذه نهائياً؟ لا يمكن التراجع عن هذا الإجراء.",
+    "en": "Are you sure you want to delete this checklist permanently? This action cannot be undone."
+  },
+  "minutes": {
+    "ar": "دقيقة",
+    "en": "min"
+  },
+  "approved_safety_checklist": {
+    "ar": "قائمة مهام السلامة المعتمدة",
+    "en": "Approved Safety Checklist"
+  },
+  "completed_tasks_count": {
+    "ar": "{{completed}} من {{total}} مكتملة",
+    "en": "{{completed}} of {{total}} completed"
+  },
+  "incident_readiness_progress": {
+    "ar": "نسبة إنجاز مهام الحادث",
+    "en": "Incident Tasks Progress"
+  },
+  "assignee": {
+    "ar": "المكلف:",
+    "en": "Assignee:"
+  },
+  "unassigned_staff": {
+    "ar": "غير مكلف بموظف محدد",
+    "en": "Unassigned"
+  },
+  "completed_by": {
+    "ar": "تم الإنجاز بواسطة:",
+    "en": "Completed by:"
+  },
+  "target_duration": {
+    "ar": "الهدف:",
+    "en": "Target:"
+  },
+  "approved_by_supervisor": {
+    "ar": "معتمد من المشرف:",
+    "en": "Approved by Supervisor:"
+  },
+  "awaiting_supervisor_approval": {
+    "ar": "بانتظار اعتماد المشرف",
+    "en": "Awaiting Supervisor Approval"
+  },
+  "field_execution_notes": {
+    "ar": "ملاحظات التنفيذ الميداني:",
+    "en": "Field Execution Notes:"
+  },
+  "justified_override_reason": {
+    "ar": "مبرر التجاوز الموثق:",
+    "en": "Documented Override Justification:"
+  },
+  "field_obstruction_reason": {
+    "ar": "سبب التعذر الميداني:",
+    "en": "Field Obstruction Reason:"
+  },
+  "change_assignee": {
+    "ar": "تغيير المكلف",
+    "en": "Change Assignee"
+  },
+  "assign_staff": {
+    "ar": "تكليف موظف",
+    "en": "Assign Staff"
+  },
+  "approve_as_supervisor": {
+    "ar": "اعتماد كمشرف",
+    "en": "Approve as Supervisor"
+  },
+  "start_execution": {
+    "ar": "بدء التنفيذ",
+    "en": "Start Execution"
+  },
+  "complete_task": {
+    "ar": "إنجاز المهمة",
+    "en": "Complete Task"
+  },
+  "inability_to_execute": {
+    "ar": "تعذر التنفيذ",
+    "en": "Unable to Execute"
+  },
+  "task_action_title": {
+    "ar": "توثيق إجراء المهمة: {{title}}",
+    "en": "Document Task Action: {{title}}"
+  },
+  "task_action_notes_label": {
+    "ar": "ملاحظات وتوثيق الميدان (اختياري)",
+    "en": "Field Notes & Documentation (Optional)"
+  },
+  "task_action_notes_placeholder": {
+    "ar": "أدخل تفاصيل ما تم تنفيذه على أرض الواقع...",
+    "en": "Enter details of what was implemented in the field..."
+  },
+  "override_reason_label": {
+    "ar": "سبب ومبرر تجاوز المهمة الميدانية *",
+    "en": "Reason for Skipping Task *"
+  },
+  "override_reason_placeholder": {
+    "ar": "اذكر مبرر عدم تنفيذ هذه الخطوة لتوثيقه في السجل...",
+    "en": "State the justification for not executing this step..."
+  },
+  "obstruction_reason_label": {
+    "ar": "سبب التعذر والعائق الميداني *",
+    "en": "Field Obstruction Reason *"
+  },
+  "obstruction_reason_placeholder": {
+    "ar": "اذكر العائق أو الظرف الذي منع التنفيذ...",
+    "en": "State the obstacle that prevented execution..."
+  },
+  "confirm_action": {
+    "ar": "تأكيد الإجراء",
+    "en": "Confirm Action"
+  },
+  "assign_task_title": {
+    "ar": "تكليف موظف بمهمة: {{title}}",
+    "en": "Assign Task to Staff: {{title}}"
+  },
+  "select_field_responder": {
+    "ar": "اختر المستجيب الميداني",
+    "en": "Select Field Responder"
+  },
+  "busy_override_warning": {
+    "ar": "تنبيه: هذا الموظف مسجل كـ 'مشغول' أو 'في استجابة أخرى'. هل تود تأكيد التكليف رغم ذلك؟",
+    "en": "Warning: Staff is marked Busy or Responding elsewhere. Override anyway?"
+  },
+  "accept_override_checkbox": {
+    "ar": "نعم، أقر بتجاوز حالة الانشغال وتكليفه بالمهمة",
+    "en": "Yes, I acknowledge busy state and assign task anyway"
+  },
+  "confirm_assignment": {
+    "ar": "تأكيد التكليف",
+    "en": "Confirm Assignment"
+  },
+  "cannot_edit_other_task": {
+    "ar": "لا يمكنك تعديل مهمة مكلف بها موظف آخر دون صلاحية إشرافية.",
+    "en": "You cannot edit another user's task without supervisor privileges."
+  },
+  "must_provide_skip_reason": {
+    "ar": "يرجى ذكر سبب التجاوز بشكل موثق.",
+    "en": "Please provide a documented justification for skipping."
+  },
+  "must_provide_blocked_reason": {
+    "ar": "يرجى ذكر سبب التعذر أو العائق الميداني.",
+    "en": "Please state the field obstruction reason."
+  },
+  "task_status_update_failed": {
+    "ar": "فشل تحديث حالة المهمة",
+    "en": "Failed to update task status"
+  },
+  "assignment_failed": {
+    "ar": "فشل التكليف",
+    "en": "Assignment failed"
+  },
+  "network_connectivity_status": {
+    "ar": "حالة الاتصال بالشبكة:",
+    "en": "Network Connectivity Status:"
+  },
+  "connected_live": {
+    "ar": "متصل لحظياً",
+    "en": "Live Connected"
+  },
+  "offline_since_minutes": {
+    "ar": "غير متصل ({{count}} دقيقة)",
+    "en": "Offline ({{count}}m)"
+  },
+  "linked_incident": {
+    "ar": "الحادث المرتبط:",
+    "en": "Linked Incident:"
+  },
+  "active_alerts_count": {
+    "ar": "{{count}} بلاغ نشط",
+    "en": "{{count}} active alert(s)"
+  },
+  "status_reason": {
+    "ar": "سبب الحالة:",
+    "en": "Status Reason:"
+  },
+  "last_updated_by": {
+    "ar": "آخر تعديل بواسطة:",
+    "en": "Last Updated By:"
+  },
+  "manual_readiness_change": {
+    "ar": "تغيير الجاهزية يدوياً",
+    "en": "Change Readiness Manually"
+  },
+  "responder_member": {
+    "ar": "عضو استجابة",
+    "en": "Response Member"
+  },
+  "general_dept": {
+    "ar": "عام",
+    "en": "General"
+  },
+  "edit_staff_readiness_title": {
+    "ar": "تعديل جاهزية: {{name}}",
+    "en": "Edit Readiness: {{name}}"
+  },
+  "audit_trail_note": {
+    "ar": "اختر الحالة الجديدة واذكر السبب لتوثيق الإجراء في السجل الأمني المعتمد (Audit Trail):",
+    "en": "Select new status and state reason for audit logging:"
+  },
+  "availability_status_label": {
+    "ar": "حالة التفرغ والاستعداد *",
+    "en": "Availability & Readiness Status *"
+  },
+  "change_reason_label": {
+    "ar": "سبب تغيير الحالة (توثيق أمني إلزامي للإشراف)",
+    "en": "Reason for Change (Mandatory Audit Documentation)"
+  },
+  "change_reason_placeholder": {
+    "ar": "مثال: مكلف بمهمة خارجية، أو إجازة طارئة، أو انتهاء المناوبة...",
+    "en": "e.g. Assigned to external task, emergency leave, or shift ended..."
+  },
+  "save_and_update_status": {
+    "ar": "حفظ وتحديث الحالة",
+    "en": "Save & Update Status"
+  },
+  "status_update_success": {
+    "ar": "تم تحديث حالة جاهزية {{name}} بنجاح إلى \\\"{{status}}\\\"",
+    "en": "Readiness status for {{name}} updated to \\\"{{status}}\\\""
+  },
+  "status_update_failed": {
+    "ar": "فشل تحديث الحالة",
+    "en": "Failed to update status"
+  },
+  "connected_devices_global_map": {
+    "ar": "مراقبة الأجهزة والمواقع العالمية",
+    "en": "Connected Devices & Global Locations"
+  },
+  "live_stream_active": {
+    "ar": "بث لحظي نشط",
+    "en": "Live Stream Active"
+  },
+  "unauthorized_access": {
+    "ar": "غير مصرح لك بالوصول",
+    "en": "Unauthorized Access"
+  },
+  "admin_only_map_desc": {
+    "ar": "هذه اللوحة مخصصة لمدراء النظام فقط لمراقبة الأجهزة العالمية.",
+    "en": "This panel is restricted to system administrators to monitor global devices."
+  },
+  "detection_method": {
+    "ar": "طريقة الرصد:",
+    "en": "Detection Method:"
+  },
+  "accurate_gps_icon": {
+    "ar": "🛰️ نظام GPS دقيق",
+    "en": "🛰️ High Accuracy GPS"
+  },
+  "approx_ip_icon": {
+    "ar": "🌐 تقريبي عبر IP",
+    "en": "🌐 Approximate via IP"
+  },
+  "location_version": {
+    "ar": "إصدار الموقع:",
+    "en": "Location Version:"
+  },
+  "last_connection": {
+    "ar": "آخر اتصال:",
+    "en": "Last Seen:"
+  },
+  "view_details_and_history": {
+    "ar": "عرض كافة التفاصيل والسجل",
+    "en": "View Details & History"
+  },
+  "search_device_placeholder": {
+    "ar": "بحث بالجهاز، المستخدم، عنوان IP، المدينة...",
+    "en": "Search device, user, IP, city..."
+  },
+  "all_users": {
+    "ar": "جميع المستخدمين",
+    "en": "All Users"
+  },
+  "all_countries": {
+    "ar": "جميع الدول",
+    "en": "All Countries"
+  },
+  "all_statuses": {
+    "ar": "كافة الحالات",
+    "en": "All Statuses"
+  },
+  "all_sources": {
+    "ar": "كافة المصادر",
+    "en": "All Sources"
+  },
+  "accurate_gps": {
+    "ar": "نظام GPS دقيق",
+    "en": "Accurate GPS"
+  }
+}

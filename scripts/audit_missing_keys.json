@@ -1,0 +1,2036 @@
+{
+  "ar": [
+    {
+      "key": "cannot_edit_others_task",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "enter_skip_reason_required",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "enter_blocked_reason_required",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "failed_update_task_status",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "failed_assignment",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "checklist_sop_badge",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "checklist_sop_title",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "checklist_sop_desc",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "field_completion_rate",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "tasks_completed_count",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "safety_notice_title",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "safety_notice_body",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "loading_sop_tasks",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "no_tasks_for_incident",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "status_completed",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "status_in_progress",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "status_skipped",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "status_blocked",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "status_pending",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "mandatory_badge",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "supervisor_approval_badge",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "assigned_to_label",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "unassigned_task",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "completed_by_label",
+      "files": [
+        "components/EmergencyChecklistSection.tsx",
+        "pages/admin/CaseReports.tsx"
+      ]
+    },
+    {
+      "key": "supervisor_approved",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "field_action_notes_label",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "skip_reason_label",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "blocked_reason_label",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "assign_employee",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "supervisor_approve_action",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "start_task_action",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "complete_task_action",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "skip_task_action",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "block_task_action",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "task_update_modal_title",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "current_performing_user",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "field_action_notes_input_label",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "field_action_notes_placeholder",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "skip_reason_input_label",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "skip_reason_placeholder",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "blocked_reason_input_label",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "blocked_reason_placeholder",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "confirm_save_action",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "assign_task_modal_title",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "assign_task_modal_desc",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "candidate_employee_label",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "select_employee_from_list",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "auto_readiness_eval",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "supervisor_override_acknowledgement",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "emergency",
+      "files": [
+        "pages/Alarm.tsx"
+      ]
+    },
+    {
+      "key": "generating",
+      "files": [
+        "pages/MobileDiagnostics.tsx"
+      ]
+    },
+    {
+      "key": "connected_device",
+      "files": [
+        "pages/admin/ConnectedDevicesMap.tsx"
+      ]
+    },
+    {
+      "key": "total_devices",
+      "files": [
+        "pages/admin/ConnectedDevicesMap.tsx"
+      ]
+    },
+    {
+      "key": "devices",
+      "files": [
+        "pages/admin/ConnectedDevicesMap.tsx"
+      ]
+    },
+    {
+      "key": "checklist_title_ur",
+      "files": [
+        "pages/admin/EmergencyChecklistsManagement.tsx"
+      ]
+    },
+    {
+      "key": "task_title_ur",
+      "files": [
+        "pages/admin/EmergencyChecklistsManagement.tsx"
+      ]
+    }
+  ],
+  "ku": [
+    {
+      "key": "cannot_edit_others_task",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "enter_skip_reason_required",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "enter_blocked_reason_required",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "failed_update_task_status",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "failed_assignment",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "checklist_sop_badge",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "checklist_sop_title",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "checklist_sop_desc",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "field_completion_rate",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "tasks_completed_count",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "safety_notice_title",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "safety_notice_body",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "loading_sop_tasks",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "no_tasks_for_incident",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "status_completed",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "status_in_progress",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "status_skipped",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "status_blocked",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "status_pending",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "mandatory_badge",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "supervisor_approval_badge",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "assigned_to_label",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "unassigned_task",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "completed_by_label",
+      "files": [
+        "components/EmergencyChecklistSection.tsx",
+        "pages/admin/CaseReports.tsx"
+      ]
+    },
+    {
+      "key": "supervisor_approved",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "field_action_notes_label",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "skip_reason_label",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "blocked_reason_label",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "assign_employee",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "supervisor_approve_action",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "start_task_action",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "complete_task_action",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "skip_task_action",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "block_task_action",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "task_update_modal_title",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "current_performing_user",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "field_action_notes_input_label",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "field_action_notes_placeholder",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "skip_reason_input_label",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "skip_reason_placeholder",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "blocked_reason_input_label",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "blocked_reason_placeholder",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "confirm_save_action",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "assign_task_modal_title",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "assign_task_modal_desc",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "candidate_employee_label",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "select_employee_from_list",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "auto_readiness_eval",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "supervisor_override_acknowledgement",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "emergency",
+      "files": [
+        "pages/Alarm.tsx"
+      ]
+    },
+    {
+      "key": "generating",
+      "files": [
+        "pages/MobileDiagnostics.tsx"
+      ]
+    },
+    {
+      "key": "connected_device",
+      "files": [
+        "pages/admin/ConnectedDevicesMap.tsx"
+      ]
+    },
+    {
+      "key": "total_devices",
+      "files": [
+        "pages/admin/ConnectedDevicesMap.tsx"
+      ]
+    },
+    {
+      "key": "devices",
+      "files": [
+        "pages/admin/ConnectedDevicesMap.tsx"
+      ]
+    },
+    {
+      "key": "checklist_title_ur",
+      "files": [
+        "pages/admin/EmergencyChecklistsManagement.tsx"
+      ]
+    },
+    {
+      "key": "task_title_ur",
+      "files": [
+        "pages/admin/EmergencyChecklistsManagement.tsx"
+      ]
+    }
+  ],
+  "ur": [
+    {
+      "key": "cannot_edit_others_task",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "enter_skip_reason_required",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "enter_blocked_reason_required",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "failed_update_task_status",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "failed_assignment",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "checklist_sop_badge",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "checklist_sop_title",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "checklist_sop_desc",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "field_completion_rate",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "tasks_completed_count",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "safety_notice_title",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "safety_notice_body",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "loading_sop_tasks",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "no_tasks_for_incident",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "status_completed",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "status_in_progress",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "status_skipped",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "status_blocked",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "status_pending",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "mandatory_badge",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "supervisor_approval_badge",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "assigned_to_label",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "unassigned_task",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "completed_by_label",
+      "files": [
+        "components/EmergencyChecklistSection.tsx",
+        "pages/admin/CaseReports.tsx"
+      ]
+    },
+    {
+      "key": "supervisor_approved",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "field_action_notes_label",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "skip_reason_label",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "blocked_reason_label",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "assign_employee",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "supervisor_approve_action",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "start_task_action",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "complete_task_action",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "skip_task_action",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "block_task_action",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "task_update_modal_title",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "current_performing_user",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "field_action_notes_input_label",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "field_action_notes_placeholder",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "skip_reason_input_label",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "skip_reason_placeholder",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "blocked_reason_input_label",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "blocked_reason_placeholder",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "confirm_save_action",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "assign_task_modal_title",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "assign_task_modal_desc",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "candidate_employee_label",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "select_employee_from_list",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "auto_readiness_eval",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "supervisor_override_acknowledgement",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "emergency",
+      "files": [
+        "pages/Alarm.tsx"
+      ]
+    },
+    {
+      "key": "generating",
+      "files": [
+        "pages/MobileDiagnostics.tsx"
+      ]
+    },
+    {
+      "key": "connected_device",
+      "files": [
+        "pages/admin/ConnectedDevicesMap.tsx"
+      ]
+    },
+    {
+      "key": "total_devices",
+      "files": [
+        "pages/admin/ConnectedDevicesMap.tsx"
+      ]
+    },
+    {
+      "key": "devices",
+      "files": [
+        "pages/admin/ConnectedDevicesMap.tsx"
+      ]
+    },
+    {
+      "key": "checklist_title_ur",
+      "files": [
+        "pages/admin/EmergencyChecklistsManagement.tsx"
+      ]
+    },
+    {
+      "key": "task_title_ur",
+      "files": [
+        "pages/admin/EmergencyChecklistsManagement.tsx"
+      ]
+    }
+  ],
+  "en": [
+    {
+      "key": "cannot_edit_others_task",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "enter_skip_reason_required",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "enter_blocked_reason_required",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "failed_update_task_status",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "failed_assignment",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "checklist_sop_badge",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "checklist_sop_title",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "checklist_sop_desc",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "field_completion_rate",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "tasks_completed_count",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "safety_notice_title",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "safety_notice_body",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "loading_sop_tasks",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "no_tasks_for_incident",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "status_completed",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "status_in_progress",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "status_skipped",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "status_blocked",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "status_pending",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "mandatory_badge",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "supervisor_approval_badge",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "assigned_to_label",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "unassigned_task",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "completed_by_label",
+      "files": [
+        "components/EmergencyChecklistSection.tsx",
+        "pages/admin/CaseReports.tsx"
+      ]
+    },
+    {
+      "key": "supervisor_approved",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "field_action_notes_label",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "skip_reason_label",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "blocked_reason_label",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "assign_employee",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "supervisor_approve_action",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "start_task_action",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "complete_task_action",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "skip_task_action",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "block_task_action",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "task_update_modal_title",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "current_performing_user",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "field_action_notes_input_label",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "field_action_notes_placeholder",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "skip_reason_input_label",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "skip_reason_placeholder",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "blocked_reason_input_label",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "blocked_reason_placeholder",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "confirm_save_action",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "assign_task_modal_title",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "assign_task_modal_desc",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "candidate_employee_label",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "select_employee_from_list",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "auto_readiness_eval",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "supervisor_override_acknowledgement",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "emergency",
+      "files": [
+        "pages/Alarm.tsx"
+      ]
+    },
+    {
+      "key": "generating",
+      "files": [
+        "pages/MobileDiagnostics.tsx"
+      ]
+    },
+    {
+      "key": "connected_device",
+      "files": [
+        "pages/admin/ConnectedDevicesMap.tsx"
+      ]
+    },
+    {
+      "key": "total_devices",
+      "files": [
+        "pages/admin/ConnectedDevicesMap.tsx"
+      ]
+    },
+    {
+      "key": "devices",
+      "files": [
+        "pages/admin/ConnectedDevicesMap.tsx"
+      ]
+    },
+    {
+      "key": "checklist_title_ur",
+      "files": [
+        "pages/admin/EmergencyChecklistsManagement.tsx"
+      ]
+    },
+    {
+      "key": "task_title_ur",
+      "files": [
+        "pages/admin/EmergencyChecklistsManagement.tsx"
+      ]
+    }
+  ],
+  "fr": [
+    {
+      "key": "cannot_edit_others_task",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "enter_skip_reason_required",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "enter_blocked_reason_required",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "failed_update_task_status",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "failed_assignment",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "checklist_sop_badge",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "checklist_sop_title",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "checklist_sop_desc",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "field_completion_rate",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "tasks_completed_count",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "safety_notice_title",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "safety_notice_body",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "loading_sop_tasks",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "no_tasks_for_incident",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "status_completed",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "status_in_progress",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "status_skipped",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "status_blocked",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "status_pending",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "mandatory_badge",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "supervisor_approval_badge",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "assigned_to_label",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "unassigned_task",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "completed_by_label",
+      "files": [
+        "components/EmergencyChecklistSection.tsx",
+        "pages/admin/CaseReports.tsx"
+      ]
+    },
+    {
+      "key": "supervisor_approved",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "field_action_notes_label",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "skip_reason_label",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "blocked_reason_label",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "assign_employee",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "supervisor_approve_action",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "start_task_action",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "complete_task_action",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "skip_task_action",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "block_task_action",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "task_update_modal_title",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "current_performing_user",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "field_action_notes_input_label",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "field_action_notes_placeholder",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "skip_reason_input_label",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "skip_reason_placeholder",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "blocked_reason_input_label",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "blocked_reason_placeholder",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "confirm_save_action",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "assign_task_modal_title",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "assign_task_modal_desc",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "candidate_employee_label",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "select_employee_from_list",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "auto_readiness_eval",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "supervisor_override_acknowledgement",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "emergency",
+      "files": [
+        "pages/Alarm.tsx"
+      ]
+    },
+    {
+      "key": "generating",
+      "files": [
+        "pages/MobileDiagnostics.tsx"
+      ]
+    },
+    {
+      "key": "connected_device",
+      "files": [
+        "pages/admin/ConnectedDevicesMap.tsx"
+      ]
+    },
+    {
+      "key": "total_devices",
+      "files": [
+        "pages/admin/ConnectedDevicesMap.tsx"
+      ]
+    },
+    {
+      "key": "devices",
+      "files": [
+        "pages/admin/ConnectedDevicesMap.tsx"
+      ]
+    },
+    {
+      "key": "checklist_title_ur",
+      "files": [
+        "pages/admin/EmergencyChecklistsManagement.tsx"
+      ]
+    },
+    {
+      "key": "task_title_ur",
+      "files": [
+        "pages/admin/EmergencyChecklistsManagement.tsx"
+      ]
+    }
+  ],
+  "de": [
+    {
+      "key": "cannot_edit_others_task",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "enter_skip_reason_required",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "enter_blocked_reason_required",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "failed_update_task_status",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "failed_assignment",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "checklist_sop_badge",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "checklist_sop_title",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "checklist_sop_desc",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "field_completion_rate",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "tasks_completed_count",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "safety_notice_title",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "safety_notice_body",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "loading_sop_tasks",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "no_tasks_for_incident",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "status_completed",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "status_in_progress",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "status_skipped",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "status_blocked",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "status_pending",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "mandatory_badge",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "supervisor_approval_badge",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "assigned_to_label",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "unassigned_task",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "completed_by_label",
+      "files": [
+        "components/EmergencyChecklistSection.tsx",
+        "pages/admin/CaseReports.tsx"
+      ]
+    },
+    {
+      "key": "supervisor_approved",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "field_action_notes_label",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "skip_reason_label",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "blocked_reason_label",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "assign_employee",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "supervisor_approve_action",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "start_task_action",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "complete_task_action",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "skip_task_action",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "block_task_action",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "task_update_modal_title",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "current_performing_user",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "field_action_notes_input_label",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "field_action_notes_placeholder",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "skip_reason_input_label",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "skip_reason_placeholder",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "blocked_reason_input_label",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "blocked_reason_placeholder",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "confirm_save_action",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "assign_task_modal_title",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "assign_task_modal_desc",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "candidate_employee_label",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "select_employee_from_list",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "auto_readiness_eval",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "supervisor_override_acknowledgement",
+      "files": [
+        "components/EmergencyChecklistSection.tsx"
+      ]
+    },
+    {
+      "key": "emergency",
+      "files": [
+        "pages/Alarm.tsx"
+      ]
+    },
+    {
+      "key": "generating",
+      "files": [
+        "pages/MobileDiagnostics.tsx"
+      ]
+    },
+    {
+      "key": "connected_device",
+      "files": [
+        "pages/admin/ConnectedDevicesMap.tsx"
+      ]
+    },
+    {
+      "key": "total_devices",
+      "files": [
+        "pages/admin/ConnectedDevicesMap.tsx"
+      ]
+    },
+    {
+      "key": "devices",
+      "files": [
+        "pages/admin/ConnectedDevicesMap.tsx"
+      ]
+    },
+    {
+      "key": "checklist_title_ur",
+      "files": [
+        "pages/admin/EmergencyChecklistsManagement.tsx"
+      ]
+    },
+    {
+      "key": "task_title_ur",
+      "files": [
+        "pages/admin/EmergencyChecklistsManagement.tsx"
+      ]
+    }
+  ]
+}

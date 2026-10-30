@@ -1,0 +1,176 @@
+{
+  "timestamp": "2026-10-30T10:45:46.838Z",
+  "totalLanguages": 6,
+  "languagesChecked": [
+    "ar",
+    "ku",
+    "ur",
+    "en",
+    "fr",
+    "de"
+  ],
+  "languageStats": {
+    "ar": {
+      "totalKeys": 842,
+      "missingKeysCount": 0,
+      "emptyKeysCount": 0,
+      "completionPercentage": "100%",
+      "status": "PASSED"
+    },
+    "ku": {
+      "totalKeys": 842,
+      "missingKeysCount": 0,
+      "emptyKeysCount": 0,
+      "completionPercentage": "100%",
+      "status": "PASSED"
+    },
+    "ur": {
+      "totalKeys": 842,
+      "missingKeysCount": 0,
+      "emptyKeysCount": 0,
+      "completionPercentage": "100%",
+      "status": "PASSED"
+    },
+    "en": {
+      "totalKeys": 842,
+      "missingKeysCount": 0,
+      "emptyKeysCount": 0,
+      "completionPercentage": "100%",
+      "status": "PASSED"
+    },
+    "fr": {
+      "totalKeys": 842,
+      "missingKeysCount": 0,
+      "emptyKeysCount": 0,
+      "completionPercentage": "100%",
+      "status": "PASSED"
+    },
+    "de": {
+      "totalKeys": 842,
+      "missingKeysCount": 0,
+      "emptyKeysCount": 0,
+      "completionPercentage": "100%",
+      "status": "PASSED"
+    }
+  },
+  "criticalKeysVerification": {
+    "start_task_action": {
+      "ar": "بدء التنفيذ",
+      "ku": "دەستپێکردنی جێبەجێکردن",
+      "ur": "عمل شروع کریں",
+      "en": "Start Execution",
+      "fr": "Démarrer l'exécution",
+      "de": "Ausführung starten"
+    },
+    "complete_task_action": {
+      "ar": "إتمام المهمة",
+      "ku": "تەواوکردنی ئەرک",
+      "ur": "ٹاسک مکمل کریں",
+      "en": "Complete Task",
+      "fr": "Terminer la tâche",
+      "de": "Aufgabe abschließen"
+    },
+    "skip_task_action": {
+      "ar": "تخطي بمبرر",
+      "ku": "پەڕاندن بە هۆکار",
+      "ur": "جواز کے ساتھ چھوڑیں",
+      "en": "Skip with Reason",
+      "fr": "Ignorer avec motif",
+      "de": "Mit Begründung überspringen"
+    },
+    "block_task_action": {
+      "ar": "إبلاغ عن تعثر",
+      "ku": "ڕاپۆرتکردنی پەککەوتن",
+      "ur": "رکاوٹ کی اطلاع دیں",
+      "en": "Report Obstacle",
+      "fr": "Signaler un obstacle",
+      "de": "Hindernis melden"
+    },
+    "assign_employee": {
+      "ar": "تكليف موظف",
+      "ku": "ڕاسپاردنی کارمەند",
+      "ur": "ملازم کو تفویض کریں",
+      "en": "Assign Staff",
+      "fr": "Assigner un membre",
+      "de": "Mitarbeiter zuweisen"
+    },
+    "status_pending": {
+      "ar": "قيد الانتظار",
+      "ku": "چاوەڕوانکراو",
+      "ur": "زیر التواء",
+      "en": "Pending",
+      "fr": "En attente",
+      "de": "Ausstehend"
+    },
+    "mandatory_badge": {
+      "ar": "إلزامي",
+      "ku": "زۆرەملێ",
+      "ur": "لازمی",
+      "en": "Mandatory",
+      "fr": "Obligatoire",
+      "de": "Pflicht"
+    },
+    "unassigned_task": {
+      "ar": "غير مكلّف لأحد",
+      "ku": "بە کەس نەسپێردراوە",
+      "ur": "غیر تفویض شدہ",
+      "en": "Unassigned",
+      "fr": "Non assigné",
+      "de": "Nicht zugewiesen"
+    },
+    "supervisor_approval_badge": {
+      "ar": "يتطلب اعتماد المشرف",
+      "ku": "پێویستی بە پەسەندکردنی سەرپەرشتیارە",
+      "ur": "سپروائزر کی منظوری درکار ہے",
+      "en": "Requires Supervisor Approval",
+      "fr": "Approbation du superviseur requise",
+      "de": "Vorgesetzten-Genehmigung erforderlich"
+    }
+  },
+  "languageSwitchTests": [
+    {
+      "targetLang": "ar",
+      "currentLang": "ar",
+      "direction": "rtl",
+      "sampleResolvedText": "بدء التنفيذ",
+      "passed": true
+    },
+    {
+      "targetLang": "ku",
+      "currentLang": "ku",
+      "direction": "rtl",
+      "sampleResolvedText": "دەستپێکردنی جێبەجێکردن",
+      "passed": true
+    },
+    {
+      "targetLang": "ur",
+      "currentLang": "ur",
+      "direction": "rtl",
+      "sampleResolvedText": "عمل شروع کریں",
+      "passed": true
+    },
+    {
+      "targetLang": "en",
+      "currentLang": "en",
+      "direction": "ltr",
+      "sampleResolvedText": "Start Execution",
+      "passed": true
+    },
+    {
+      "targetLang": "fr",
+      "currentLang": "fr",
+      "direction": "ltr",
+      "sampleResolvedText": "Démarrer l'exécution",
+      "passed": true
+    },
+    {
+      "targetLang": "de",
+      "currentLang": "de",
+      "direction": "ltr",
+      "sampleResolvedText": "Ausführung starten",
+      "passed": true
+    }
+  ],
+  "rtlLtrTests": [],
+  "allPassed": true
+}

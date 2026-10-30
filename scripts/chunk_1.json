@@ -1,0 +1,802 @@
+{
+  "welcome": {
+    "ar": "مرحباً",
+    "en": "Welcome"
+  },
+  "login": {
+    "ar": "تسجيل الدخول",
+    "en": "Login"
+  },
+  "dashboard": {
+    "ar": "الشاشة الرئيسية",
+    "en": "Dashboard"
+  },
+  "new_emergency": {
+    "ar": "فتح حالة طوارئ جديدة",
+    "en": "New Emergency"
+  },
+  "active_alerts": {
+    "ar": "البلاغات النشطة",
+    "en": "Active Alerts"
+  },
+  "admin_panel": {
+    "ar": "إدارة النظام",
+    "en": "System Admin"
+  },
+  "settings": {
+    "ar": "الإعدادات",
+    "en": "Settings"
+  },
+  "logout": {
+    "ar": "تسجيل خروج",
+    "en": "Logout"
+  },
+  "emergency_type": {
+    "ar": "نوع الطوارئ",
+    "en": "Emergency Type"
+  },
+  "location": {
+    "ar": "الموقع",
+    "en": "Location"
+  },
+  "notes": {
+    "ar": "ملاحظات",
+    "en": "Notes"
+  },
+  "activate_alarm": {
+    "ar": "تفعيل الإنذار الآن",
+    "en": "ACTIVATE ALARM"
+  },
+  "back": {
+    "ar": "رجوع",
+    "en": "Back"
+  },
+  "responders": {
+    "ar": "المستجيبون",
+    "en": "Responders"
+  },
+  "close_case": {
+    "ar": "إغلاق الحالة",
+    "en": "Close Case"
+  },
+  "respond": {
+    "ar": "استجابة",
+    "en": "RESPOND"
+  },
+  "responded": {
+    "ar": "تم الاستجابة",
+    "en": "RESPONDED"
+  },
+  "ai_report": {
+    "ar": "تقارير الذكاء الاصطناعي",
+    "en": "AI Report"
+  },
+  "ai_reports": {
+    "ar": "تقارير الذكاء الاصطناعي",
+    "en": "Artificial Intelligence Reports"
+  },
+  "ai_report_center": {
+    "ar": "مركز التقارير الذكي",
+    "en": "AI Intelligent Report Center"
+  },
+  "ai_settings": {
+    "ar": "إعدادات الذكاء الاصطناعي",
+    "en": "AI Global Settings"
+  },
+  "personal_report": {
+    "ar": "تقارير شخصية",
+    "en": "Personal Report"
+  },
+  "job_titles": {
+    "ar": "المسميات الوظيفية",
+    "en": "Job Titles"
+  },
+  "roles": {
+    "ar": "الأدوار",
+    "en": "Roles"
+  },
+  "locations": {
+    "ar": "المواقع",
+    "en": "Locations"
+  },
+  "generate_report": {
+    "ar": "إنشاء تقرير تلقائي",
+    "en": "Generate AI Report"
+  },
+  "loading": {
+    "ar": "جار التحميل...",
+    "en": "Loading..."
+  },
+  "username": {
+    "ar": "اسم المستخدم",
+    "en": "Username"
+  },
+  "password": {
+    "ar": "كلمة المرور",
+    "en": "Password"
+  },
+  "remember_me": {
+    "ar": "تذكرني",
+    "en": "Remember Me"
+  },
+  "fastest_response": {
+    "ar": "أسرع استجابة",
+    "en": "Fastest Response"
+  },
+  "most_active_cases": {
+    "ar": "أكثر الحالات استجابة",
+    "en": "Most Active"
+  },
+  "my_responses": {
+    "ar": "عدد الحالات التي استجبت لها",
+    "en": "My Responses"
+  },
+  "my_opened_cases": {
+    "ar": "الحالات المفتوحة بواسطتي",
+    "en": "My Opened Cases"
+  },
+  "do_not_disturb": {
+    "ar": "وضع عدم الإزعاج",
+    "en": "Do Not Disturb Mode"
+  },
+  "dark_mode": {
+    "ar": "الوضع الليلي",
+    "en": "Dark Mode"
+  },
+  "language": {
+    "ar": "اللغة",
+    "en": "Language"
+  },
+  "confirm_delete": {
+    "ar": "تأكيد الحذف",
+    "en": "Confirm Delete"
+  },
+  "delete_message": {
+    "ar": "هل أنت متأكد من حذف هذا العنصر؟ لا يمكن التراجع عن هذا الإجراء.",
+    "en": "Are you sure you want to delete this item? This action cannot be undone."
+  },
+  "delete": {
+    "ar": "حذف",
+    "en": "Delete"
+  },
+  "cancel": {
+    "ar": "إلغاء",
+    "en": "Cancel"
+  },
+  "edit": {
+    "ar": "تعديل",
+    "en": "Edit"
+  },
+  "add_new": {
+    "ar": "إضافة جديد",
+    "en": "Add New"
+  },
+  "save": {
+    "ar": "حفظ",
+    "en": "Save"
+  },
+  "update": {
+    "ar": "تحديث",
+    "en": "Update"
+  },
+  "job_name": {
+    "ar": "اسم الوظيفة",
+    "en": "Job Name"
+  },
+  "description": {
+    "ar": "الوصف",
+    "en": "Description"
+  },
+  "actions": {
+    "ar": "الإجراءات",
+    "en": "Actions"
+  },
+  "no_data": {
+    "ar": "لا يوجد بيانات",
+    "en": "No data found"
+  },
+  "users_management": {
+    "ar": "إدارة المستخدمين والأدوار",
+    "en": "Users & Roles Management"
+  },
+  "my_profile_settings": {
+    "ar": "إعدادات ملفي الشخصي",
+    "en": "My Profile Settings"
+  },
+  "full_name": {
+    "ar": "الاسم الكامل",
+    "en": "Full Name"
+  },
+  "role": {
+    "ar": "الدور",
+    "en": "Role"
+  },
+  "select_job": {
+    "ar": "اختر المسمى الوظيفي",
+    "en": "Select Job Title"
+  },
+  "user_delete_confirm": {
+    "ar": "هل أنت متأكد من حذف هذا المستخدم؟",
+    "en": "Are you sure you want to delete this user?"
+  },
+  "emergency_types_management": {
+    "ar": "إدارة أنواع الطوارئ",
+    "en": "Emergency Types Management"
+  },
+  "type_name": {
+    "ar": "اسم النوع",
+    "en": "Type Name"
+  },
+  "severity_level": {
+    "ar": "مستوى الخطورة",
+    "en": "Severity Level"
+  },
+  "alert_color": {
+    "ar": "لون التنبيه",
+    "en": "Alert Color"
+  },
+  "default_procedures": {
+    "ar": "الإجراءات الافتراضية",
+    "en": "Default Procedures"
+  },
+  "high": {
+    "ar": "عالي",
+    "en": "High"
+  },
+  "medium": {
+    "ar": "متوسط",
+    "en": "Medium"
+  },
+  "low": {
+    "ar": "منخفض",
+    "en": "Low"
+  },
+  "locations_management": {
+    "ar": "إدارة الموا مواقع",
+    "en": "Locations Management"
+  },
+  "location_name": {
+    "ar": "اسم الموقع",
+    "en": "Location Name"
+  },
+  "floor_number": {
+    "ar": "رقم الطابق",
+    "en": "Floor Number"
+  },
+  "coordinates": {
+    "ar": "الإحداثيات",
+    "en": "Coordinates"
+  },
+  "latitude": {
+    "ar": "دائرة العرض",
+    "en": "Latitude"
+  },
+  "longitude": {
+    "ar": "خط الطول",
+    "en": "Longitude"
+  },
+  "general_report": {
+    "ar": "التقرير التحليلي الشامل",
+    "en": "General Analytics Report"
+  },
+  "analyze_all": {
+    "ar": "تحليل جميع الحالات",
+    "en": "Analyze All Cases"
+  },
+  "general_report_desc": {
+    "ar": "تحليل شامل لجميع الحالات المغلقة، الاتجاهات، ومؤشرات الأداء.",
+    "en": "Comprehensive analysis of all closed cases, trends, and performance metrics."
+  },
+  "print": {
+    "ar": "طباعة",
+    "en": "Print"
+  },
+  "export_pdf": {
+    "ar": "تصدير PDF",
+    "en": "Export PDF"
+  },
+  "back_to_dashboard": {
+    "ar": "رجوع للرئيسية",
+    "en": "Back to Dashboard"
+  },
+  "duplicate_error": {
+    "ar": "يوجد سجل بنفس الاسم مسبقاً، الرجاء استخدام اسم مختلف.",
+    "en": "Duplicate entry exists. Please use a unique name."
+  },
+  "total_involved": {
+    "ar": "إجمالي المشاركات",
+    "en": "Total Involved"
+  },
+  "contribution_rate": {
+    "ar": "معدل المساهمة",
+    "en": "Contribution Rate"
+  },
+  "top_locations": {
+    "ar": "أكثر المواقع زيارة",
+    "en": "Top Locations Visited"
+  },
+  "activity_timeline": {
+    "ar": "سجل نشاطي الزمني",
+    "en": "My Activity Timeline"
+  },
+  "participation_by_type": {
+    "ar": "المشاركة حسب النوع",
+    "en": "Participation by Type"
+  },
+  "recent_activity": {
+    "ar": "سجل النشاط الأخير",
+    "en": "Recent Activity Log"
+  },
+  "invalid_credentials": {
+    "ar": "اسم المستخدم أو كلمة المرور غير صحيحة",
+    "en": "Invalid username or password"
+  },
+  "critical_insight": {
+    "ar": "رؤية الذكاء الاصطناعي للحالة",
+    "en": "AI Critical Insight"
+  },
+  "escalated": {
+    "ar": "تم التصعيد",
+    "en": "ESCALATED"
+  },
+  "escalate_case": {
+    "ar": "تصعيد الحالة",
+    "en": "Escalate Case"
+  },
+  "close_confirm_title": {
+    "ar": "إغلاق حالة الطوارئ؟",
+    "en": "Close Emergency?"
+  },
+  "close_confirm_msg": {
+    "ar": "هل أنت متأكد من رغبتك في إغلاق هذه الحالة؟ سيؤدي هذا إلى إيقاف الإنذار لدى جميع المستخدمين.",
+    "en": "Are you sure you want to close this case? This will stop the alarm for all users."
+  },
+  "confirm": {
+    "ar": "تأكيد",
+    "en": "Confirm"
+  },
+  "overdue": {
+    "ar": "متأخر (>15د)",
+    "en": "Overdue (>15m)"
+  },
+  "search_placeholder": {
+    "ar": "ابحث عن الموقع أو النوع...",
+    "en": "Search by location or type..."
+  },
+  "no_active_alerts": {
+    "ar": "لا توجد بلاغات نشطة.",
+    "en": "No active alerts."
+  },
+  "no_matching_alerts": {
+    "ar": "لا توجد نتائج مطابقة.",
+    "en": "No matching alerts found."
+  },
+  "initialize_db": {
+    "ar": "تهيئة قاعدة البيانات",
+    "en": "Initialize Database Defaults"
+  },
+  "initialize_db_desc": {
+    "ar": "إنشاء الجداول والبيانات الافتراضية في Firebase (اضغط هنا إذا كانت قاعدة البيانات فارغة).",
+    "en": "Create default collections in Firebase (Use this if Firestore is empty)."
+  },
+  "db_initialized_success": {
+    "ar": "تمت تهيئة قاعدة البيانات بنجاح! قم بتحديث الصفحة.",
+    "en": "Database initialized successfully! Refresh page."
+  },
+  "offline_warning": {
+    "ar": "أنت في وضع عدم الاتصال (Offline Mode). تأكد من تفعيل 'Anonymous Auth' في إعدادات Firebase لضمان حفظ البيانات.",
+    "en": "You are currently in OFFLINE MODE. Changes are only saved to your browser."
+  },
+  "skip": {
+    "ar": "تخطي",
+    "en": "Skip"
+  },
+  "next": {
+    "ar": "التالي",
+    "en": "Next"
+  },
+  "finish": {
+    "ar": "إنهاء",
+    "en": "Finish"
+  },
+  "active_users_report": {
+    "ar": "المستخدمون النشطون",
+    "en": "Active Users"
+  },
+  "ip_address": {
+    "ar": "عنوان IP",
+    "en": "IP Address"
+  },
+  "device": {
+    "ar": "نوع الجهاز",
+    "en": "Device"
+  },
+  "country": {
+    "ar": "البلد",
+    "en": "Country"
+  },
+  "status": {
+    "ar": "الحالة",
+    "en": "Status"
+  },
+  "online": {
+    "ar": "متصل",
+    "en": "Online"
+  },
+  "offline": {
+    "ar": "غير متصل",
+    "en": "Offline"
+  },
+  "last_active": {
+    "ar": "آخر نشاط",
+    "en": "Last Active"
+  },
+  "user_status_active": {
+    "ar": "نشط",
+    "en": "Active"
+  },
+  "user_status_idle": {
+    "ar": "خامل",
+    "en": "Idle"
+  },
+  "user_status_away": {
+    "ar": "غائب",
+    "en": "Away"
+  },
+  "login_logs": {
+    "ar": "سجلات الدخول",
+    "en": "Login Logs"
+  },
+  "login_time": {
+    "ar": "توقيت الدخول",
+    "en": "Login Time"
+  },
+  "logout_time": {
+    "ar": "توقيت الخروج",
+    "en": "Logout Time"
+  },
+  "duration": {
+    "ar": "المدة",
+    "en": "Duration"
+  },
+  "search_by_username": {
+    "ar": "بحث باسم المستخدم",
+    "en": "Search by username"
+  },
+  "date": {
+    "ar": "التاريخ",
+    "en": "Date"
+  },
+  "mobile_only_feature": {
+    "ar": "ميزة مخصصة للهواتف",
+    "en": "Mobile Only Feature"
+  },
+  "mobile_only_desc": {
+    "ar": "هذا التقرير متاح للعرض فقط من خلال الهواتف المحمولة.",
+    "en": "This report is restricted to mobile devices. Please access this page from your smartphone."
+  },
+  "mobile_app": {
+    "ar": "تطبيق الموبايل",
+    "en": "Mobile App"
+  },
+  "download_android": {
+    "ar": "تحميل تطبيق Android APK",
+    "en": "Download Android APK"
+  },
+  "download_ios": {
+    "ar": "تحميل تطبيق iPhone IOS",
+    "en": "Download iOS App"
+  },
+  "mobile_app_desc": {
+    "ar": "قم بتحميل تطبيق الموبايل لتلقي الإشعارات والاستجابة بشكل أسرع.",
+    "en": "Download our mobile application to receive notifications and respond faster."
+  },
+  "admin_upload_links": {
+    "ar": "المدير: تحديث روابط التطبيق",
+    "en": "Admin: Update App Links"
+  },
+  "android_link": {
+    "ar": "رابط تحميل Android",
+    "en": "Android Download Link"
+  },
+  "ios_link": {
+    "ar": "رابط تحميل iOS",
+    "en": "iOS Download Link"
+  },
+  "links_updated": {
+    "ar": "تم تحديث الروابط بنجاح.",
+    "en": "App links updated successfully."
+  },
+  "action_taken": {
+    "ar": "الإجراء المتخذ",
+    "en": "Action Taken"
+  },
+  "action_placeholder": {
+    "ar": "صف ما قمت به عند الاستجابة...",
+    "en": "Describe what you did when responding..."
+  },
+  "field_chat": {
+    "ar": "الدردشة الميدانية",
+    "en": "Field Chat"
+  },
+  "send_message": {
+    "ar": "إرسال",
+    "en": "Send"
+  },
+  "syncing": {
+    "ar": "جاري المزامنة...",
+    "en": "Syncing Data..."
+  },
+  "synced": {
+    "ar": "آمن ومتزامن",
+    "en": "Secure & Synced"
+  },
+  "AR_NAV": {
+    "ar": "الملاحة بالواقع المعزز (AR)",
+    "en": "AR Navigation"
+  },
+  "take_snapshot": {
+    "ar": "التقاط لقطة للمشهد",
+    "en": "Take Scene Snapshot"
+  },
+  "reset_ar": {
+    "ar": "إعادة معايرة الاتجاه",
+    "en": "Reset AR Orientation"
+  },
+  "presentation_assets": {
+    "ar": "مركز أصول العرض التقديمي",
+    "en": "Presentation Assets Center"
+  },
+  "generate_slide_img": {
+    "ar": "توليد صورة الشريحة",
+    "en": "Generate Slide Image"
+  },
+  "select_api_for_pro": {
+    "ar": "اختر مفتاح API لصور فائقة الجودة",
+    "en": "Select Pro API Key for 4K Images"
+  },
+  "db_tools": {
+    "ar": "أدوات قاعدة البيانات",
+    "en": "Database Tools"
+  },
+  "backup": {
+    "ar": "نسخة احتياطية",
+    "en": "Backup Database"
+  },
+  "restore": {
+    "ar": "استعادة البيانات",
+    "en": "Restore Database"
+  },
+  "last_24h": {
+    "ar": "آخر 24 ساعة",
+    "en": "Last 24 Hours"
+  },
+  "last_week": {
+    "ar": "آخر أسبوع",
+    "en": "Last Week"
+  },
+  "last_month": {
+    "ar": "آخر شهر",
+    "en": "Last Month"
+  },
+  "custom_period": {
+    "ar": "فترة مخصصة",
+    "en": "Custom Period"
+  },
+  "start_time": {
+    "ar": "وقت البداية",
+    "en": "Start Time"
+  },
+  "end_time": {
+    "ar": "وقت النهاية",
+    "en": "End Time"
+  },
+  "apply_filter": {
+    "ar": "تطبيق الفلترة",
+    "en": "Apply Filter"
+  },
+  "report_period": {
+    "ar": "فترة التقرير",
+    "en": "Report Period"
+  },
+  "live_ops_map": {
+    "ar": "خريطة العمليات الحية",
+    "en": "Live Operations Map"
+  },
+  "users_online": {
+    "ar": "متواجد الآن",
+    "en": "Online Users"
+  },
+  "today_total_alerts": {
+    "ar": "إجمالي بلاغات اليوم",
+    "en": "Today's Alerts"
+  },
+  "active_responders": {
+    "ar": "المستجيبون النشطون",
+    "en": "Active Responders"
+  },
+  "refresh_session": {
+    "ar": "تحديث الجلسة",
+    "en": "Refresh Session"
+  },
+  "available_now": {
+    "ar": "متاح الآن",
+    "en": "Available Now"
+  },
+  "report_preview": {
+    "ar": "معاينة التقرير الرسمي",
+    "en": "Official Report Preview"
+  },
+  "generate_now": {
+    "ar": "إنشاء الآن",
+    "en": "Generate Now"
+  },
+  "update_data": {
+    "ar": "تحديث البيانات",
+    "en": "Update Data"
+  },
+  "ai_processing": {
+    "ar": "جاري معالجة البيانات وإعداد التقرير التكتيكي عبر وحدة ERS الذكية...",
+    "en": "Processing report with ERS Intelligence..."
+  },
+  "technical_report": {
+    "ar": "تقرير فني",
+    "en": "Technical Report"
+  },
+  "legal_opinion": {
+    "ar": "رأي قانوني",
+    "en": "Legal Opinion"
+  },
+  "risk_prediction": {
+    "ar": "تنبؤ المخاطر",
+    "en": "Risk Prediction"
+  },
+  "statistical_analysis": {
+    "ar": "تحليل إحصائي",
+    "en": "Statistical Analysis"
+  },
+  "strategic_analysis": {
+    "ar": "التحليلات الاستراتيجية",
+    "en": "Strategic Analysis"
+  },
+  "facility_security_score": {
+    "ar": "درجة أمان المنشأة",
+    "en": "Facility Security Score"
+  },
+  "strategic_analytics": {
+    "ar": "التحليلات الاستراتيجية",
+    "en": "Strategic Analytics"
+  },
+  "command_hub": {
+    "ar": "مركز القيادة الاستراتيجي",
+    "en": "Strategic Command Hub"
+  },
+  "security_status": {
+    "ar": "حالة الأمن",
+    "en": "Security Status"
+  },
+  "safe_status": {
+    "ar": "الوضع آمن",
+    "en": "Safe Status"
+  },
+  "alert_high_risk": {
+    "ar": "تنبيه: مخاطر مرتفعة",
+    "en": "Alert: High Risk"
+  },
+  "response_time_index": {
+    "ar": "مؤشر زمن الاستجابة",
+    "en": "Response Time Index"
+  },
+  "risk_heatmap": {
+    "ar": "خريطة حرارة المخاطر",
+    "en": "Risk Heatmap"
+  },
+  "emergency_type_dist": {
+    "ar": "توزيع أنواع البلاغات",
+    "en": "Emergency Type Distribution"
+  },
+  "compliance_rate": {
+    "ar": "معدل تنفيذ المهام الذكية",
+    "en": "SOP Compliance Rate"
+  },
+  "employee_report_engine": {
+    "ar": "محرك تقارير الموظفين",
+    "en": "Employee Report Engine"
+  },
+  "user_participation_log": {
+    "ar": "سجل مشاركات ومساهمات المستخدمين",
+    "en": "User Participation Log"
+  },
+  "total_participations": {
+    "ar": "إجمالي المشاركات",
+    "en": "Total Participations"
+  },
+  "contribution_avg": {
+    "ar": "معدل المساهمة",
+    "en": "Contribution Avg"
+  },
+  "facility_profile": {
+    "ar": "الملف التعريفي للمنشأة",
+    "en": "Facility Profile"
+  },
+  "company_context": {
+    "ar": "سياق المنشأة",
+    "en": "Company Context"
+  },
+  "facility_context_ai": {
+    "ar": "سياق المنشأة للذكاء الاصطناعي",
+    "en": "Facility Context for ERS AI"
+  },
+  "facility_activity": {
+    "ar": "نوع النشاط الأساسي",
+    "en": "Primary Activity Type"
+  },
+  "potential_hazards": {
+    "ar": "المخاطر الكامنة",
+    "en": "Potential Hazards"
+  },
+  "critical_assets": {
+    "ar": "الأصول الحيوية",
+    "en": "Critical Assets"
+  },
+  "safety_standards_followed": {
+    "ar": "المعايير المتبعة",
+    "en": "Standards Followed"
+  },
+  "site_description": {
+    "ar": "وصف عام للمنشأة والكثافة",
+    "en": "Site Description & Density"
+  },
+  "save_facility_profile": {
+    "ar": "حفظ الملف التعريفي للمنشأة",
+    "en": "Save Facility Profile"
+  },
+  "crisis_simulator": {
+    "ar": "محاكي الأزمات الذكي",
+    "en": "Intelligent Crisis Simulator"
+  },
+  "simulated_emergencies": {
+    "ar": "محاكي الأزمات",
+    "en": "Simulated Emergencies"
+  },
+  "simulator_title": {
+    "ar": "تدريب المستجيبين (AI)",
+    "en": "Responder Training (AI)"
+  },
+  "generate_scenario": {
+    "ar": "توليد سيناريو جديد",
+    "en": "Generate New Scenario"
+  },
+  "scenario_details": {
+    "ar": "تفاصيل الأزمة الميدانية",
+    "en": "Scenario Details"
+  },
+  "critical_challenges": {
+    "ar": "التحديات الحرجة",
+    "en": "Critical Challenges"
+  },
+  "success_kpis": {
+    "ar": "مؤشرات النجاح (KPIs)",
+    "en": "Success Indicators (KPIs)"
+  },
+  "difficulty_level": {
+    "ar": "مستوى الصعوبة",
+    "en": "Difficulty Level"
+  },
+  "api_key_settings": {
+    "ar": "إعدادات مفتاح API",
+    "en": "API Key Settings"
+  },
+  "appearance_and_lang": {
+    "ar": "المظهر واللغة",
+    "en": "Appearance & Language"
+  },
+  "mute_global_siren": {
+    "ar": "كتم صافرة الإنذار العالمية",
+    "en": "Mute Global Siren"
+  },
+  "siren_mute_desc": {
+    "ar": "سيتم إيقاف صوت الصافرة الحادة عند ورود بلاغ جديد",
+    "en": "The sharp siren sound will be disabled for new alerts"
+  }
+}

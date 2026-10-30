@@ -1,0 +1,12 @@
+{
+  "name": "ERS-Center-New",
+  "description": "Imported from GitHub",
+  "requestFramePermissions": [
+    "microphone",
+    "geolocation",
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

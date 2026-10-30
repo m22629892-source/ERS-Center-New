@@ -1,0 +1,1640 @@
+{
+  "pages/MobileDiagnostics.tsx": [
+    {
+      "line": 27,
+      "text": "const [deviceModel, setDeviceModel] = useState<string>('جاري الفحص...');"
+    },
+    {
+      "line": 30,
+      "text": "const [networkStatus, setNetworkStatus] = useState<string>('متصل');"
+    },
+    {
+      "line": 33,
+      "text": "const [notifPermission, setNotifPermission] = useState<string>('فحص...');"
+    },
+    {
+      "line": 40,
+      "text": "const [locationPermission, setLocationPermission] = useState<string>('فحص...');"
+    },
+    {
+      "line": 65,
+      "text": "setDeviceModel('متصفح ويب (Web Browser)');"
+    },
+    {
+      "line": 70,
+      "text": "setNetworkStatus(net.connected ? `متصل (${net.connectionType})` : 'غير متصل (Offline)');"
+    },
+    {
+      "line": 114,
+      "text": "message: 'لا يوجد رمز FCM صالح حالياً. يرجى منح صلاحية الإشعارات أولاً.'"
+    },
+    {
+      "line": 126,
+      "text": "userName: user?.name || 'مستخدم تجريبي',"
+    },
+    {
+      "line": 131,
+      "text": "title: '🔔 فحص إشعار ERS الحقيقي',"
+    },
+    {
+      "line": 132,
+      "text": "body: 'تم استلام الإشعار التجريبي بنجاح عبر قناة إنذار ERS!'"
+    },
+    {
+      "line": 139,
+      "text": "typeName: 'فحص دوري لنظام الإنذار',"
+    },
+    {
+      "line": 140,
+      "text": "locationName: 'جهاز الاختبار الحالي'"
+    },
+    {
+      "line": 146,
+      "text": "message: 'تم إرسال طلب فحص الإشعار إلى الخادم بنجاح! إذا كان التطبيق في الخلفية أو الشاشة مقفلة، ستتلقى التنبيه عبر نظام التشغيل.'"
+    },
+    {
+      "line": 151,
+      "text": "message: `فشل إرسال الإشعار: ${err.message || 'خطأ غير معروف'}`"
+    },
+    {
+      "line": 167,
+      "text": "setShiftError(res.error || 'فشل بدء المناوبة ومشاركة الموقع');"
+    },
+    {
+      "line": 171,
+      "text": "setShiftError(err.message || 'حدث خطأ أثناء تغيير حالة المناوبة');"
+    },
+    {
+      "line": 190,
+      "text": "تشخيص واختبار خدمات الموبايل"
+    },
+    {
+      "line": 193,
+      "text": "فحص شامل لتكامل الإشعارات، تسجيل الأجهزة، والـ GPS الميداني"
+    },
+    {
+      "line": 202,
+      "text": "<RefreshCw size={16} /> إعادة الفحص"
+    },
+    {
+      "line": 214,
+      "text": "<h2 className=\"font-black text-lg dark:text-white\">معلومات الجهاز والبيئة</h2>"
+    },
+    {
+      "line": 215,
+      "text": "<p className=\"text-xs text-gray-500\">{isNative ? 'تطبيق أصلي (Native APK / Capacitor)' : 'بيئة الويب / متصفح (PWA)'}</p>"
+    },
+    {
+      "line": 225,
+      "text": "<span className=\"text-gray-400 block mb-1\">طراز الجهاز</span>"
+    },
+    {
+      "line": 229,
+      "text": "<span className=\"text-gray-400 block mb-1\">نظام التشغيل</span>"
+    },
+    {
+      "line": 230,
+      "text": "<span className=\"font-bold dark:text-white\">{osVersion || 'غير محدد'}</span>"
+    },
+    {
+      "line": 233,
+      "text": "<span className=\"text-gray-400 block mb-1\">حالة الشبكة</span>"
+    },
+    {
+      "line": 239,
+      "text": "<span className=\"text-gray-400 block mb-1\">معرّف الجهاز (Device ID)</span>"
+    },
+    {
+      "line": 240,
+      "text": "<span className=\"font-mono text-[10px] block truncate dark:text-white\" title={deviceId}>{deviceId || 'جاري التوليد...'}</span>"
+    },
+    {
+      "line": 253,
+      "text": "<h2 className=\"font-black text-lg dark:text-white\">خدمة الإشعارات الفورية (FCM Push)</h2>"
+    },
+    {
+      "line": 254,
+      "text": "<p className=\"text-xs text-gray-500\">استقبال التنبيهات في الخلفية والشاشة مقفلة</p>"
+    },
+    {
+      "line": 260,
+      "text": "<CheckCircle2 size={14} /> مفعّل (Granted)"
+    },
+    {
+      "line": 264,
+      "text": "<XCircle size={14} /> غير مفعّل ({notifPermission})"
+    },
+    {
+      "line": 273,
+      "text": "<span className=\"text-gray-500 font-bold\">رمز تسجيل الجهاز (FCM Token):</span>"
+    },
+    {
+      "line": 280,
+      "text": "{copiedToken ? 'تم النسخ!' : 'نسخ التوكن'}"
+    },
+    {
+      "line": 285,
+      "text": "{fcmToken || 'لم يتم تسجيل توكن بعد. اضغط منح الصلاحية أدناه.'}"
+    },
+    {
+      "line": 291,
+      "text": "<span className=\"text-gray-500 font-bold\">قناة إنذارات أندرويد (Channel ID):</span>"
+    },
+    {
+      "line": 295,
+      "text": "<span className=\"text-gray-500 font-bold\">مستوى الأولوية (Priority):</span>"
+    },
+    {
+      "line": 296,
+      "text": "<span className=\"font-bold text-green-600 dark:text-green-400\">High / Max (صوت + اهتزاز)</span>"
+    },
+    {
+      "line": 308,
+      "text": "إرسال إشعار فحص حقيقي لهذا الجهاز"
+    },
+    {
+      "line": 329,
+      "text": "<h2 className=\"font-black text-lg dark:text-white\">خدمات الموقع الميداني (GPS Tracking)</h2>"
+    },
+    {
+      "line": 330,
+      "text": "<p className=\"text-xs text-gray-500\">تتبع المناوبة ومشاركة الموقع الحي على خريطة ERS</p>"
+    },
+    {
+      "line": 336,
+      "text": "<CheckCircle2 size={14} /> GPS مصرح به"
+    },
+    {
+      "line": 354,
+      "text": "{isShiftSharing ? 'مشاركة الموقع أثناء المناوبة: نشطة الآن' : 'مشاركة الموقع أثناء المناوبة: متوقفة'}"
+    },
+    {
+      "line": 358,
+      "text": "? 'يتم تحديث موقعك الميداني ودقته تلقائياً على خريطة العمليات'"
+    },
+    {
+      "line": 359,
+      "text": ": 'اضغط لتفعيل مشاركة موقعك المباشر مع غرفة العمليات'}"
+    },
+    {
+      "line": 374,
+      "text": "{isShiftSharing ? 'إيقاف مشاركة الموقع' : 'بدء مشاركة الموقع أثناء المناوبة'}"
+    },
+    {
+      "line": 388,
+      "text": "<span className=\"text-gray-400 block mb-1\">خط العرض (Latitude)</span>"
+    },
+    {
+      "line": 389,
+      "text": "<span className=\"font-mono font-bold text-sm dark:text-white\">{gpsReport ? gpsReport.lat : 'غير محدد'}</span>"
+    },
+    {
+      "line": 392,
+      "text": "<span className=\"text-gray-400 block mb-1\">خط الطول (Longitude)</span>"
+    },
+    {
+      "line": 393,
+      "text": "<span className=\"font-mono font-bold text-sm dark:text-white\">{gpsReport ? gpsReport.lng : 'غير محدد'}</span>"
+    },
+    {
+      "line": 396,
+      "text": "<span className=\"text-gray-400 block mb-1\">دقة الموقع (Accuracy)</span>"
+    },
+    {
+      "line": 398,
+      "text": "{gpsReport ? `± ${gpsReport.accuracy} متر` : 'غير محدد'}"
+    },
+    {
+      "line": 402,
+      "text": "<span className=\"text-gray-400 block mb-1\">توقيت القياس</span>"
+    },
+    {
+      "line": 404,
+      "text": "{gpsReport?.timestamp ? new Date(gpsReport.timestamp).toLocaleTimeString() : 'غير متوفر'}"
+    },
+    {
+      "line": 417,
+      "text": "<h3 className=\"font-black text-lg\">نظام مراقبة الأجهزة والخريطة العالمية (Leaflet)</h3>"
+    },
+    {
+      "line": 419,
+      "text": "لوحة الإدارة الشاملة لتتبع أجهزة المستخدمين عالمياً، وتحديد مصادر المواقع (GPS / IP)، ومراقبة الحضور والنزاعات."
+    },
+    {
+      "line": 428,
+      "text": "<span>فتح الخريطة العالمية</span>"
+    },
+    {
+      "line": 437,
+      "text": "دليل اختبار الموبايل على الأجهزة الفعلية"
+    },
+    {
+      "line": 440,
+      "text": "<li><strong>التطبيق مغلق تماماً:</strong> عند إرسال بلاغ جديد من غرفة التحكم، يستقبل الهاتف إشعار FCM فوري برنين قناة الإنذار <code>ers_emergency_channel</code>.</li>"
+    },
+    {
+      "line": 441,
+      "text": "<li><strong>الضغط على الإشعار:</strong> يفتح تطبيق ERS وينتقل مباشرة إلى تفاصيل البلاغ <code>/#/alarm/:id</code> بعد التحقق من تسجيل الدخول.</li>"
+    },
+    {
+      "line": 442,
+      "text": "<li><strong>منع التكرار:</strong> كل تنبيه يحمل <code>alertId</code> فريد يمنع تكرار صفارة الإنذار أو فتح الشاشة مرتين.</li>"
+    },
+    {
+      "line": 443,
+      "text": "<li><strong>تسجيل الخروج:</strong> عند خروج المستخدم، يتم إلغاء ربط توكن الجهاز فوراً من <code>user_devices</code> لمنع وصول بلاغات حساسة لمستخدمين آخرين.</li>"
+    },
+    {
+      "line": 444,
+      "text": "<li><strong>الموقع في الخلفية:</strong> زر \"بدء مشاركة الموقع أثناء المناوبة\" يحافظ على إرسال الإحداثيات كل 10-15 ثانية أو عند التحرك &gt; 10 أمتار لتوفير البطارية.</li>"
+    }
+  ],
+  "pages/admin/ConnectedDevicesMap.tsx": [
+    {
+      "line": 252,
+      "text": "<span class=\"absolute -bottom-1 -right-1 text-[9px] bg-white dark:bg-gray-900 rounded-full shadow px-0.5 border\" title=\"${isGps ? 'GPS محدد بدقة' : 'موقع تقريبي عبر IP'}\">"
+    },
+    {
+      "line": 300,
+      "text": "<span class=\"font-bold text-gray-800\">${device.city || t('unspecified')}، ${device.country || t('unspecified')}</span>"
+    },
+    {
+      "line": 367,
+      "text": "setSimulationNotice('جاري طلب فحص الموقع الجغرافي وتحديثه لحظياً...');"
+    },
+    {
+      "line": 370,
+      "text": "setSimulationNotice('تم تحديث إحداثيات وموقع جهازك بنجاح.');"
+    },
+    {
+      "line": 373,
+      "text": "setSimulationNotice('حدث خطأ أثناء فحص الموقع.');"
+    },
+    {
+      "line": 380,
+      "text": "setSimulationNotice('جاري محاكاة انتقال الجهاز من السعودية إلى مصر (القاهرة)...');"
+    },
+    {
+      "line": 384,
+      "text": "'جمهورية مصر العربية',"
+    },
+    {
+      "line": 385,
+      "text": "'القاهرة',"
+    },
+    {
+      "line": 390,
+      "text": "setSimulationNotice('نجحت المحاكاة! تم تحديث موقع الجهاز إلى مصر مع رفع الإصدار وتوثيق السجل دون تكرار.');"
+    },
+    {
+      "line": 393,
+      "text": "setSimulationNotice(`فشلت المحاكاة: ${e.message}`);"
+    },
+    {
+      "line": 400,
+      "text": "setSimulationNotice('جاري محاكاة عودة الجهاز إلى المملكة العربية السعودية (الرياض)...');"
+    },
+    {
+      "line": 404,
+      "text": "'المملكة العربية السعودية',"
+    },
+    {
+      "line": 405,
+      "text": "'الرياض',"
+    },
+    {
+      "line": 410,
+      "text": "setSimulationNotice('نجحت المحاكاة! تم تسجيل العودة للرياض بسلاسة مع التحقق من عدم تعارض الجلسات.');"
+    },
+    {
+      "line": 413,
+      "text": "setSimulationNotice(`فشلت المحاكاة: ${e.message}`);"
+    },
+    {
+      "line": 429,
+      "text": "<h2 className=\"text-xl font-black\">غير مصرح لك بالوصول</h2>"
+    },
+    {
+      "line": 430,
+      "text": "<p className=\"text-gray-500 text-sm mt-1\">هذه اللوحة مخصصة لمدراء النظام فقط لمراقبة الأجهزة العالمية.</p>"
+    },
+    {
+      "line": 431,
+      "text": "<Button onClick={() => navigate('/')} className=\"mt-4\">العودة للرئيسية</Button>"
+    },
+    {
+      "line": 447,
+      "text": "مراقبة الأجهزة والمواقع العالمية"
+    },
+    {
+      "line": 450,
+      "text": "بث لحظي نشط"
+    },
+    {
+      "line": 454,
+      "text": "تحديد دقيق عبر GPS و IP Geolocation مع إدارة النزاعات وحفظ السجل الزمني"
+    },
+    {
+      "line": 466,
+      "text": "<RefreshCw size={14} /> فحص موقعي الآن"
+    },
+    {
+      "line": 474,
+      "text": "<ArrowLeft size={14} /> العودة للإدارة"
+    },
+    {
+      "line": 546,
+      "text": "<span className=\"text-[10px] text-amber-500 font-bold mt-1\">{availableCountries.slice(0, 2).join('، ') || '—'}</span>"
+    },
+    {
+      "line": 719,
+      "text": "{dev.city}، {dev.country}"
+    },
+    {
+      "line": 767,
+      "text": "إصدار الموقع: v{selectedDevice.locationVersion || 1}"
+    },
+    {
+      "line": 771,
+      "text": "معرف التثبيت: {selectedDevice.installationId} | الجهاز: {selectedDevice.deviceId}"
+    },
+    {
+      "line": 789,
+      "text": "<Info size={14} /> الحقول المسجلة في Firestore (users/{selectedDevice.userId}/devices/{selectedDevice.deviceId})"
+    },
+    {
+      "line": 793,
+      "text": "<MetaItem label=\"المستخدم (userId)\" value={selectedDevice.userId} />"
+    },
+    {
+      "line": 794,
+      "text": "<MetaItem label=\"اسم المستخدم (userName)\" value={selectedDevice.userName || selectedDevice.userId} />"
+    },
+    {
+      "line": 795,
+      "text": "<MetaItem label=\"جلسة العمل الحالية (sessionId)\" value={selectedDevice.sessionId} />"
+    },
+    {
+      "line": 796,
+      "text": "<MetaItem label=\"الجلسة النشطة (activeSessionId)\" value={selectedDevice.activeSessionId} />"
+    },
+    {
+      "line": 797,
+      "text": "<MetaItem label=\"نظام التشغيل (operatingSystem)\" value={selectedDevice.operatingSystem} />"
+    },
+    {
+      "line": 798,
+      "text": "<MetaItem label=\"المتصفح (browser)\" value={selectedDevice.browser} />"
+    },
+    {
+      "line": 799,
+      "text": "<MetaItem label=\"نوع الجهاز (deviceType)\" value={selectedDevice.deviceType} />"
+    },
+    {
+      "line": 800,
+      "text": "<MetaItem label=\"عنوان IP (ipAddress)\" value={selectedDevice.ipAddress} isMono />"
+    },
+    {
+      "line": 801,
+      "text": "<MetaItem label=\"الدولة (country / countryCode)\" value={`${selectedDevice.country} (${selectedDevice.countryCode})`} />"
+    },
+    {
+      "line": 802,
+      "text": "<MetaItem label=\"المدينة والمنطقة (city / region)\" value={`${selectedDevice.city} - ${selectedDevice.region}`} />"
+    },
+    {
+      "line": 803,
+      "text": "<MetaItem label=\"خط العرض (latitude)\" value={String(selectedDevice.latitude)} isMono />"
+    },
+    {
+      "line": 804,
+      "text": "<MetaItem label=\"خط الطول (longitude)\" value={String(selectedDevice.longitude)} isMono />"
+    },
+    {
+      "line": 805,
+      "text": "<MetaItem label=\"مصدر الموقع (locationSource)\" value={selectedDevice.locationSource} />"
+    },
+    {
+      "line": 806,
+      "text": "<MetaItem label=\"دقة الموقع (locationAccuracy)\" value={`${selectedDevice.locationAccuracy} متر`} />"
+    },
+    {
+      "line": 807,
+      "text": "<MetaItem label=\"حالة الموقع (locationStatus)\" value={selectedDevice.locationStatus} />"
+    },
+    {
+      "line": 808,
+      "text": "<MetaItem label=\"توقيت الرصد الفعلي (locationObservedAt)\" value={new Date(selectedDevice.locationObservedAt).toLocaleString('ar-EG')} />"
+    },
+    {
+      "line": 809,
+      "text": "<MetaItem label=\"توقيت التحديث بالخادم (locationUpdatedAt)\" value={new Date(selectedDevice.locationUpdatedAt).toLocaleString('ar-EG')} />"
+    },
+    {
+      "line": 810,
+      "text": "<MetaItem label=\"آخر فحص IP (lastIpCheckAt)\" value={new Date(selectedDevice.lastIpCheckAt).toLocaleString('ar-EG')} />"
+    },
+    {
+      "line": 811,
+      "text": "<MetaItem label=\"آخر دولة معروفة (lastKnownCountry)\" value={selectedDevice.lastKnownCountry} />"
+    },
+    {
+      "line": 812,
+      "text": "<MetaItem label=\"آخر مدينة معروفة (lastKnownCity)\" value={selectedDevice.lastKnownCity} />"
+    },
+    {
+      "line": 813,
+      "text": "<MetaItem label=\"حالة الاتصال (isOnline)\" value={selectedDevice.isOnline ? 'متصل (Online)' : 'غير متصل (Offline)'} isHighlight={selectedDevice.isOnline} />"
+    },
+    {
+      "line": 814,
+      "text": "<MetaItem label=\"أول ظهور (firstSeen)\" value={new Date(selectedDevice.firstSeen).toLocaleString('ar-EG')} />"
+    },
+    {
+      "line": 815,
+      "text": "<MetaItem label=\"آخر ظهور (lastSeen)\" value={new Date(selectedDevice.lastSeen).toLocaleString('ar-EG')} />"
+    },
+    {
+      "line": 816,
+      "text": "<MetaItem label=\"إذن الإشعارات (notificationEnabled)\" value={selectedDevice.notificationEnabled ? 'مفعل' : 'معطل'} />"
+    },
+    {
+      "line": 817,
+      "text": "<MetaItem label=\"رمز FCM Token\" value={selectedDevice.fcmToken ? `${selectedDevice.fcmToken.slice(0, 15)}...` : 'غير متوفر'} isMono />"
+    },
+    {
+      "line": 825,
+      "text": "<History size={14} /> سجل تحركات وتغيرات الموقع الجغرافي (locationHistory)"
+    },
+    {
+      "line": 827,
+      "text": "<span className=\"text-[10px] text-gray-400 font-bold\">{historyEntries.length} سجلات مسجلة</span>"
+    },
+    {
+      "line": 831,
+      "text": "<div className=\"py-8 text-center text-xs font-bold text-gray-400\">جاري تحميل السجل...</div>"
+    },
+    {
+      "line": 834,
+      "text": "لا يوجد سجل تحركات مسجل لهذا الجهاز حتى الآن (يتم التسجيل تلقائياً عند تغيير الدولة أو المدينة أو الحركة)."
+    },
+    {
+      "line": 849,
+      "text": "{item.city}، {item.country} ({item.countryCode})"
+    },
+    {
+      "line": 852,
+      "text": "{item.reason || 'تحديث دوري للموقع'}"
+    },
+    {
+      "line": 862,
+      "text": "{item.locationSource === 'gps' ? '🛰️ GPS دقيق' : '🌐 تقريبي IP'}"
+    }
+  ],
+  "pages/admin/CaseReports.tsx": [
+    {
+      "line": 80,
+      "text": "<h2 style=\"text-align:center; color:#1976d2;\">سجل بلاغات الطوارئ ERS System</h2>"
+    },
+    {
+      "line": 81,
+      "text": "<p style=\"text-align:center;\">تاريخ الاستخراج: ${new Date().toLocaleString('ar-EG')}</p>"
+    },
+    {
+      "line": 147,
+      "text": "<label className=\"text-[10px] font-black text-gray-400 uppercase tracking-widest px-2 flex items-center gap-1\"><Search size={10}/> بحث باسم الحالة</label>"
+    },
+    {
+      "line": 152,
+      "text": "placeholder=\"مثلاً: حريق، تسريب...\""
+    },
+    {
+      "line": 157,
+      "text": "<label className=\"text-[10px] font-black text-gray-400 uppercase tracking-widest px-2 flex items-center gap-1\"><Filter size={10}/> فلترة الحالة</label>"
+    },
+    {
+      "line": 159,
+      "text": "<option value=\"all\">الكل</option>"
+    },
+    {
+      "line": 160,
+      "text": "<option value=\"closed\">مغلقة فقط</option>"
+    },
+    {
+      "line": 161,
+      "text": "<option value=\"active\">نشطة فقط</option>"
+    },
+    {
+      "line": 165,
+      "text": "<label className=\"text-[10px] font-black text-gray-400 uppercase tracking-widest px-2 flex items-center gap-1\"><Calendar size={10}/> من تاريخ</label>"
+    },
+    {
+      "line": 169,
+      "text": "<label className=\"text-[10px] font-black text-gray-400 uppercase tracking-widest px-2 flex items-center gap-1\"><Calendar size={10}/> إلى تاريخ</label>"
+    },
+    {
+      "line": 180,
+      "text": "<th className=\"px-4 sm:px-6 py-4 text-right text-[10px] font-black text-gray-400 uppercase tracking-widest\">نوع الطوارئ</th>"
+    },
+    {
+      "line": 181,
+      "text": "<th className=\"px-4 sm:px-6 py-4 text-right text-[10px] font-black text-gray-400 uppercase tracking-widest\">غير المعنيين</th>"
+    },
+    {
+      "line": 182,
+      "text": "<th className=\"px-4 sm:px-6 py-4 text-right text-[10px] font-black text-gray-400 uppercase tracking-widest\">أغلق بواسطة</th>"
+    },
+    {
+      "line": 183,
+      "text": "<th className=\"px-4 sm:px-6 py-4 text-center text-[10px] font-black text-gray-400 uppercase tracking-widest no-print\">التوثيق والملاحظات</th>"
+    },
+    {
+      "line": 201,
+      "text": "<span className=\"text-[10px] text-gray-400 font-bold\">فرد</span>"
+    },
+    {
+      "line": 211,
+      "text": "<span className=\"text-[10px] font-black text-red-500 uppercase animate-pulse\">نشطة حالياً</span>"
+    },
+    {
+      "line": 220,
+      "text": "<span>المهام والتسجيلات</span>"
+    },
+    {
+      "line": 235,
+      "text": "<td colSpan={5} className=\"p-10 text-center text-gray-400 font-bold italic text-xs\">لا توجد بلاغات تطابق معايير البحث</td>"
+    },
+    {
+      "line": 247,
+      "text": "title={`توثيق وسجل الحادث: ${inspectingEmergency?.typeName || ''} (${inspectingEmergency?.locationName || ''})`}"
+    },
+    {
+      "line": 253,
+      "text": "<p className=\"text-xs font-bold\">جاري تحميل سجل المهام والملاحظات الصوتية الموثقة...</p>"
+    },
+    {
+      "line": 262,
+      "text": "سجل المهام والبروتوكول الميداني ({inspectingTasks.length})"
+    },
+    {
+      "line": 265,
+      "text": "{inspectingTasks.filter(t => t.status === 'completed').length} منجزة"
+    },
+    {
+      "line": 270,
+      "text": "<p className=\"text-xs text-gray-400 italic text-center py-3\">لا توجد مهام مسجلة لهذا الحادث.</p>"
+    },
+    {
+      "line": 293,
+      "text": "<span>المنفذ: {task.completedByName}</span>"
+    },
+    {
+      "line": 295,
+      "text": "<span>في {new Date(task.completedAt).toLocaleTimeString('ar-SA')}</span>"
+    },
+    {
+      "line": 303,
+      "text": "<span>معتمد من المشرف: {task.approvedByName}</span>"
+    },
+    {
+      "line": 309,
+      "text": "ملاحظة: {task.notes}"
+    },
+    {
+      "line": 315,
+      "text": "سبب التجاوز: {task.skipReason}"
+    },
+    {
+      "line": 329,
+      "text": "الملاحظات الصوتية الموثقة ({inspectingVoiceNotes.length})"
+    },
+    {
+      "line": 334,
+      "text": "<p className=\"text-xs text-gray-400 italic text-center py-3\">لا توجد تسجيلات صوتية مرتبطة بهذا الحادث.</p>"
+    },
+    {
+      "line": 346,
+      "text": "{vn.durationSeconds} ثانية"
+    },
+    {
+      "line": 374,
+      "text": "<span>{playingVoiceId === vn.noteId ? 'إيقاف' : 'استماع'}</span>"
+    },
+    {
+      "line": 387,
+      "text": "إغلاق"
+    }
+  ],
+  "pages/admin/RolesManagement.tsx": [
+    {
+      "line": 59,
+      "text": "await logAdminAction('BULK_DELETE_USERS', `حذف ${selectedUsers.length} مستخدم`);"
+    },
+    {
+      "line": 74,
+      "text": "await logAdminAction('DELETE_USER', `حذف المستخدم: ${deleteId}`);"
+    },
+    {
+      "line": 78,
+      "text": "alert(\"فشل الحذف\");"
+    },
+    {
+      "line": 118,
+      "text": "await logAdminAction('UPDATE_USER', `تحديث بيانات المستخدم: ${currentUser.username}`);"
+    },
+    {
+      "line": 124,
+      "text": "setModalError(\"اسم المستخدم هذا مسجل مسبقاً، يرجى اختيار اسم آخر.\");"
+    },
+    {
+      "line": 140,
+      "text": "await logAdminAction('CREATE_USER', `إنشاء مستخدم جديد: ${newUser.name}`);"
+    },
+    {
+      "line": 145,
+      "text": "setModalError(\"فشل في حفظ البيانات، يرجى المحاولة لاحقاً.\");"
+    },
+    {
+      "line": 191,
+      "text": "header: 'الحالة',"
+    },
+    {
+      "line": 197,
+      "text": "<span className=\"text-[10px] text-gray-500\">{isOnline ? 'متصل' : 'أوفلاين'}</span>"
+    },
+    {
+      "line": 208,
+      "text": "<Shield size={24} className=\"text-blue-500\" /> إدارة المستخدمين"
+    },
+    {
+      "line": 213,
+      "text": "<Plus size={18} /> إضافة مستخدم جديد"
+    },
+    {
+      "line": 217,
+      "text": "<Trash2 size={18} className=\"mr-2\"/> حذف المحدد ({selectedUsers.length})"
+    },
+    {
+      "line": 231,
+      "text": "placeholder=\"بحث بالاسم أو اسم المستخدم...\""
+    },
+    {
+      "line": 244,
+      "text": "<option value=\"all\">كل الأدوار</option>"
+    },
+    {
+      "line": 266,
+      "text": "title={currentUser ? \"تعديل بيانات المستخدم\" : \"إنشاء حساب جديد\"}"
+    },
+    {
+      "line": 276,
+      "text": "<label className=\"block text-xs font-bold text-gray-400 mb-1\">الاسم الكامل</label>"
+    },
+    {
+      "line": 284,
+      "text": "placeholder=\"أدخل الاسم الحقيقي\""
+    },
+    {
+      "line": 291,
+      "text": "<label className=\"block text-xs font-bold text-gray-400 mb-1\">اسم المستخدم</label>"
+    },
+    {
+      "line": 300,
+      "text": "placeholder=\"اسم دخول النظام\""
+    },
+    {
+      "line": 307,
+      "text": "<label className=\"block text-xs font-bold text-gray-400 mb-1\">كلمة المرور</label>"
+    },
+    {
+      "line": 315,
+      "text": "placeholder=\"كلمة مرور الدخول\""
+    },
+    {
+      "line": 322,
+      "text": "<label className=\"block text-xs font-bold text-gray-400 mb-1\">تحديد الدور (Role)</label>"
+    },
+    {
+      "line": 328,
+      "text": "<option value={UserRole.USER}>مستخدم عادي (User)</option>"
+    },
+    {
+      "line": 329,
+      "text": "<option value={UserRole.RESPONDER}>مستجيب ميداني (Responder)</option>"
+    },
+    {
+      "line": 330,
+      "text": "<option value={UserRole.ADMIN}>مسؤول نظام (Admin)</option>"
+    },
+    {
+      "line": 336,
+      "text": "{isSaving ? <Loader2 className=\"animate-spin mx-auto\" /> : (currentUser ? \"حفظ التعديلات\" : \"إضافة المستخدم الآن\")}"
+    },
+    {
+      "line": 345,
+      "text": "title=\"تأكيد الحذف الجماعي\""
+    },
+    {
+      "line": 346,
+      "text": "message={`هل أنت متأكد من حذف ${selectedUsers.length} مستخدم؟ لا يمكن التراجع عن هذا الإجراء.`}"
+    },
+    {
+      "line": 353,
+      "text": "title=\"حذف المستخدم\""
+    },
+    {
+      "line": 354,
+      "text": "message=\"هل أنت متأكد من حذف هذا المستخدم نهائياً من النظام؟\""
+    }
+  ],
+  "pages/AiReports.tsx": [
+    {
+      "line": 88,
+      "text": "throw new Error(\"يرجى اختيار بلاغ من القائمة أولاً لتوليد التقرير عليه.\");"
+    },
+    {
+      "line": 143,
+      "text": "<h1 style=\"color:#1976d2; margin-bottom: 5px;\">تقرير الذكاء الاصطناعي - ERS System</h1>"
+    },
+    {
+      "line": 144,
+      "text": "<p style=\"color:#6b7280;\">تاريخ التقرير: ${new Date().toLocaleDateString('ar-EG')}</p>"
+    },
+    {
+      "line": 200,
+      "text": "title: 'تقرير ذكاء اصطناعي - ERS System',"
+    },
+    {
+      "line": 201,
+      "text": "text: 'مرفق تقرير الاستجابة الذكي من نظام ERS System.'"
+    },
+    {
+      "line": 231,
+      "text": "<button onClick={() => setTimeFilter('24h')} className={`py-2 px-1 rounded-xl text-[10px] font-black border-2 transition-all ${timeFilter === '24h' ? 'bg-primary text-white border-primary' : 'bg-gray-50 dark:bg-gray-900 border-transparent text-gray-500'}`}>آخر 24 ساعة</button>"
+    },
+    {
+      "line": 232,
+      "text": "<button onClick={() => setTimeFilter('week')} className={`py-2 px-1 rounded-xl text-[10px] font-black border-2 transition-all ${timeFilter === 'week' ? 'bg-primary text-white border-primary' : 'bg-gray-50 dark:bg-gray-900 border-transparent text-gray-500'}`}>آخر أسبوع</button>"
+    },
+    {
+      "line": 233,
+      "text": "<button onClick={() => setTimeFilter('month')} className={`py-2 px-1 rounded-xl text-[10px] font-black border-2 transition-all ${timeFilter === 'month' ? 'bg-primary text-white border-primary' : 'bg-gray-50 dark:bg-gray-900 border-transparent text-gray-500'}`}>آخر شهر</button>"
+    },
+    {
+      "line": 234,
+      "text": "<button onClick={() => setTimeFilter('custom')} className={`py-2 px-1 rounded-xl text-[10px] font-black border-2 transition-all ${timeFilter === 'custom' ? 'bg-primary text-white border-primary' : 'bg-gray-50 dark:bg-gray-900 border-transparent text-gray-500'}`}>فترة مخصصة</button>"
+    },
+    {
+      "line": 243,
+      "text": "<label className=\"text-[8px] font-bold text-gray-400 uppercase\">من تاريخ</label>"
+    },
+    {
+      "line": 248,
+      "text": "<label className=\"text-[8px] font-bold text-gray-400 uppercase\">إلى تاريخ</label>"
+    },
+    {
+      "line": 277,
+      "text": "<p className=\"text-[9px] font-black text-gray-400 uppercase tracking-widest px-2 mb-2\">البلاغات المطابقة ({filteredEmergencies.length})</p>"
+    },
+    {
+      "line": 309,
+      "text": "{generating ? <Loader2 className=\"animate-spin\" size={16} /> : (report ? \"تحديث التقرير\" : \"توليد التقرير الآن\")}"
+    },
+    {
+      "line": 312,
+      "text": "<button onClick={handleShare} disabled={!report || generating} className=\"p-2.5 bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-600 rounded-xl text-primary hover:bg-primary/10 disabled:opacity-30 transition-all shadow-sm\" title=\"مشاركة PDF\">"
+    },
+    {
+      "line": 315,
+      "text": "<button onClick={handlePrint} disabled={!report || generating} className=\"p-2.5 bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-600 rounded-xl text-primary hover:bg-primary/10 disabled:opacity-30 transition-all shadow-sm\" title=\"طباعة\">"
+    },
+    {
+      "line": 318,
+      "text": "<button onClick={handleExportPDF} disabled={!report || generating} className=\"p-2.5 bg-white dark:bg-gray-700 border border-gray-200 dark:border-gray-600 rounded-xl text-primary hover:bg-primary/10 disabled:opacity-30 transition-all shadow-sm\" title=\"تصدير PDF\">"
+    },
+    {
+      "line": 348,
+      "text": "const hasHeaderPattern = lines.some(l => l.startsWith('التاريخ:') || l.startsWith('اسم الحالة:'));"
+    },
+    {
+      "line": 351,
+      "text": "const dateLine = lines.find(l => l.startsWith('التاريخ:')) || '';"
+    },
+    {
+      "line": 352,
+      "text": "const caseLine = lines.find(l => l.startsWith('اسم الحالة:')) || '';"
+    },
+    {
+      "line": 353,
+      "text": "const timeLine = lines.find(l => l.startsWith('توقيت حالة الطوارئ:')) || '';"
+    },
+    {
+      "line": 354,
+      "text": "const metaLine = lines.find(l => l.startsWith('الموقع:')) || '';"
+    },
+    {
+      "line": 355,
+      "text": "const otherLines = lines.filter(l => !l.startsWith('التاريخ:') && !l.startsWith('اسم الحالة:') && !l.startsWith('توقيت حالة الطوارئ:') && !l.startsWith('الموقع:') && !l.startsWith('---'));"
+    },
+    {
+      "line": 362,
+      "text": "<span className=\"font-mono text-[11px] bg-white dark:bg-gray-800 px-3 py-1 rounded-full border border-primary/20 shadow-xs\">{metaLine.split('|').find(s => s.includes('المرجع')) || 'ERS-OFFICIAL'}</span>"
+    },
+    {
+      "line": 385,
+      "text": "const isMainTitle = bIdx === 0 && (lines[0].startsWith('تقرير') || lines[0].startsWith('مذكرة'));"
+    },
+    {
+      "line": 386,
+      "text": "const isSectionHeader = /^(أولاً|ثانياً|ثالثاً|رابعاً|خامساً|سادساً|سابعاً|الموضوع|الملف المرجعي|رقم المرجع|تاريخ الإصدار):?/i.test(lines[0]);"
+    },
+    {
+      "line": 413,
+      "text": "const isNumbered = /^[0-9١-٩]+[\\.\\)]/.test(line);"
+    },
+    {
+      "line": 436,
+      "text": "const isNumbered = /^[0-9١-٩]+[\\.\\)]/.test(line);"
+    },
+    {
+      "line": 461,
+      "text": "<p className=\"text-xs font-black mt-4 uppercase tracking-widest\">حدد معايير الفلترة واضغط توليد</p>"
+    }
+  ],
+  "pages/admin/CrisisSimulator.tsx": [
+    {
+      "line": 50,
+      "text": "} catch (e) { alert(\"فشل حفظ الإعدادات\"); }"
+    },
+    {
+      "line": 78,
+      "text": "<h2 style=\"color:#1976d2; margin-bottom: 5px;\">تقرير محاكي الأزمات الذكي ERS System</h2>"
+    },
+    {
+      "line": 79,
+      "text": "<p style=\"font-size:12px; color:#6b7280;\">تاريخ التوليد: ${new Date().toLocaleString('ar-EG')}</p>"
+    },
+    {
+      "line": 114,
+      "text": "alert(\"أداة PDF غير محملة بعد، يرجى المحاولة مرة أخرى.\");"
+    },
+    {
+      "line": 126,
+      "text": "alert(`فشل توليد السيناريو: ${e.message}`);"
+    },
+    {
+      "line": 145,
+      "text": "<Settings2 size={16} /> تخصيص محتوى المحاكي"
+    },
+    {
+      "line": 147,
+      "text": "<p className=\"text-[10px] text-gray-400 font-bold\">أدخل أنواع الحوادث أو المواقف التي تريد أن يركز عليها الذكاء الاصطناعي عند التوليد:</p>"
+    },
+    {
+      "line": 151,
+      "text": "placeholder=\"مثال: تسريب غاز في المعمل الكيميائي، حريق في غرفة الخوادم بالدور الثالث...\""
+    },
+    {
+      "line": 156,
+      "text": "{savingSettings ? <Loader2 className=\"animate-spin\" /> : <><Save size={14} className=\"mr-1\"/> حفظ المواقف المخصصة</>}"
+    },
+    {
+      "line": 165,
+      "text": "<h3 className=\"text-2xl sm:text-3xl font-black mb-3\">توليد سيناريو مؤسسي</h3>"
+    },
+    {
+      "line": 166,
+      "text": "<p className=\"text-indigo-100 font-medium leading-relaxed text-sm sm:text-base italic\">تقوم وحدة ERS الذكية بربط بيانات منشأتك والمواقف المخصصة أعلاه لإنشاء تجربة تدريبية دقيقة ومتقدمة.</p>"
+    },
+    {
+      "line": 172,
+      "text": "{loading ? <Loader2 className=\"animate-spin\" size={20} /> : <Play size={20} fill=\"currentColor\" />} {scenario ? 'توليد سيناريو مختلف' : 'بدء المحاكاة الآن'}"
+    },
+    {
+      "line": 189,
+      "text": "<span className={`mt-2 inline-block px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-widest ${scenario.difficulty === 'صعب' ? 'bg-red-100 text-red-600' : 'bg-green-100 text-green-600'}`}>مستوى الصعوبة: {scenario.difficulty}</span>"
+    },
+    {
+      "line": 192,
+      "text": "<button onClick={handlePrint} className=\"p-3 bg-gray-50 dark:bg-gray-700 text-gray-500 hover:text-primary rounded-xl transition-all border border-gray-100 dark:border-gray-600 shadow-sm\" title=\"طباعة\">"
+    },
+    {
+      "line": 195,
+      "text": "<button onClick={handleExportPDF} className=\"p-3 bg-gray-50 dark:bg-gray-700 text-gray-500 hover:text-primary rounded-xl transition-all border border-gray-100 dark:border-gray-600 shadow-sm\" title=\"تصدير PDF\">"
+    },
+    {
+      "line": 203,
+      "text": "<AlertTriangle size={18} className=\"text-orange-500\"/> تفاصيل الأزمة الميدانية"
+    },
+    {
+      "line": 213,
+      "text": "<Zap className=\"text-blue-500\" size={18}/> التحديات الحرجة"
+    },
+    {
+      "line": 226,
+      "text": "<Target className=\"text-green-500\" size={18}/> مؤشرات النجاح (KPIs)"
+    },
+    {
+      "line": 240,
+      "text": "<span>ERS System - محاكي الأزمات الذكي</span>"
+    },
+    {
+      "line": 241,
+      "text": "<span>تاريخ التوليد: ${new Date().toLocaleString('ar-EG')}</span>"
+    }
+  ],
+  "pages/admin/PresentationAssets.tsx": [
+    {
+      "line": 18,
+      "text": "title: \"شاشة الدخول الذكية\","
+    },
+    {
+      "line": 19,
+      "text": "description: \"واجهة دخول مستقبلية مع بصمة إصبع وتصميم Minimalist ضوئي.\","
+    },
+    {
+      "line": 24,
+      "text": "title: \"لوحة العمليات الحية\","
+    },
+    {
+      "line": 25,
+      "text": "description: \"غرفة تحكم مركزية بشاشات ضخمة تعرض خرائط وبيانات حية.\","
+    },
+    {
+      "line": 30,
+      "text": "title: \"الرؤية العميقة للذكاء الاصطناعي\","
+    },
+    {
+      "line": 31,
+      "text": "description: \"تحليل مشهد حريق باستخدام عيون روبوتية وبيانات HUD.\","
+    },
+    {
+      "line": 36,
+      "text": "title: \"الملاحة بالواقع المعزز\","
+    },
+    {
+      "line": 37,
+      "text": "description: \"أسهم توجيه ذكية تظهر في ممر بناية مشتعلة.\","
+    },
+    {
+      "line": 42,
+      "text": "title: \"التواصل والترجمة الفورية\","
+    },
+    {
+      "line": 43,
+      "text": "description: \"مسعفون يتواصلون عبر أجهزة معصم ذكية وهولوجرام.\","
+    },
+    {
+      "line": 48,
+      "text": "title: \"العقل الاستراتيجي والتقارير\","
+    },
+    {
+      "line": 49,
+      "text": "description: \"دماغ رقمي يولد تقارير وبيانات قانونية معقدة.\","
+    },
+    {
+      "line": 64,
+      "text": "throw new Error(errData.error || 'فشل توليد الصورة');"
+    },
+    {
+      "line": 71,
+      "text": "alert(\"فشل توليد الصورة: \" + error.message);"
+    },
+    {
+      "line": 91,
+      "text": "<p className=\"text-gray-500 font-bold text-sm\">قم بتوليد صور احترافية عالية الدقة لشرائح العرض التقديمي</p>"
+    },
+    {
+      "line": 100,
+      "text": "ملاحظة: هذه العملية تتطلب مفتاح API مدفوع (GCP Paid Project). الصور المولدة هنا هي أصول بصرية (Marketing Visuals) لتستخدمها في تصميم شرائحك لتبهر الجمهور بمدى تطور النظام."
+    },
+    {
+      "line": 128,
+      "text": "<p className=\"text-xs font-black animate-pulse\">جاري الرسم بالذكاء الاصطناعي...</p>"
+    },
+    {
+      "line": 145,
+      "text": "{generatedImages[slide.id] ? \"إعادة توليد (Pro)\" : t('generate_slide_img')}"
+    }
+  ],
+  "pages/Alarm.tsx": [
+    {
+      "line": 91,
+      "text": "const raw = (typeName || 'الطوارئ').trim();"
+    },
+    {
+      "line": 92,
+      "text": "if (raw.startsWith('حالة')) {"
+    },
+    {
+      "line": 93,
+      "text": "return `نداء استجابة ${raw}`;"
+    },
+    {
+      "line": 95,
+      "text": "return `نداء استجابة حالة ${raw}`;"
+    },
+    {
+      "line": 377,
+      "text": "<h1 className=\"text-3xl sm:text-6xl font-black uppercase tracking-tighter italic\">تنبيه عام</h1>"
+    },
+    {
+      "line": 382,
+      "text": "<span className=\"text-xl font-black tracking-widest uppercase\">النداء الميداني الذكي</span>"
+    },
+    {
+      "line": 412,
+      "text": "<span className=\"text-[10px] font-black text-red-600 uppercase tracking-widest\">بث ذكاء اصطناعي فوري</span>"
+    },
+    {
+      "line": 439,
+      "text": "<StatBox icon={<Clock className=\"text-orange-500\" size={16}/>} label=\"الزمن\" value={elapsedTime} />"
+    },
+    {
+      "line": 465,
+      "text": "<textarea value={actionNotes} onChange={(e) => setActionNotes(e.target.value)} placeholder=\"صف الإجراءات التي قمت بها هنا...\" className=\"w-full p-4 rounded-3xl border-2 border-gray-200 dark:border-gray-700 dark:bg-gray-900 dark:text-white outline-none text-sm font-bold min-h-[120px] focus:border-primary shadow-inner resize-none\" />"
+    },
+    {
+      "line": 470,
+      "text": "<Loader2 className=\"animate-spin\" /> جاري الإرسال وتأمين الموقع..."
+    },
+    {
+      "line": 474,
+      "text": "إرسال الاستجابة وإيقاف كافة الإنذارات"
+    },
+    {
+      "line": 482,
+      "text": "{isAdmin && <Button variant=\"outline\" className=\"w-full py-4 font-black rounded-2xl border-red-500 text-red-500 hover:bg-red-50 text-xs shadow-sm\" onClick={() => setIsCloseModalOpen(true)}>إغلاق البلاغ نهائياً</Button>}"
+    },
+    {
+      "line": 487,
+      "text": "<Modal isOpen={isScanning} onClose={stopScanner} title=\"ماسح رمز تأكيد الوصول\">"
+    },
+    {
+      "line": 492,
+      "text": "<Button variant=\"outline\" fullWidth onClick={stopScanner} className=\"rounded-xl font-black py-3\">إلغاء</Button>"
+    }
+  ],
+  "pages/NewEmergency.tsx": [
+    {
+      "line": 80,
+      "text": "if (result.notes) setNotes(prev => `${prev}\\n[صوت]: ${result.notes}`);"
+    },
+    {
+      "line": 94,
+      "text": "} catch (err) { setMicError(\"إذن الميكروفون مطلوب.\"); }"
+    },
+    {
+      "line": 119,
+      "text": "if (!typeId || !locationId) { alert(\"يرجى اختيار النوع والموقع\"); return; }"
+    },
+    {
+      "line": 127,
+      "text": "typeName: selectedType?.type_name || 'طوارئ عامة',"
+    },
+    {
+      "line": 129,
+      "text": "locationName: selectedLocation?.name || 'غير محدد',"
+    },
+    {
+      "line": 135,
+      "text": "} catch (e) { alert(\"حدث خطأ أثناء إرسال البلاغ\"); }"
+    },
+    {
+      "line": 144,
+      "text": "<AlertCircle size={32} className=\"text-primary\" /> بلاغ طوارئ جديد"
+    },
+    {
+      "line": 157,
+      "text": "<span className=\"font-bold text-center\">ارفع صورة الحادث (اختياري)</span>"
+    },
+    {
+      "line": 163,
+      "text": "{analyzingImage ? <Loader2 className=\"animate-spin\" /> : <><Bot className=\"mr-2\" /> تحليل الذكاء الاصطناعي للمشهد</>}"
+    },
+    {
+      "line": 173,
+      "text": "<label className=\"block text-sm font-bold text-gray-700 dark:text-gray-300 mb-3 uppercase tracking-widest px-2\">نوع الطوارئ</label>"
+    },
+    {
+      "line": 185,
+      "text": "<label className=\"block text-sm font-bold text-gray-700 dark:text-gray-300 mb-2 uppercase tracking-widest px-2\">الموقع المحدد</label>"
+    },
+    {
+      "line": 187,
+      "text": "<option value=\"\">اختر الموقع من القائمة</option>"
+    },
+    {
+      "line": 192,
+      "text": "<textarea value={notes} onChange={(e) => setNotes(e.target.value)} placeholder=\"اكتب أي تفاصيل إضافية عن المشهد...\" className=\"w-full p-4 rounded-2xl border-2 dark:bg-gray-700 dark:text-white outline-none min-h-[100px] font-bold text-sm shadow-inner\" />"
+    },
+    {
+      "line": 197,
+      "text": "{isSubmitting ? <Loader2 className=\"animate-spin\" /> : 'تفعيل الإنذار والنداء الموحد'}"
+    }
+  ],
+  "pages/admin/EmergencyChecklistsManagement.tsx": [
+    {
+      "line": 82,
+      "text": "titleAr: presetTypeId ? `قائمة مهام ${matchedType?.type_name}` : '',"
+    },
+    {
+      "line": 84,
+      "text": "description: 'بروتوكول السلامة المعتمد للاستجابة. يرجى توثيق كافة الخطوات بدقة.',"
+    },
+    {
+      "line": 92,
+      "text": "titleAr: 'التحقق الأولي من منطقة الخطر وتحديد المسار الآمن',"
+    },
+    {
+      "line": 94,
+      "text": "description: 'تقييم بيئة الحادث والتأكد من عدم وجود مخاطر غير متوقعة.',"
+    },
+    {
+      "line": 158,
+      "text": "setActionMessage({ type: 'error', text: 'يرجى إدخال عنوان القائمة وتحديد نوع الطوارئ' });"
+    },
+    {
+      "line": 163,
+      "text": "setActionMessage({ type: 'error', text: 'يجب إضافة مهمة واحدة على الأقل داخل القائمة' });"
+    },
+    {
+      "line": 174,
+      "text": "setActionMessage({ type: 'success', text: 'تم حفظ القائمة بنجاح' });"
+    },
+    {
+      "line": 178,
+      "text": "setActionMessage({ type: 'error', text: e.message || 'فشل حفظ القائمة' });"
+    },
+    {
+      "line": 186,
+      "text": "setActionMessage({ type: 'success', text: 'تم اعتماد الإصدار الجديد للقائمة وتثبيته رسمياً' });"
+    },
+    {
+      "line": 189,
+      "text": "setActionMessage({ type: 'error', text: e.message || 'فشل الاعتماد' });"
+    },
+    {
+      "line": 197,
+      "text": "setActionMessage({ type: 'success', text: 'تم حذف القائمة بنجاح' });"
+    },
+    {
+      "line": 201,
+      "text": "setActionMessage({ type: 'error', text: e.message || 'فشل الحذف' });"
+    },
+    {
+      "line": 212,
+      "text": "text: `تم استيراد واعتماد ${created} بروتوكولات سلامة رسمية مطابقة لمعايير الاستجابة الطارئة.`"
+    },
+    {
+      "line": 216,
+      "text": "setActionMessage({ type: 'error', text: e.message || 'فشل توليد القوائم المعتمدة' });"
+    }
+  ],
+  "pages/admin/ApiSettings.tsx": [
+    {
+      "line": 60,
+      "text": "<Crown className=\"text-amber-500\" /> بروتوكول حماية المفاتيح (Dual Key Failover)"
+    },
+    {
+      "line": 62,
+      "text": "<p className=\"text-xs sm:text-sm text-gray-500 dark:text-gray-400 font-bold uppercase tracking-widest\">تأمين استمرارية الذكاء الاصطناعي بنسبة 99.9%</p>"
+    },
+    {
+      "line": 75,
+      "text": "<p className=\"text-sm text-blue-900 dark:text-blue-200 font-black\">نظام التبديل التلقائي (Smart Routing)</p>"
+    },
+    {
+      "line": 77,
+      "text": "عند حدوث أي فشل في المفتاح \"الأساسي\"، سيقوم النظام فوراً وبدون تدخل بشري بالتحويل للمفتاح \"الاحتياطي\" لضمان عدم توقف التقارير الميدانية."
+    },
+    {
+      "line": 86,
+      "text": "<div className=\"w-2 h-2 rounded-full bg-green-500 animate-pulse\"></div> المفتاح الأساسي (Primary)"
+    },
+    {
+      "line": 110,
+      "text": "<div className=\"w-2 h-2 rounded-full bg-amber-500\"></div> المفتاح الاحتياطي (Secondary Failover)"
+    },
+    {
+      "line": 139,
+      "text": "<span>جاري تحديث البروتوكول الآمن...</span>"
+    },
+    {
+      "line": 144,
+      "text": "<span>تحديث المفاتيح في قاعدة البيانات</span>"
+    },
+    {
+      "line": 152,
+      "text": "<CheckCircle size={18} /> تمت المزامنة بنجاح - النظام يعمل بالوضعية الثنائية الآن."
+    },
+    {
+      "line": 157,
+      "text": "<AlertCircle size={18} /> خطأ: فشل الوصول لقاعدة البيانات لتحديث البروتوكول."
+    },
+    {
+      "line": 166,
+      "text": "<ShieldCheck size={12} className=\"text-green-500\"/> تم التحقق: بيئة اتصال مشفرة ومؤمنة"
+    }
+  ],
+  "pages/admin/LocationsManagement.tsx": [
+    {
+      "line": 70,
+      "text": "} catch (err) { setModalError(\"فشل الحفظ.\"); }"
+    },
+    {
+      "line": 94,
+      "text": "<p>الطابق: ${selectedLocationForQr.floor_number}</p>"
+    },
+    {
+      "line": 97,
+      "text": "<div class=\"footer\">نظام ERS - تأكيد الوصول للموقع</div>"
+    },
+    {
+      "line": 122,
+      "text": "header: \"رمز QR\","
+    },
+    {
+      "line": 127,
+      "text": "title=\"عرض وطباعة رمز QR\""
+    },
+    {
+      "line": 209,
+      "text": "<label className=\"w-1/3 text-xs font-black text-gray-400 uppercase tracking-widest\">كود التحقق</label>"
+    },
+    {
+      "line": 215,
+      "text": "placeholder=\"سيتم توليده تلقائياً\""
+    },
+    {
+      "line": 247,
+      "text": "{/* نافذة عرض الـ QR */}"
+    },
+    {
+      "line": 248,
+      "text": "<Modal isOpen={isQrModalOpen} onClose={() => setIsQrModalOpen(false)} title=\"رمز الاستجابة السريعة (QR)\">"
+    },
+    {
+      "line": 260,
+      "text": "<p className=\"text-sm font-bold text-gray-500\">كود التحقق: <span className=\"font-mono text-primary\">{selectedLocationForQr.verificationCode}</span></p>"
+    },
+    {
+      "line": 263,
+      "text": "<Printer size={20} /> طباعة الرمز للموقع"
+    }
+  ],
+  "components/AiLiveAssistant.tsx": [
+    {
+      "line": 146,
+      "text": "setError(msg.error || 'تم قطع الاتصال مع خادم الذكاء الاصطناعي.');"
+    },
+    {
+      "line": 163,
+      "text": "setError(\"تعذر استقرار المكالمة الصوتية مع الخادم.\");"
+    },
+    {
+      "line": 171,
+      "text": "setError(\"تعذر الوصول للميكروفون أو بدء المكالمة.\");"
+    },
+    {
+      "line": 209,
+      "text": "<h3 className=\"font-black text-xs uppercase tracking-tighter\">الدعم الفني الذكي (Live API)</h3>"
+    },
+    {
+      "line": 228,
+      "text": "<p className=\"text-sm font-black dark:text-white\">بدء نداء الدعم الفني</p>"
+    },
+    {
+      "line": 229,
+      "text": "<p className=\"text-[10px] text-gray-500 font-bold px-4 leading-relaxed\">اتصل بوحدة الاستجابة الذكية ERS للحصول على ملخص الحالة وتوجيهات الاستجابة الفورية.</p>"
+    },
+    {
+      "line": 235,
+      "text": "{isProcessing ? 'جاري الربط...' : 'بدء المكالمة الآن'}"
+    },
+    {
+      "line": 244,
+      "text": "<span className=\"text-[10px] font-black text-green-600 uppercase\">مكالمة نشطة</span>"
+    },
+    {
+      "line": 260,
+      "text": "<p className=\"italic text-center\">بانتظار ملخص الدعم الفني...</p>"
+    },
+    {
+      "line": 270,
+      "text": "<button onClick={stopSession} className=\"w-full py-3 text-[10px] font-black text-red-500 bg-red-50 hover:bg-red-100 rounded-xl transition-colors border border-red-100\">إنهاء المكالمة</button>"
+    }
+  ],
+  "components/ArNavigator.tsx": [
+    {
+      "line": 12,
+      "text": "distance: number; // بالمتر"
+    },
+    {
+      "line": 13,
+      "text": "angle: number; // الزاوية بالنسبة للمستجيب (0-360)"
+    },
+    {
+      "line": 22,
+      "text": "const [headingOffset, setHeadingOffset] = useState(0); // أوفست للمعايرة"
+    },
+    {
+      "line": 27,
+      "text": "{ id: '1', type: 'victim', label: 'موقع المصاب', distance: 12, angle: 45 },"
+    },
+    {
+      "line": 28,
+      "text": "{ id: '2', type: 'exit', label: 'مخرج الطوارئ A', distance: 45, angle: 180 },"
+    },
+    {
+      "line": 29,
+      "text": "{ id: '3', type: 'extinguisher', label: 'طفائية حريق', distance: 5, angle: 290 },"
+    },
+    {
+      "line": 30,
+      "text": "{ id: '4', type: 'hazard', label: 'تسريب غاز مكتشف', distance: 20, angle: 10 },"
+    },
+    {
+      "line": 42,
+      "text": "setPermissionError(\"الكاميرا مطلوبة لتشغيل الواقع المعزز.\");"
+    }
+  ],
+  "components/GuidedTour.tsx": [
+    {
+      "line": 29,
+      "text": "title: i18n.language === 'ar' ? 'مرحباً بك في نظام ERS' : 'Welcome to ERS',"
+    },
+    {
+      "line": 31,
+      "text": "? 'نظام الاستجابة للطوارئ الذكي. دعنا نأخذك في جولة سريعة.'"
+    },
+    {
+      "line": 37,
+      "text": "title: i18n.language === 'ar' ? 'الإبلاغ السريع' : 'Quick Report',"
+    },
+    {
+      "line": 39,
+      "text": "? 'اضغط هنا لفتح حالة طوارئ جديدة، يمكنك استخدام الذكاء الاصطناعي لتحليل الصور.'"
+    },
+    {
+      "line": 45,
+      "text": "title: i18n.language === 'ar' ? 'غرفة العمليات الحية' : 'Live Ops Map',"
+    },
+    {
+      "line": 47,
+      "text": "? 'تتبع المستجيبين والحالات النشطة بشكل لحظي على الخريطة التفاعلية.'"
+    },
+    {
+      "line": 53,
+      "text": "title: i18n.language === 'ar' ? 'وحدة التحليل الذكي ERS' : 'ERS Intelligence Hub',"
+    },
+    {
+      "line": 55,
+      "text": "? 'يقوم الذكاء الاصطناعي بتحليل الوضع وتقديم رؤى حرجة واستراتيجية هنا.'"
+    }
+  ],
+  "components/LiveMap.tsx": [
+    {
+      "line": 263,
+      "text": "<span>موقع حي ومباشر (مناوبة نشطة)</span>"
+    },
+    {
+      "line": 268,
+      "text": "<span>موقع حديث (غير نشط حالياً)</span>"
+    },
+    {
+      "line": 273,
+      "text": "<span>آخر موقع مسجل (قديم)</span>"
+    },
+    {
+      "line": 283,
+      "text": "<span>دقة تحديد الموقع (GPS)</span>"
+    },
+    {
+      "line": 285,
+      "text": "<span className=\"font-black dark:text-gray-200\">± {selectedUser.lastLocation.accuracy} متر</span>"
+    },
+    {
+      "line": 291,
+      "text": "<span>آخر تحديث للموقع</span>"
+    },
+    {
+      "line": 296,
+      "text": ": 'غير متوفر'}"
+    },
+    {
+      "line": 303,
+      "text": "<span>البلد</span>"
+    }
+  ],
+  "components/PrivateChat.tsx": [
+    {
+      "line": 138,
+      "text": "text: data.mediaType === 'text' ? data.text : `أرسل ${data.mediaType}`"
+    },
+    {
+      "line": 169,
+      "text": "alert(\"حجم الملف كبير جداً. الحد الأقصى هو 1 ميجابايت.\");"
+    },
+    {
+      "line": 185,
+      "text": "alert(\"تعذر إرسال الملف: الحجم يتجاوز حدود قاعدة البيانات.\");"
+    },
+    {
+      "line": 231,
+      "text": "alert(\"التسجيل طويل جداً، يرجى إرسال رسالة أقصر.\");"
+    },
+    {
+      "line": 242,
+      "text": "alert(\"إذن الميكروفون مطلوب لتسجيل الرسائل الصوتية.\");"
+    },
+    {
+      "line": 293,
+      "text": "<h3 className=\"font-black text-[13px] sm:text-sm truncate max-w-[150px]\">{selectedRecipient ? selectedRecipient.name : \"دردشة العمليات\"}</h3>"
+    },
+    {
+      "line": 372,
+      "text": "<input type=\"text\" value={newMessage} onChange={(e) => setNewMessage(e.target.value)} placeholder=\"اكتب رسالة...\" className=\"flex-1 bg-gray-50 dark:bg-gray-800 border-none rounded-2xl px-3 sm:px-4 py-2.5 text-[11px] sm:text-xs outline-none font-bold dark:text-white\" onKeyPress={(e) => e.key === 'Enter' && sendMessage(e)} />"
+    },
+    {
+      "line": 381,
+      "text": "{isUploading && <div className=\"text-[8px] text-primary font-black animate-pulse text-center\">جاري معالجة ورفع الملف...</div>}"
+    }
+  ],
+  "components/Toast.tsx": [
+    {
+      "line": 37,
+      "text": "<h4 className=\"font-bold text-lg uppercase tracking-wide\">إنذار طوارئ نشط!</h4>"
+    },
+    {
+      "line": 40,
+      "text": "<span>في</span>"
+    },
+    {
+      "line": 61,
+      "text": "<BellOff size={14} /> لست من المعنيين بهذا البلاغ (إيقاف الإنذار)"
+    }
+  ],
+  "pages/ActiveAlerts.tsx": [
+    {
+      "line": 61,
+      "text": "await logAdminAction('BULK_DELETE_ALERTS', `تم حذف ${selectedIds.length} بلاغ نشط جماعياً`);"
+    },
+    {
+      "line": 65,
+      "text": "alert(\"حدث خطأ أثناء الحذف\");"
+    },
+    {
+      "line": 78,
+      "text": "<p className=\"text-xs text-gray-500 mt-1 font-medium\">إدارة ومتابعة حالات الطوارئ القائمة حالياً</p>"
+    },
+    {
+      "line": 108,
+      "text": "تحديد الكل ({filteredEmergencies.length})"
+    },
+    {
+      "line": 119,
+      "text": "<Trash2 size={14}/> حذف المحدد ({selectedIds.length})"
+    },
+    {
+      "line": 188,
+      "text": "title=\"تأكيد الحذف الجماعي\""
+    },
+    {
+      "line": 189,
+      "text": "message={`هل أنت متأكد من حذف ${selectedIds.length} بلاغ نشط؟ سيؤدي هذا لإزالة البلاغات من النظام تماماً.`}"
+    }
+  ],
+  "pages/Dashboard.tsx": [
+    {
+      "line": 146,
+      "text": "<p className=\"text-xs font-black text-amber-800\">صوت الإنذار غير مفعل حالياً على جهازك</p>"
+    },
+    {
+      "line": 148,
+      "text": "<Button onClick={unlockAudio} className=\"w-full sm:w-auto bg-amber-600 border-none py-2 px-6 rounded-xl font-black text-[10px] uppercase\">تنشيط محرك الإنذار الآن</Button>"
+    },
+    {
+      "line": 292,
+      "text": "title=\"الموظفون المتاحون\""
+    },
+    {
+      "line": 300,
+      "text": "title=\"في استجابة ميدانية\""
+    },
+    {
+      "line": 308,
+      "text": "title=\"نسبة إنجاز المهام\""
+    },
+    {
+      "line": 316,
+      "text": "title=\"المهام المتأخرة\""
+    }
+  ],
+  "pages/admin/AdvancedAnalytics.tsx": [
+    {
+      "line": 75,
+      "text": "<h2 style=\"color:#1976d2; margin-bottom:5px;\">تقرير التحليلات الاستراتيجية ERS System</h2>"
+    },
+    {
+      "line": 76,
+      "text": "<p>تاريخ الاستخراج: ${new Date().toLocaleString('ar-EG')}</p>"
+    },
+    {
+      "line": 140,
+      "text": "datasets: [{ label: 'دقائق', data, borderColor: '#1976d2', backgroundColor: 'rgba(25, 118, 210, 0.1)', fill: true, tension: 0.4 }]"
+    },
+    {
+      "line": 150,
+      "text": "datasets: [{ label: 'عدد البلاغات', data: sorted.map(s => s[1]), backgroundColor: '#ef4444', borderRadius: 8 }]"
+    },
+    {
+      "line": 195,
+      "text": "<StatCard color=\"bg-orange-500\" icon={<BellOff/>} label=\"إجمالي المستبعدين\" value={totalDismissals} />"
+    },
+    {
+      "line": 237,
+      "text": "<th className=\"p-4 text-center\">تجاهل (غير معني)</th>"
+    }
+  ],
+  "pages/Login.tsx": [
+    {
+      "line": 164,
+      "text": "setError(\"تعذر الاتصال بالخادم. يرجى التحقق من اتصال الإنترنت.\");"
+    },
+    {
+      "line": 183,
+      "text": "<h2 className=\"text-xl font-black text-gray-800 dark:text-white mb-2\">جاري استعادة الجلسة...</h2>"
+    },
+    {
+      "line": 184,
+      "text": "<p className=\"text-gray-500 text-sm font-bold\">يرجى الانتظار، يتم تسجيل الدخول تلقائياً</p>"
+    },
+    {
+      "line": 200,
+      "text": "<WifiOff size={14} /> أنت حالياً في وضع عدم الاتصال"
+    }
+  ],
+  "pages/admin/LoginLogs.tsx": [
+    {
+      "line": 42,
+      "text": "if (!logout) return <span className=\"text-green-500 font-bold text-xs animate-pulse\">متصل الآن</span>;"
+    },
+    {
+      "line": 47,
+      "text": "return `${hours}س ${minutes}د`;"
+    },
+    {
+      "line": 83,
+      "text": "header: \"توقيت الدخول\","
+    },
+    {
+      "line": 121,
+      "text": "<RefreshCw size={12} className=\"mr-1\" /> إعادة تعيين"
+    }
+  ],
+  "pages/admin/ActiveUsersReport.tsx": [
+    {
+      "line": 60,
+      "text": "header: \"الجهاز\","
+    },
+    {
+      "line": 69,
+      "text": "header: \"الموقع (IP)\","
+    },
+    {
+      "line": 107,
+      "text": "<input type=\"text\" value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} placeholder=\"ابحث عن اسم الناشط...\""
+    }
+  ],
+  "pages/admin/Admin.tsx": [
+    {
+      "line": 132,
+      "text": "{/* أدوات السوبر أدمن (مخفية تماماً عن الـ Admin العادي) */}"
+    },
+    {
+      "line": 153,
+      "text": "{/* الأدوات القياسية */}"
+    },
+    {
+      "line": 166,
+      "text": "{/* أدوات قاعدة البيانات */}"
+    }
+  ],
+  "pages/Settings.tsx": [
+    {
+      "line": 57,
+      "text": "{ id: 'ar', name: 'العربية' },"
+    },
+    {
+      "line": 58,
+      "text": "{ id: 'ku', name: 'کوردی' },"
+    }
+  ],
+  "pages/MobileAppDownload.tsx": [
+    {
+      "line": 54,
+      "text": "<Smartphone size={18} /> تشخيص واختبار الجهاز"
+    }
+  ]
+}
