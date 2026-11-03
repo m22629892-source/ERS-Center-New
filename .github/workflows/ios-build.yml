@@ -1,6 +1,8 @@
 name: iOS compile check
 on:
   workflow_dispatch:
+  push:
+    branches: [ios-firebase-build]
 permissions:
   contents: read
 jobs:
