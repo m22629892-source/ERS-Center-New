@@ -1,0 +1,36 @@
+name: iOS AltStore test build
+on:
+  workflow_dispatch:
+  push:
+    branches: [ios-firebase-build]
+permissions:
+  contents: read
+jobs:
+  compile:
+    runs-on: macos-26-intel
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - run: npm install
+      - run: npm run build
+      - run: npx cap add ios --packagemanager SPM
+      - run: npx cap sync ios
+      - name: Build for physical iPhone
+        run: |
+          xcodebuild -project ios/App/App.xcodeproj -scheme App \
+            -destination 'generic/platform=iOS' -configuration Release \
+            -derivedDataPath "$RUNNER_TEMP/nidaa-build" CODE_SIGNING_ALLOWED=NO build
+      - name: Package unsigned IPA
+        run: |
+          mkdir Payload
+          cp -R "$RUNNER_TEMP/nidaa-build/Build/Products/Release-iphoneos/App.app" Payload/
+          /usr/libexec/PlistBuddy -c 'Set :CFBundleDisplayName Nidaa Test' Payload/App.app/Info.plist
+          zip -qry Nidaa-AltStore.ipa Payload
+          unzip -tq Nidaa-AltStore.ipa
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Nidaa-AltStore
+          path: Nidaa-AltStore.ipa
+          if-no-files-found: error
