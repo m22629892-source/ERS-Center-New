@@ -1,0 +1,29 @@
+name: iOS compile check
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  compile:
+    runs-on: macos-26
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - run: npm install
+      - run: npm run build
+      - run: npx cap add ios --packagemanager SPM
+      - run: npx cap sync ios
+      - name: Configure Firebase Messaging
+        env:
+          FIREBASE_IOS_PLIST_BASE64: ${{ secrets.FIREBASE_IOS_PLIST_BASE64 }}
+        run: |
+          if [ -z "$FIREBASE_IOS_PLIST_BASE64" ]; then
+            echo "::error::Set FIREBASE_IOS_PLIST_BASE64 for com.ers.emergency"
+            exit 1
+          fi
+          printf '%s' "$FIREBASE_IOS_PLIST_BASE64" | base64 -D > "$RUNNER_TEMP/firebase-ios.plist"
+          gem install xcodeproj --no-document
+          ruby scripts/configure-ios.rb "$RUNNER_TEMP/firebase-ios.plist"
+      - run: xcodebuild -project ios/App/App.xcodeproj -scheme App -sdk iphonesimulator -configuration Debug CODE_SIGNING_ALLOWED=NO build
